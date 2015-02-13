@@ -1,0 +1,31 @@
+@import mixins
+
+.footer-container
+  background-color: $header-bg
+  width: 100%
+  margin-top: 150px
+
+  .footer
+    display: table
+    width: 100%
+    height: $footer-height
+    max-width: $max-width
+    margin: 0 auto
+    color: $secondary-text-color
+
+    p, a
+      display: table-cell
+      vertical-align: middle
+      color: $secondary-text-color
+      font-size: .8em
+
+    a
+      float: right
+      line-height: $footer-height
+      padding-left: 20px
+
+    .social-media
+      vertical-align: middle
+      display: table-cell
+      .icon
+        float: left

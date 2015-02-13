@@ -1,0 +1,27 @@
+$primary-color: #373737
+$secondary-color: #BBBBBB
+$tertiary-color: #FFFFFF
+
+$primary-text-color: #000000
+$secondary-text-color: #FFFFFF
+$hover-text-color: #B7B7B7
+
+$header-bg: $primary-color
+$body-bg: $secondary-color
+$main-bg: $tertiary-color
+$footer-bg: $primary-color
+
+$primary-font: 'PT Sans', sans-serif
+$secondary-font: 'Crimson Text', serif
+
+$max-width: 1024px
+
+$header-height: 70px
+$footer-height: 100px
+$block-height: 350px
+
+=vendor($prop, $args)
+  -webkit-#{$prop}: $args
+  -moz-#{$prop}: $args
+  -o-#{$prop}: $args
+  #{$prop}: $args

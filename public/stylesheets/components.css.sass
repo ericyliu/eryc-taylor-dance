@@ -1,0 +1,58 @@
+@import mixins
+
+body
+  font-family: $primary-font
+  text-rendering: optimizeLegibility
+  font-smooth: always
+  font-smoothing: antialiased
+  -moz-font-smoothing: antialiased
+  -webkit-font-smoothing: antialiased
+  background-color: $body-bg
+  color: $primary-text-color
+  font-size: 20px
+
+a
+  color: $primary-text-color
+  text-decoration: none
+
+  &:hover
+    color: $hover-text-color
+    text-decoration: none
+    text-shadow: 0.05em 0.05em 0.2em $secondary-text-color
+
+@viewport
+  zoom: 1.0
+  width: device-width
+@-ms-viewport
+  zoom: 1.0
+  width: device-width
+
+main
+  margin-top: $header-height
+  position: relative
+  height: 100%
+  width: 100%
+  background-color: $main-bg
+  margin: 0 auto
+  z-index: 15
+
+.social-media
+  .icon
+    width: 25px
+    height: 25px
+    background-size: 25px 25px
+    background-position: center center
+    background-repeat: no-repeat
+    padding: 0 20px
+
+    &.facebook
+      background-image: url("/images/facebook-logo-square.png")
+
+    &.twitter
+      background-image: url("/images/twitter-logo-square.png")
+
+    &.linkedin
+      background-image: url("/images/linkedin-logo-square2.png")
+
+    &.youtube
+      background-image: url("/images/youtube.png")

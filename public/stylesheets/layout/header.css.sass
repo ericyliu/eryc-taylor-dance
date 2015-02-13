@@ -1,0 +1,41 @@
+@import mixins
+
+.header-container
+  position: fixed
+  background-color: $header-bg
+  opacity: .9
+  width: 100%
+  z-index: 99
+
+  .header
+    display: table
+    height: $header-height
+    width: 100%
+    margin: 0 auto
+
+    .logo
+      display: table-cell
+      width: 200px
+      height: 60px
+      background-image: url(/images/logo.jpg)
+      background-repeat: no-repeat
+      background-position: 20px center
+      background-size: 60px 60px
+
+    .links
+      float: right
+      padding-right: 50px
+      display: table-cell
+      height: 100%
+      vertical-align: middle
+
+      li
+        display: inline
+        list-style-type: none
+        padding-left: 50px
+
+        a
+          font-size: 20px
+          font-size: 1.0em
+          line-height: $header-height
+          color: $secondary-text-color

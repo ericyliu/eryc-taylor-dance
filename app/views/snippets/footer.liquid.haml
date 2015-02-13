@@ -1,2 +1,8 @@
-.footer
-  %p &copy; Company {{ now | localized_date: '%Y' }}
+.footer-container
+  .footer
+    %p &copy; Eryc Taylor Dance, Inc {{ now | localized_date: '%Y' }}
+    {% include social-media %}
+    %a{href:"/contact"} Contact Us
+    %a{href:"/supporters"} Our Supporters
+    %a{href:"mailto:etd.assistant@gmail.com"} etd.assistant@gmail.com
+    %a{href:"tel:14752351268"} (475)235-1268

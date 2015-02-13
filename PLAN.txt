@@ -1,0 +1,66 @@
+Header
+Logo (goes to home) Events About People Career 
+
+1. Home Page
+  1. mp4 video banner x
+  2. small mission statement x
+  3. calender for events
+  4. blog for press
+2. Events
+  ~ blog style for events, ordered by most recent
+3. About 
+  1. descriptions of company
+  2. block and link to people
+  3. block and link to careers
+4. Career
+  1. internships
+  2. auditions
+  3. summer workshops
+  4. choreography grant
+5. Store
+
+6. How to Help
+  1. paypal block
+  2. tote bag
+
+
+Contact Page
+  1. Form for contacting
+
+Supporters Page
+  2. List of Supporters
+
+People
+  1. ceo
+  2. dancers (with see past dancers link)
+    - highlight to see name
+  3. collaboraters
+    - highlight to see name
+  4. board of directors
+
+Career Page
+
+
+Footer
+Eryc Taylor Dance - Phone - Email - Supporters - Contact us
+
+Data Strucutres:
+  1. events
+    name
+    date
+    description
+    location
+
+  2. people
+    name
+    role
+    picture
+    bio
+
+  3. careers
+    role
+    description
+
+  4. supporter
+    name
+
