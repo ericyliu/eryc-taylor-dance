@@ -12,7 +12,6 @@
     %link{href: "{{ 'apple-touch-icon-120x120-precomposed.png' | theme_image_url }}", rel: "apple-touch-icon-precomposed", sizes: "120x120"}
     %link{href: "{{ 'apple-touch-icon-152x152-precomposed.png' | theme_image_url }}", rel: "apple-touch-icon-precomposed", sizes: "152x152"}
     {{ 'application.css' | stylesheet_tag }}
-    {{ 'http://fonts.googleapis.com/css?family=PT+Sans:400,700|Crimson+Text:400,700' | stylesheet_tag }}
 
   %body{:class=> "{{ page.slug }}"}
     {% include header %}

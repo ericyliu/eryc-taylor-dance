@@ -3,11 +3,12 @@ title: Home
 published: true
 ---
 !!!
-{% extends layout %}
+{% extends default %}
 
 {% block main %}
-%video.banner{width: "1024", height: "500", loop: true, autoplay: true, controls: true}
-  %source{src: "/images/banner.mp4", type: "video/mp4"}
+{% capture video %}{% editable_file "video" %}{% endeditable_file %}{% endcapture %}
+%video.banner{width: "1024", height: "500", loop: true, autoplay: true}
+  %source{src: "{{ video }}", type: "video/mp4"}
 
 .block-container.light
   .block
