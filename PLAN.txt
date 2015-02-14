@@ -64,3 +64,11 @@ Data Strucutres:
   4. supporter
     name
 
+Demo #1 notes
+- dropdowns for header
+- social media more visible
+- Careers -> Programs
+- Events through google calender api
+- Press page
+- button to mute home video
+- put eryc taylor dance
