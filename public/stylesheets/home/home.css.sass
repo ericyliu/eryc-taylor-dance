@@ -2,8 +2,25 @@
 
 body.index
   main
-    video.banner
-      display: block
-      padding-top: $header-height
-      width: 100%
-      height: auto
+    .banner-container
+      .banner
+        display: table
+        position: relative
+        padding-top: $header-height
+        top: 50%
+
+        .title
+          display: table-cell
+          position: absolute
+          color: $secondary-text-color
+          text-align: center
+          z-index: 20
+          width: 100%
+          top: 50%
+          font-size: 3.0em
+
+        video
+          display: block
+          width: 100%
+          height: auto
+          z-index: 15

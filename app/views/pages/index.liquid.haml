@@ -6,9 +6,11 @@ published: true
 {% extends default %}
 
 {% block main %}
-{% capture video %}{% editable_file "video" %}{% endeditable_file %}{% endcapture %}
-%video.banner{width: "1024", height: "500", loop: true, autoplay: true}
-  %source{src: "{{ video }}", type: "video/mp4"}
+{% capture video_url %}{% editable_file "Banner Video" %}/samples/videos/banner.mp4{% endeditable_file %}{% endcapture %}
+.banner-container
+  .banner
+    %video{width: "1024", height: "500", loop: true, autoplay: true, muted: true}
+      %source{src: "{{ video_url }}", type: "video/mp4"}
 
 .block-container.light
   .block

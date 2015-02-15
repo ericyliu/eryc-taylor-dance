@@ -1,0 +1,24 @@
+---
+name: People
+description: People
+slug: people
+label_field_name: name
+order_by: manually
+fields:
+- name:
+    label: Name
+    type: string
+    hint: Name of the person
+    required: true
+- role:
+    label: Role
+    type: string
+    hint: Role of the person
+- picture:
+    label: Picture
+    type: file
+    hint: Picture of the person
+- bio:
+    label: Biography
+    type: text
+    hint: Description of the person
