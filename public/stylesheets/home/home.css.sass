@@ -24,3 +24,40 @@ body.index
           width: 100%
           height: auto
           z-index: 15
+
+        .button
+          display: table-cell
+          position: absolute
+          color: $secondary-text-color
+          z-index: 20
+          width: 40px
+          height: 40px
+
+          &:hover
+            cursor: pointer
+
+          &.play
+            background-image: url("/images/icon_set_player.svg")
+            background-position: 82px 0px
+            background-size: 125px
+            bottom: 10px
+            right: 10px
+
+          &.pause
+            background-image: url("/images/icon_set_player.svg")
+            background-position: 82px 40px
+            background-size: 125px
+            right: 10px
+            bottom: 10px
+
+          &.mute
+            background-image: url("/images/unmute.svg")
+            background-size: 40px
+            right: 10px
+            bottom: 55px
+
+          &.unmute
+            background-image: url("/images/mute.svg")
+            background-size: 40px
+            right: 10px
+            bottom: 55px

@@ -1,51 +1,29 @@
 ---
-- The International Dance Festival Avant Garde
-    _slug: the-international-dance-festival-avant-garde
+- Event 1:
+    _slug: event-1
     start_date: 09/25/2015 12:00
-    end_date: 09/25/2015 22:00
+    end_date: 09/25/2015 22:00 
     description: ETD will be performing at The International Dance Festival Avant Garde 
       from September 25th-27th.
     location: Yucatan, Mexico
-
-- Guest Performance at Chris Tanner Valentine Soiree
-    _slug: guest-performance-at-chris-tanner-valentine-soiree
-    start_date:  10/25/2015 12:00
-    end_date: 10/25/2015 22:00
-    description: Eryc Taylor Dance will be performing a new trio titled, "The Box" 
-      with original musical composition by Salomon Lerner, concept and movement by 
-      ETD member Jesus Olivera, and composition/stage direction by Eryc Taylor.
-  location: La MaMa Galleria
-
-- The International Dance Festival Avant Garde
-    _slug: the-international-dance-festival-avant-garde
+- Event 2:
+    _slug: event-1
+    start_date: 10/25/2015 12:00
+    end_date: 10/25/2015 22:00 
+    description: ETD will be performing at The International Dance Festival Avant Garde 
+      from September 25th-27th.
+    location: Yucatan, Mexico
+- Event 3:
+    _slug: event-1
     start_date: 11/25/2015 12:00
-    end_date: 11/25/2015 22:00
+    end_date: 11/25/2015 22:00 
     description: ETD will be performing at The International Dance Festival Avant Garde 
       from September 25th-27th.
     location: Yucatan, Mexico
-
-- Guest Performance at Chris Tanner Valentine Soiree
-    _slug: guest-performance-at-chris-tanner-valentine-soiree
-    start_date:  12/25/2015 12:00
-    end_date: 12/25/2015 22:00
-    description: Eryc Taylor Dance will be performing a new trio titled, "The Box" 
-      with original musical composition by Salomon Lerner, concept and movement by 
-      ETD member Jesus Olivera, and composition/stage direction by Eryc Taylor.
-  location: La MaMa Galleria
-
-- The International Dance Festival Avant Garde
-    _slug: the-international-dance-festival-avant-garde
-    start_date: 01/25/2016 12:00
-    end_date: 01/25/2015 22:00
+- Event 4:
+    _slug: event-1
+    start_date: 12/25/2015 12:00
+    end_date: 12/25/2015 22:00 
     description: ETD will be performing at The International Dance Festival Avant Garde 
       from September 25th-27th.
     location: Yucatan, Mexico
-
-- Guest Performance at Chris Tanner Valentine Soiree
-    _slug: guest-performance-at-chris-tanner-valentine-soiree
-    start_date:  02/25/2016 12:00
-    end_date: 02/25/2016 22:00
-    description: Eryc Taylor Dance will be performing a new trio titled, "The Box" 
-      with original musical composition by Salomon Lerner, concept and movement by 
-      ETD member Jesus Olivera, and composition/stage direction by Eryc Taylor.
-  location: La MaMa Galleria

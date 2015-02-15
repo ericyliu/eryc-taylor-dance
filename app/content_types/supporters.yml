@@ -10,13 +10,13 @@ fields:
     type: string
     hint: Name of the supporter
     required: true
-- importance
+- importance:
     label: Importance
     type: select
     hint: What group of contributers supporter belongs to
     select_options: ["Primary", "Secondary"]
     required: true
-- amount
+- amount:
     label: Amount
     type: float
     hint: Amount the supporter has contributed

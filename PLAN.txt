@@ -58,17 +58,22 @@ Data Strucutres:
     bio
 
   3. programs
-    role
+    name
     description
 
   4. supporter
     name
 
+  5. blog
+    title
+    content
+
+
 Demo #1 notes
 - dropdowns for header
-- social media more visible
-- Careers -> Programs
+- social media more visible x
+- Careers -> Programs x
 - Events through google calender api
-- Press page
+- Press page x
 - button to mute home video
-- put eryc taylor dance
+- put eryc taylor dance x
