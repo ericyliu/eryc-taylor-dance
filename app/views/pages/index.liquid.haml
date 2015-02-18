@@ -6,12 +6,46 @@ published: true
 {% extends default %}
 
 {% block main %}
-{% capture video %}{% editable_file "video" %}{% endeditable_file %}{% endcapture %}
-%video.banner{width: "1024", height: "500", loop: true, autoplay: true}
-  %source{src: "{{ video }}", type: "video/mp4"}
+{% capture video_url %}{% editable_file "Banner Video" %}/samples/videos/banner.mp4{% endeditable_file %}{% endcapture %}
+.banner-container
+  .banner
+    %video{id: "banner-video", width: "1024", height: "500", loop: true, autoplay: true, muted: true}
+      %source{src: "{{ video_url }}", type: "video/mp4"}
+    .play.button{onclick: "playPause()", style: "display:none"}
+    .pause.button{onclick: "playPause()"}
+    .mute.button{onclick: "muteUnmute()", style: "display:none"}
+    .unmute.button{onclick: "muteUnmute()"}
 
 .block-container.light
   .block
     .title Eryc Taylor Dance, Inc.
     .text We are a New York City based not-for-profit corporation with a mission to advance the appreciation of dance and educate the public about dance by creating and presenting original performances, conducting master classes and workshops, and making grants to aspiring choreographers.
+
+:javascript
+  function playPause() {
+    var video = document.getElementById("banner-video")
+    if (video.paused) {
+      video.play();
+      $('.play.button').hide();
+      $('.pause.button').show();
+    }
+    else {
+      $('.play.button').show();
+      $('.pause.button').hide();
+      video.pause();
+    }
+  }
+  function muteUnmute() {
+    var video = document.getElementById("banner-video")
+    video.muted = !video.muted;
+    if (video.muted) {
+      $('.mute.button').hide();
+      $('.unmute.button').show();
+    }
+    else {
+      $('.mute.button').show();
+      $('.unmute.button').hide();
+    }
+  }
+
 {% endblock %}

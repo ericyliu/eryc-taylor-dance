@@ -15,7 +15,11 @@
 
   %body{:class=> "{{ page.slug }}"}
     {% include header %}
+    {% include social-sidebar %}
     %main
       {% block main %}
       {% endblock %}
     {% include footer %}
+
+    {{ 'jquery.min.js' | javascript_tag }}
+    {{ 'application.js' | javascript_tag }}

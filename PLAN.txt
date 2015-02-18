@@ -12,7 +12,7 @@ Logo (goes to home) Events About People Career
   1. descriptions of company
   2. block and link to people
   3. block and link to careers
-4. Career
+4. Programs
   1. internships
   2. auditions
   3. summer workshops
@@ -57,10 +57,23 @@ Data Strucutres:
     picture
     bio
 
-  3. careers
-    role
+  3. programs
+    name
     description
 
   4. supporter
     name
 
+  5. blog
+    title
+    content
+
+
+Demo #1 notes
+- dropdowns for header
+- social media more visible x
+- Careers -> Programs x
+- Events through google calender api
+- Press page x
+- button to mute home video
+- put eryc taylor dance x

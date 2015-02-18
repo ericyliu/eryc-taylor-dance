@@ -1,0 +1,29 @@
+---
+- Event 1:
+    _slug: event-1
+    start_date: 09/25/2015 12:00
+    end_date: 09/25/2015 22:00 
+    description: ETD will be performing at The International Dance Festival Avant Garde 
+      from September 25th-27th.
+    location: Yucatan, Mexico
+- Event 2:
+    _slug: event-1
+    start_date: 10/25/2015 12:00
+    end_date: 10/25/2015 22:00 
+    description: ETD will be performing at The International Dance Festival Avant Garde 
+      from September 25th-27th.
+    location: Yucatan, Mexico
+- Event 3:
+    _slug: event-1
+    start_date: 11/25/2015 12:00
+    end_date: 11/25/2015 22:00 
+    description: ETD will be performing at The International Dance Festival Avant Garde 
+      from September 25th-27th.
+    location: Yucatan, Mexico
+- Event 4:
+    _slug: event-1
+    start_date: 12/25/2015 12:00
+    end_date: 12/25/2015 22:00 
+    description: ETD will be performing at The International Dance Festival Avant Garde 
+      from September 25th-27th.
+    location: Yucatan, Mexico

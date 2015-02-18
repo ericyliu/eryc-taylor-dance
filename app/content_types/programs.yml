@@ -1,0 +1,16 @@
+---
+name: Programs
+description: Programs
+slug: programs
+label_field_name: name
+order_by: manually
+fields:
+- name:
+    label: Name
+    type: string
+    hint: Name of the program
+    required: true
+- description:
+    label: Description
+    type: text
+    hint: Description of the program
