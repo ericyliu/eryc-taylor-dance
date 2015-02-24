@@ -75,5 +75,5 @@ Demo #1 notes
 - Careers -> Programs x
 - Events through google calender api
 - Press page x
-- button to mute home video
+- button to mute home video x
 - put eryc taylor dance x

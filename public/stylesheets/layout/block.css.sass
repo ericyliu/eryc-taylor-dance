@@ -40,3 +40,47 @@
       line-height: 30px
       line-height: 1.5em
       padding-bottom: 150px
+
+    .events
+      width: 100%
+      max-width: $max-width
+      padding-bottom: 100px
+
+      .today
+        width: 90%
+        margin: auto
+        padding-bottom: 30px
+        font-size: .8em
+        text-align: right
+
+      .event
+        display: table
+        width: 90%
+        border: 1px solid white
+        padding: 10px
+        margin: 20px auto
+
+        .name
+          display: table-cell
+          vertical-align: middle
+          width: 65%
+
+        .hint
+          font-size: .7em
+          display: table-cell
+          vertical-align: middle
+          padding-top: 3px
+
+        .date
+          display: table-cell
+          vertical-align: middl
+          float: right
+
+        &:hover
+          background-color: $tertiary-color
+          color: $primary-color
+          cursor: pointer
+
+    .event-title
+      padding-top: 100px
+      padding-bottom: 10px

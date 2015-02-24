@@ -16,36 +16,63 @@ published: true
     .mute.button{onclick: "muteUnmute()", style: "display:none"}
     .unmute.button{onclick: "muteUnmute()"}
 
+    :javascript
+      function playPause() {
+        var video = document.getElementById("banner-video")
+        if (video.paused) {
+          video.play();
+          $('.play.button').hide();
+          $('.pause.button').show();
+        }
+        else {
+          $('.play.button').show();
+          $('.pause.button').hide();
+          video.pause();
+        }
+      }
+      function muteUnmute() {
+        var video = document.getElementById("banner-video")
+        video.muted = !video.muted;
+        if (video.muted) {
+          $('.mute.button').hide();
+          $('.unmute.button').show();
+        }
+        else {
+          $('.mute.button').show();
+          $('.unmute.button').hide();
+        }
+      }
+
+.block-container.dark
+  .block
+    .title.event-title Upcoming Events
+    .events
+      .today Today: {{ today | localized_date: '%B %d %Y'}}
+      == {% for event in contents.events limit:5 %}
+      .event{id: "{{ event._slug | escape }}"}
+        .name {{ event.name | escape }}
+        .hint Click for details
+        .date {{ event.date | localized_date: '%B %d %Y' }}
+      == {% endfor %}
+
 .block-container.light
   .block
     .title Eryc Taylor Dance, Inc.
     .text We are a New York City based not-for-profit corporation with a mission to advance the appreciation of dance and educate the public about dance by creating and presenting original performances, conducting master classes and workshops, and making grants to aspiring choreographers.
 
-:javascript
-  function playPause() {
-    var video = document.getElementById("banner-video")
-    if (video.paused) {
-      video.play();
-      $('.play.button').hide();
-      $('.pause.button').show();
-    }
-    else {
-      $('.play.button').show();
-      $('.pause.button').hide();
-      video.pause();
-    }
-  }
-  function muteUnmute() {
-    var video = document.getElementById("banner-video")
-    video.muted = !video.muted;
-    if (video.muted) {
-      $('.mute.button').hide();
-      $('.unmute.button').show();
-    }
-    else {
-      $('.mute.button').show();
-      $('.unmute.button').hide();
-    }
-  }
-
+== {% for event in contents.events limit:5 %}
+.event-block
+  .name {{ event.name | escape }}
+  {% if event.start_time != undefined %}
+  {% if event.end_time != undefined %}
+  .date {{ event.date | localized_date: '%B %d %Y' }} {{ event.start_time }} - {{ event.end_time }}
+  {% else %}
+  .date {{ event.date | localized_date: '%B %d %Y' }} {{ event.start_time }}
+  {% endif %}
+  {% else %}
+  .date {{ event.date | localized_date: '%B %d %Y' }}
+  {% endif %}
+  .description {{ event.description | escape }}
+  %a.link Click here to go to event page
+{% endfor %}
 {% endblock %}
