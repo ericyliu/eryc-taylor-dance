@@ -57,8 +57,8 @@ published: true
 
   :javascript
     function show(id) {
-      $(".event-block").hide();
-      $(".event-block#" + id).show(100);
+      $(".event-popup").hide();
+      $(".event-popup#" + id).show(100);
     }
 
 .block-container.light
@@ -67,7 +67,7 @@ published: true
     .text We are a New York City based not-for-profit corporation with a mission to advance the appreciation of dance and educate the public about dance by creating and presenting original performances, conducting master classes and workshops, and making grants to aspiring choreographers.
 
 == {% for event in contents.events limit:5 %}
-.event-block{id: "{{ event._slug | escape }}", style: "display:none"}
+.event-popup{id: "{{ event._slug | escape }}", style: "display:none"}
   .name {{ event.name | escape }}
   .date Date: {{ event.date | localized_date: '%B %d %Y' }}
   {% if event.start_time != undefined %}
@@ -85,6 +85,6 @@ published: true
 {% endfor %}
 :javascript
   function hide(id) {
-    $(".event-block#" + id).hide();
+    $(".event-popup#" + id).hide();
   }
 {% endblock %}

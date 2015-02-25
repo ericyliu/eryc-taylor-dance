@@ -1,0 +1,50 @@
+@import mixins
+
+.events
+  main
+    .title
+      padding-top: $header-height + 70px
+      margin: 0 150px
+      margin-bottom: 50px
+      
+      h1
+        margin: 0
+        font-size: 50px
+        font-size: 2.5em
+        font-weight: bold
+        text-align: center
+        border-bottom: 1px solid $secondary-color
+        padding-bottom: 50px
+        font-family: $secondary-font
+
+    .event-block
+      position: relative
+      margin: 25px 200px
+      padding-bottom: 50px
+      border-bottom: 1px solid $secondary-color
+
+      &:last-child
+        border-bottom: none
+
+      .date, .time
+        font-size: 18px
+        font-size: .9em
+
+      .name
+        font-size: 28px
+        font-size: 1.4em
+        text-align: center
+
+      .description
+        font-size: 18px
+        font-size: .9em
+        font-family: $secondary-font
+        margin: 10px 30px
+        padding-bottom: 20px
+
+      .link
+        font-size: 12px
+        font-size: .6em
+        position: absolute
+        right: 5px
+        bottom: 5px
