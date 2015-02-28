@@ -19,10 +19,10 @@ published: true
 
     :javascript
       document.getElementById("banner-video").oncanplay = function() {
-        console.log("can play");
         $('.pause.button').show();
         $('.unmute.button').show();
         $('.banner .title').hide();
+        $('.imgur-album .logo').hide();
       };
 
       function playPause() {
@@ -73,13 +73,7 @@ published: true
       .text We are a New York City based not-for-profit corporation with a mission to advance the appreciation of dance and educate the public about dance by creating, teaching and inspiring.
       %a.link Learn More
 
-
 .block-container.light
-  .block.full
-    .title Eryc Taylor Dance, Inc.
-    .text We are a New York City based not-for-profit corporation with a mission to advance the appreciation of dance and educate the public about dance by creating and presenting original performances, conducting master classes and workshops, and making grants to aspiring choreographers.
-
-.block-container.dark
   .block.full
     .title.event-title Upcoming Events
     .events
@@ -96,6 +90,10 @@ published: true
       $(".event-popup").hide();
       $(".event-popup#" + id).show(100);
     }
+
+.block-container.dark
+  .block.full
+    %iframe.imgur-album{:frameborder => "0", :height => "550", :src => "//imgur.com/a/hcH3f/embed?background=373737&text=ffffff&link=FFFFFF", :width => "100%"}
 
 == {% for event in contents.events limit:5 %}
 .event-popup{id: "{{ event._slug | escape }}", style: "display:none"}

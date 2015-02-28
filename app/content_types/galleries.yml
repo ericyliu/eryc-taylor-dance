@@ -1,0 +1,17 @@
+---
+name: Galleries
+description: Galleries
+slug: galleries
+label_field_name: name
+order_by: manually
+fields:
+- name:
+    label: Name
+    type: string
+    hint: Name of gallery
+    required: true
+- link:
+    label: Imgur Link
+    type: string
+    hint: Link to Imgur gallery
+    required: true
