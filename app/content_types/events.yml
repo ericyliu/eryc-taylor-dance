@@ -11,15 +11,19 @@ fields:
     type: string
     hint: Name of the event
     required: true
-- start_date:
-    label: Start Date
-    type: date_time
-    hint: Date and time of event start
+- date:
+    label: Date
+    type: date
+    hint: Date of event
     required: true
-- end_date:
-    label: End Date
-    type: date_time
-    hint: Date and time of event end
+- start_time:
+    label: Start Time
+    type: string
+    hint: Time of event start
+- end_time:
+    label: End Time
+    type: string
+    hint: Time of event end
 - description:
     label: Description
     type: text
