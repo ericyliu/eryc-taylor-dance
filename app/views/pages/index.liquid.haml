@@ -22,7 +22,6 @@ published: true
         $('.pause.button').show();
         $('.unmute.button').show();
         $('.banner .title').hide();
-        $('.imgur-album .logo').hide();
       };
 
       function playPause() {
@@ -93,7 +92,7 @@ published: true
 
 .block-container.dark
   .block.full
-    %iframe.imgur-album{:frameborder => "0", :height => "550", :src => "//imgur.com/a/hcH3f/embed?background=373737&text=ffffff&link=FFFFFF", :width => "100%"}
+    %iframe.imgur-album{:frameborder => "0", :height => "550", :src => "{{ contents.galleries.first.link }}/embed?background=373737&text=ffffff&link=FFFFFF", :width => "100%"}
 
 == {% for event in contents.events limit:5 %}
 .event-popup{id: "{{ event._slug | escape }}", style: "display:none"}
