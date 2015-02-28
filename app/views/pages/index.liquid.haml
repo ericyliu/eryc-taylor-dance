@@ -9,14 +9,22 @@ published: true
 {% capture video_url %}{% editable_file "Banner Video" %}/samples/videos/banner.mp4{% endeditable_file %}{% endcapture %}
 .banner-container
   .banner
+    .title Eryc Taylor Dance
     %video{id: "banner-video", width: "1024", height: "500", loop: true, autoplay: true, muted: true}
       %source{src: "{{ video_url }}", type: "video/mp4"}
     .play.button{onclick: "playPause()", style: "display:none"}
-    .pause.button{onclick: "playPause()"}
+    .pause.button{onclick: "playPause()", style: "display:none"}
     .mute.button{onclick: "muteUnmute()", style: "display:none"}
-    .unmute.button{onclick: "muteUnmute()"}
+    .unmute.button{onclick: "muteUnmute()", style: "display:none"}
 
     :javascript
+      document.getElementById("banner-video").oncanplay = function() {
+        console.log("can play");
+        $('.pause.button').show();
+        $('.unmute.button').show();
+        $('.title').hide();
+      };
+
       function playPause() {
         var video = document.getElementById("banner-video")
         if (video.paused) {
@@ -44,7 +52,17 @@ published: true
       }
 
 .block-container.dark
-  .block
+  .block.left
+  .block.right
+
+
+.block-container.light
+  .block.full
+    .title Eryc Taylor Dance, Inc.
+    .text We are a New York City based not-for-profit corporation with a mission to advance the appreciation of dance and educate the public about dance by creating and presenting original performances, conducting master classes and workshops, and making grants to aspiring choreographers.
+
+.block-container.dark
+  .block.full
     .title.event-title Upcoming Events
     .events
       .today Today: {{ today | localized_date: '%B %d %Y'}}
@@ -60,11 +78,6 @@ published: true
       $(".event-popup").hide();
       $(".event-popup#" + id).show(100);
     }
-
-.block-container.light
-  .block
-    .title Eryc Taylor Dance, Inc.
-    .text We are a New York City based not-for-profit corporation with a mission to advance the appreciation of dance and educate the public about dance by creating and presenting original performances, conducting master classes and workshops, and making grants to aspiring choreographers.
 
 == {% for event in contents.events limit:5 %}
 .event-popup{id: "{{ event._slug | escape }}", style: "display:none"}
