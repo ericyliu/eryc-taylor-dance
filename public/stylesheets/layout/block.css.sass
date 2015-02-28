@@ -9,17 +9,35 @@
     background-color: $tertiary-color
     color: $primary-text-color
 
+    a
+      color: $secondary-text-color
+
   &.dark
     background-color: $primary-color
     color: $secondary-text-color
 
+    a
+      color: $secondary-text-color
+
   .block
     height: 100%
-    margin: 150px auto
+    box-sizing: border-box
 
     &.full
       max-width: $max-width
       width: 100%
+      margin: 150px auto
+
+    &.left, &.right
+      display: inline-block
+      max-width: $max-width/2
+      width: 46%
+      padding: 60px 0
+      border: 1px solid white
+      min-height: 580px
+
+    &.right
+      float: right
 
     .title
       display: block
@@ -40,6 +58,13 @@
       line-height: 30px
       line-height: 1.5em
       padding-top: 40px
+
+    .link
+      display: block
+      text-align: center
+      padding-top: 50px
+      margin: 0 auto
+      font-weight: bold
 
     .events
       width: 100%

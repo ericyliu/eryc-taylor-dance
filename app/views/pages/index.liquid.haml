@@ -22,7 +22,7 @@ published: true
         console.log("can play");
         $('.pause.button').show();
         $('.unmute.button').show();
-        $('.title').hide();
+        $('.banner .title').hide();
       };
 
       function playPause() {
@@ -52,8 +52,26 @@ published: true
       }
 
 .block-container.dark
-  .block.left
-  .block.right
+  .block.full
+    .block.left
+      .title Contribute
+      .text We are a not-for-profit corporation that is exempt from federal taxation. Contributions in support of Eryc Taylor's work are fully tax-deductible and greatly appreciated! Thank you for your support!
+      %form.link{:action => "https://www.paypal.com/cgi-bin/webscr", :method => "post", :target => "_top"}
+        %input{:name => "cmd", :type => "hidden", :value => "_donations"}
+          %input{:name => "business", :type => "hidden", :value => "eryc@eryctyalordance.com"}
+            %input{:name => "lc", :type => "hidden", :value => "US"}
+              %input{:name => "item_name", :type => "hidden", :value => "Eryc Tyalor Dance"}
+                %input{:name => "no_note", :type => "hidden", :value => "0"}
+                  %input{:name => "currency_code", :type => "hidden", :value => "USD"}
+                    %input{:name => "bn", :type => "hidden", :value => "PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest"}
+                      %input{:alt => "PayPal - The safer, easier way to pay online!", :border => "0", :name => "submit", :src => "https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif", :type => "image"}
+                        %img{:alt => "", :border => "0", :height => "1", :src => "https://www.paypalobjects.com/en_US/i/scr/pixel.gif", :width => "1"}
+
+
+    .block.right
+      .title About Us
+      .text We are a New York City based not-for-profit corporation with a mission to advance the appreciation of dance and educate the public about dance by creating, teaching and inspiring.
+      %a.link Learn More
 
 
 .block-container.light
