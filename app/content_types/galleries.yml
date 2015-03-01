@@ -15,3 +15,8 @@ fields:
     type: string
     hint: Link to Imgur gallery
     required: true
+- cover:
+    label: Cover Photo
+    type: file
+    hint: Cover photo for the gallery
+    required: true

@@ -8,8 +8,9 @@ position: 1
 {% extends default %}
 
 {% block main %}
-.title
-  %h1 Upcoming Events
+.block-container.dark
+  .block.full
+    .title Upcoming Events
 == {% for event in contents.events %}
 .event-block
   .name {{ event.name | escape }}
@@ -24,4 +25,7 @@ position: 1
   .description {{ event.description | escape }}
   %a.link Click here to go to event page
 == {% endfor %}
+.block-container.dark
+  .block.full
+    .title News
 {% endblock %}

@@ -70,7 +70,7 @@ published: true
     .block.right
       .title About Us
       .text We are a New York City based not-for-profit corporation with a mission to advance the appreciation of dance and educate the public about dance by creating, teaching and inspiring.
-      %a.link Learn More
+      %a.link{href: "/about"} Learn More
 
 .block-container.light
   .block.full
@@ -94,7 +94,7 @@ published: true
   .block.full
     %iframe.imgur-album{:frameborder => "0", :height => "550", :src => "{{ contents.galleries.first.link }}/embed?background=373737&text=ffffff&link=FFFFFF", :width => "100%"}
 
-== {% for event in contents.events limit:5 %}
+{% for event in contents.events limit:5 %}
 .event-popup{id: "{{ event._slug | escape }}", style: "display:none"}
   .name {{ event.name | escape }}
   .date Date: {{ event.date | localized_date: '%B %d %Y' }}
