@@ -9,7 +9,7 @@ published: true
 {% capture video_url %}{% editable_file "Banner Video" %}/samples/videos/banner.mp4{% endeditable_file %}{% endcapture %}
 .banner-container
   .banner
-    .title Eryc Taylor Dance
+    .title ERYC TAYLOR DANCE
     %video{id: "banner-video", width: "1024", height: "500", loop: true, autoplay: true, muted: true}
       %source{src: "{{ video_url }}", type: "video/mp4"}
     .play.button{onclick: "playPause()", style: "display:none"}

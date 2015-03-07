@@ -1,0 +1,49 @@
+---
+title: Contact
+published: true
+listed: false
+position: 1
+---
+{% extends default %}
+
+{% block main %}
+.block-container.dark
+  .block.full
+    .title Talk To Us
+    .contact-block
+      %form{action: "{{ contents.contact_submissions.public_submission_url}}", method: "POST"}
+        {% csrf_param %}
+        %input{type: "hidden", value: "/contact", name: "success_callback"}
+        %input{type: "hidden", value: "/contact", name: "error_callback"}
+
+        {% if contact_submission.errors %}
+        {% if contact_submission.errors.size > 0 %}
+        .errors
+          %p The following errors occured:
+          %ul
+            {% for error in contact_submission.errors %}
+            %li {{ error[0] | capitalize }} -  {{error[1]}}
+            {% endfor %}
+        {% else %}
+        .success
+          %p Your message was sent successfully!
+        {% endif %}
+        {% endif %}
+
+        %input{type: "text", name: "content[name]", value: "{{ contact_submission.name }}", placeholder: "Name"}
+        %input{type: "text", name: "content[email]", value: "{{ contact_submission.email }}", placeholder: "Email"}
+        %textarea{name: "content[message]", placeholder: "Message"} {{ contact_submission.message }}
+        %input.button{type: "submit", value: "Send"}
+
+      %p contact submissions: {{ contents.contact_submissions.size }}
+      {% for sub in contents.contact_submissions %}
+      %p sub.name
+      {% endfor %}
+
+.block-container.light
+  .block.full
+    .title Contact Us
+    .text Alternatively, contact us at the address and number below:
+    .text.address ERYC TAYLOR DANCE<br>450 42ND ST<br>NEW YORK CITY, NY 10036<br>(475)235-1268
+
+{% endblock %}
