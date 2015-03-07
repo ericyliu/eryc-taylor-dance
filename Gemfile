@@ -14,6 +14,7 @@ group :development do
 
   # Windows
   gem 'wdm', '>= 0.1.0', require: RUBY_PLATFORM =~ /mswin|mingw/i && 'wdm'
+  gem 'binding_of_caller'
 end
 
 group :misc do

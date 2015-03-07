@@ -1,0 +1,34 @@
+---
+name: Articles
+description: Articles
+slug: articles
+label_field_name: name
+order_by: manually
+order_direction: asc
+fields:
+- name:
+    label: Name
+    type: string
+    hint: Name of the article
+    required: true
+- image:
+    label: Image
+    type: file
+    hint: Image to use for the article
+    required: true
+- source:
+    label: Source
+    type: select
+    select_options: ["internal","external"]
+    hint: Whether article is written by you or by someone else
+    required: true
+- link:
+    label: Link
+    type: string
+    hint: Link to the article (if external)
+    required: false
+- content:
+    label: Content
+    type: text
+    hint: Content of the article (if internal)
+    required: false

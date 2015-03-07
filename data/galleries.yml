@@ -1,0 +1,15 @@
+---
+- Gallery 1:
+    _slug: gallery_1
+    link: "http://imgur.com/a/hcH3f"
+    cover: "/samples/images/image1.jpg"
+
+- Gallery 2:
+    _slug: gallery_1
+    link: "http://imgur.com/a/hcH3f"
+    cover: "/samples/images/image2.jpg"
+
+- Gallery 3:
+    _slug: gallery_1
+    link: "http://imgur.com/a/hcH3f"
+    cover: "/samples/images/image3.jpg"

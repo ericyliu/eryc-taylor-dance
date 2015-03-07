@@ -4,7 +4,7 @@ description: Events
 slug: events
 label_field_name: name
 order_by: date
-order_direction: desc
+order_direction: asc
 fields:
 - name:
     label: Name

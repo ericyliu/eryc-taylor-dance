@@ -4,4 +4,66 @@ published: true
 listed: true
 position: 3
 ---
-{% extends layout %}
+{% extends default %}
+{% block main %}
+.block-container.dark
+  .block.full
+    .title What's Going On
+    .articles-container
+      {% for article in contents.articles limit: 5 %}
+      .article{id: "index-{{ forloop.index }}"}
+        %img{src: "{{ article.image.url }}"}
+        .name {{ article.name }}
+        {% if article.source == "external" %}
+        %a{href:"{{ article.link }}"}
+        {% else %}
+        %a{href:"/stories/{{ article._slug }}"}
+        {% endif %}
+      {% endfor %}
+
+      :javascript
+        $(document).ready(function() {
+          var container = $('.articles-container');
+          var width = container.width()/5;
+          var height = width
+          container.height(2*height);
+          articles = $('.article');
+          $(articles[0]).css({ height: 2*height, width: 2*width })
+          $(articles[1]).css({ height: height, width: 2*width, left: 2*width });
+          $(articles[2]).css({ height: height, width: width, left: 4*width });
+          $(articles[3]).css({ height: height, width: width, left: 2*width, top: height })
+          $(articles[4]).css({ height: height, width: 2*width, left: 3*width, top: height })
+        })
+
+    %a.link See More Articles
+
+.block-container.light
+  .block.full
+    .title Book Us
+    .text Here is some info on how to book us. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu.
+    %a.link Get in Touch
+
+.block-container.dark
+  .block.full
+    .title Gallery
+    .galleries-container
+      {% for gallery in contents.galleries limit: 9 %}
+      .gallery
+        %img{src: "{{ gallery.cover.url }}"}
+        %a.overlay{href: "/galleries/{{ gallery._slug}}"}
+        %a.name{href: "/galleries/{{ gallery._slug}}"} {{ gallery.name | escape }}
+      {% endfor %}
+
+      :javascript
+        $(document).ready(function() {
+          var container = $('.galleries-container');
+          var size = container.width()/3-5;
+          galleries = $('.gallery');
+          for (i=0; i<galleries.length; i++) {
+            $(galleries[i]).css({ height: size, width: size });
+          }
+        })
+
+    %a.link{href: "/gallery"} See More Galleries
+
+{% endblock %}
