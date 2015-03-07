@@ -1,0 +1,15 @@
+---
+- Video 1:
+    _slug: gallery_1
+    embed: vaedADPMWe0
+    cover: "/samples/images/image1.jpg"
+
+- Video 2:
+    _slug: gallery_1
+    embed: vaedADPMWe0
+    cover: "/samples/images/image2.jpg"
+
+- Video 3:
+    _slug: gallery_1
+    embed: vaedADPMWe0
+    cover: "/samples/images/image3.jpg"

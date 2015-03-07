@@ -1,0 +1,22 @@
+---
+name: Videos
+description: Videos
+slug: videos
+label_field_name: name
+order_by: manually
+fields:
+- name:
+    label: Name
+    type: string
+    hint: Name of video
+    required: true
+- embed:
+    label: Youtube Embed ID
+    type: string
+    hint: Embed URL ID for Youtube video, i.e. "vaedADPMWe0" in "https://www.youtube.com/watch?v=vaedADPMWe0&feature=youtu.be"
+    required: true
+- cover:
+    label: Cover Photo
+    type: file
+    hint: Cover photo for the video
+    required: true

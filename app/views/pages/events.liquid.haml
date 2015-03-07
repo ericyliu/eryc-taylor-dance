@@ -10,8 +10,8 @@ position: 1
 {% block main %}
 .block-container.dark
   .block.full
-    .title Upcoming Events
-== {% for event in contents.events %}
+    .title UPCOMING EVENTS
+{% for event in contents.events %}
 .event-block
   .name {{ event.name | escape }}
   .date Date: {{ event.date | localized_date: '%B %d %Y' }}
@@ -24,8 +24,5 @@ position: 1
   {% endif %}
   .description {{ event.description | escape }}
   %a.link Click here to go to event page
-== {% endfor %}
-.block-container.dark
-  .block.full
-    .title News
+{% endfor %}
 {% endblock %}
