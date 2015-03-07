@@ -4,4 +4,51 @@ published: true
 listed: true
 position: 5
 ---
-{% extends layout %}
+{% extends default %}
+{% block main %}
+.block-container.dark
+  .block.full
+    .title CONTRIBUTE
+    .text Eryc Taylor Dance, Inc. is a New York not-for-profit corporation that is exempt from federal taxation. Contributions in support of Eryc Taylor's work are fully tax-deductible and greatly appreciated! Your name will also appear in the list of contributors below!
+
+.block-container.light
+  .block.full
+    .title Online
+    .text You can contribute through paypal at the link below:
+    %form.link{:action => "https://www.paypal.com/cgi-bin/webscr", :method => "post", :target => "_top"}
+      %input{:name => "cmd", :type => "hidden", :value => "_donations"}
+        %input{:name => "business", :type => "hidden", :value => "eryc@eryctyalordance.com"}
+          %input{:name => "lc", :type => "hidden", :value => "US"}
+            %input{:name => "item_name", :type => "hidden", :value => "Eryc Taylor Dance"}
+              %input{:name => "no_note", :type => "hidden", :value => "0"}
+                %input{:name => "currency_code", :type => "hidden", :value => "USD"}
+                  %input{:name => "bn", :type => "hidden", :value => "PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest"}
+                    %input{:alt => "PayPal - The safer, easier way to pay online!", :border => "0", :name => "submit", :src => "https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif", :type => "image"}
+                      %img{:alt => "", :border => "0", :height => "1", :src => "https://www.paypalobjects.com/en_US/i/scr/pixel.gif", :width => "1"}  
+
+.block-container.dark
+  .block.full
+    .title By Check
+    .text You can also pay by check. Please make check payable to <br> Eryc Taylor Dance, Inc. <br> and send to:<br><br> Eryc Taylor Dance <br> 450 West 42nd Street <br> New York City, New York 10036
+
+.block-container.light
+  .block.full
+    .title Supporters
+    .supporter-list
+      {% for supporter in contents.supporters %}
+      {% if supporter.importance == "Primary" %} 
+      .supporter {{ supporter.name | escape }}
+      {% endif %}
+      {% endfor %}
+
+.block-container.dark
+  .block.full
+    .title Contributors
+    .supporter-list
+      {% for supporter in contents.supporters %}
+      {% if supporter.importance == "Secondary" %} 
+      .supporter {{ supporter.name | escape }}
+      {% endif %}
+      {% endfor %}
+
+{% endblock %}
