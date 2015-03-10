@@ -36,9 +36,14 @@ parent: About
     .people-list
       {% for person in contents.people %}
       %a.person{id: "{{person.role}}", href: "/people/{{ person._slug }}"}
+        {% if person.picture.url == undefined %}
+        .overlay.active
+          .name {{ person.name }}
+        {% else %}
         .picture{style: 'background-image:url("{{ person.picture.url }}");'}
         .overlay
           .name {{ person.name }}
+        {% endif %}
       {% endfor %}
 
   :javascript
