@@ -10,6 +10,10 @@ fields:
     type: string
     hint: Name of the program
     required: true
+- type:
+    label: Type
+    type: select
+    select_options: ["Grant, Workshop, Residency, Job, Internship"]
 - description:
     label: Description
     type: text

@@ -38,7 +38,13 @@ position: 1
 .block-container.light
   .block.full
     .title Contact Us
-    .text Alternatively, contact us at the address and number below:
-    .text.address ERYC TAYLOR DANCE<br>450 42ND ST<br>NEW YORK CITY, NY 10036<br>(475)235-1268
+    .text
+      %a{href: "mailto:andrew@eryctaylordance.com"} andrew@eryctaylordance.com
+    .text (475)235-1268
+
+.block-container.dark
+  .block.full
+    .title Find Us
+    .text.address ERYC TAYLOR DANCE<br>450 42ND ST<br>NEW YORK CITY, NY<br>10036
 
 {% endblock %}

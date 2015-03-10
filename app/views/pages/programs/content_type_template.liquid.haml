@@ -1,0 +1,22 @@
+---
+title: Programs Template
+listed: false
+published: true
+position: 1
+content_type: "programs"
+---
+{% extends default %}
+{% block main %}
+.block-container.dark
+  .block.full
+    .title {{ program.name }}
+    .text {{ program.type }}
+
+.block-container.light
+  .block.full
+    .text {{ program.description }}
+
+.block-container.dark
+  .block.full
+    %a.title{href: "/contact"} Apply Here
+{% endblock %}

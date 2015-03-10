@@ -1,0 +1,10 @@
+---
+- Grant 1:
+    _slug: grant-1
+    type: Grant
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent purus ex, scelerisque ut ullamcorper vitae, efficitur a diam. Duis suscipit, sem mollis euismod vestibulum, nisi mauris rutrum massa, interdum tincidunt nisl enim vel leo. Nulla arcu tellus, efficitur in urna id, finibus tempus sapien.
+
+- Grant 2:
+    _slug: grant-2
+    type: Grant
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent purus ex, scelerisque ut ullamcorper vitae, efficitur a diam. Duis suscipit, sem mollis euismod vestibulum, nisi mauris rutrum massa, interdum tincidunt nisl enim vel leo. Nulla arcu tellus, efficitur in urna id, finibus tempus sapien.
