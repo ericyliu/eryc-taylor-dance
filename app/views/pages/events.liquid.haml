@@ -23,7 +23,7 @@ position: 1
       {% endif %}
       {% endif %}
       .description {{ event.description | escape }}
-      %a.link Click here to go to event page
+      %a.link{href: "/events/{{ event._slug }}"} Click here to go to event page
     {% endif %}
     {% endfor %}
 .block-container.light
@@ -42,7 +42,7 @@ position: 1
       {% endif %}
       {% endif %}
       .description {{ event.description | escape }}
-      %a.link Click here to go to event page
+      %a.link{href: "/events/{{ event._slug }}"} Click here to go to event page
     {% endif %}
     {% endfor %}
 {% endblock %}

@@ -87,7 +87,7 @@ published: true
   :javascript
     function show(id) {
       $(".event-popup").hide();
-      $(".event-popup#" + id).show(100);
+      $(".event-popup#" + id).show();
     }
 
 .block-container.dark
@@ -104,11 +104,9 @@ published: true
   {% else %}
   .time Time: {{ event.start_time }}
   {% endif %}
-  {% else %}
-  .date {{ event.date | localized_date: '%B %d %Y' }}
   {% endif %}
   .description {{ event.description | escape }}
-  %a.link Click here to go to event page
+  %a.link{href: "/events/{{ event._slug }}"} Click here to go to event page
   %a.close{onclick: "hide(\"{{ event._slug | escape }}\")"} x
 {% endfor %}
 :javascript

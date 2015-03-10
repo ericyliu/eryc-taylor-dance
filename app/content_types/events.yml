@@ -35,4 +35,4 @@ fields:
 - location_link:
     label: Location Link
     type: string
-    hint: Google Maps link to location of event
+    hint: Google Maps Address to the event

@@ -7,6 +7,7 @@
     description: ETD will be performing at The International Dance Festival Avant Garde 
       from September 25th-27th.
     location: Yucatan, Mexico
+    location_link: 20.969380, -89.604690
 - Event 2:
     _slug: event-1
     date: 10/25/2015

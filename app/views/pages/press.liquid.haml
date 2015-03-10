@@ -17,7 +17,7 @@ position: 3
         {% if article.source == "external" %}
         %a{href:"{{ article.link }}"}
         {% else %}
-        %a{href:"/stories/{{ article._slug }}"}
+        %a{href:"/articles/{{ article._slug }}"}
         {% endif %}
       {% endfor %}
 

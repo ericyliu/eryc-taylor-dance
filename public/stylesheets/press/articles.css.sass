@@ -1,0 +1,39 @@
+@import mixins
+
+.articles
+  .article-list
+    .article
+      background-size: 100% auto
+      background-position: center center
+      padding: 150px 0
+      border-bottom: 5px solid $secondary-color
+      position: relative
+
+      .overlay
+        position: absolute
+        top: 0px
+        width: 100%
+        height: 100%
+
+        .tint
+          opacity: .8
+          width: 100%
+          height: 100%
+          background-color: $primary-color
+          position: absolute
+          top: 0px
+
+        .title
+          font-size: 30px
+          font-size: 1.5em
+          color: white
+          text-align: center
+          width: 100%
+          position: absolute
+          text-transform: Uppercase
+          font-weight: bold
+          line-height: 300px
+
+        &:hover
+          .tint
+            opacity: 0

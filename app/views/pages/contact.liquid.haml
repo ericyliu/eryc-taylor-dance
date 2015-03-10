@@ -35,11 +35,6 @@ position: 1
         %textarea{name: "content[message]", placeholder: "Message"} {{ contact_submission.message }}
         %input.button{type: "submit", value: "Send"}
 
-      %p contact submissions: {{ contents.contact_submissions.size }}
-      {% for sub in contents.contact_submissions %}
-      %p sub.name
-      {% endfor %}
-
 .block-container.light
   .block.full
     .title Contact Us

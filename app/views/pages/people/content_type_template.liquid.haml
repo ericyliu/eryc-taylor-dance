@@ -1,0 +1,21 @@
+---
+title: People Tempalte
+listed: false
+published: true
+position: 1
+content_type: "people"
+---
+{% extends default %}
+{% block main %}
+.block-container.dark
+  .block.full
+    .title {{ person.name }}
+.block-container.light
+  .block.full
+    .profile
+      %img{src: "{{ person.picture.url }}"}
+      .info-container
+        .name {{ person.name }}
+        .role {{ person.position }}
+        .bio {{ person.bio }}
+{% endblock %}
