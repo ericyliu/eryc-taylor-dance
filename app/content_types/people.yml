@@ -12,8 +12,9 @@ fields:
     required: true
 - role:
     label: Role
-    type: string
+    type: select
     hint: Role of the person
+    select_options: ["Dancer","PastDancer","Collaborator","Board","Staff"]
 - picture:
     label: Picture
     type: file
@@ -22,3 +23,7 @@ fields:
     label: Biography
     type: text
     hint: Description of the person
+- position:
+    label: position
+    type: string
+    hint: Position of the person

@@ -11,3 +11,15 @@
 - Late Night with Jimmy Fallon:
     _slug: late-night-with-jimmy-fallon
     importance: "Primary"
+- Dave:
+    _slug: disney-threatrical-group
+    importance: "Secondary"
+- Frank:
+    _slug: the-joyce-foundation
+    importance: "Secondary"
+- Matt:
+    _slug: the-out-nyc
+    importance: "Secondary"
+- Eric:
+    _slug: late-night-with-jimmy-fallon
+    importance: "Secondary"

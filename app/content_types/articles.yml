@@ -32,3 +32,8 @@ fields:
     type: text
     hint: Content of the article (if internal)
     required: false
+- date:
+    label: Date
+    type: date
+    hint: Date Article was Posted (if internal)
+    required: false

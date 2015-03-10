@@ -7,4 +7,19 @@ parent: Press
 ---
 {% extends default %}
 {% block main %}
+.block-container.dark
+  .block.full
+    .title What People Are Saying
+.article-list
+  {% for article in contents.articles %}
+  .article{style: "background-image: url('{{ article.image.url }}')"}
+    .overlay
+      {% if article.source == "external" %}
+      %a.tint{href: "{{ article.link }}"}
+      %a.title{href: "{{ article.link }}"} {{ article.name }}
+      {% else %}
+      %a.tint{href: "/articles/{{ article._slug }}"}
+      %a.title{href: "/articles/{{ article._slug }}"} {{ article.name }}
+      {% endif %}
+  {% endfor %}
 {% endblock %}

@@ -1,0 +1,14 @@
+---
+title: Gallery Template
+listed: false
+published: true
+position: 1
+content_type: "galleries"
+---
+{% extends default %}
+{% block main %}
+.block-container.dark
+  .block.full
+    .title {{ gallery.name }}
+    %iframe.imgur-album{:frameborder => "0", :height => "550", :src => "{{ gallery.link }}/embed?background=373737&text=ffffff&link=FFFFFF", :width => "100%", :style => "margin-top: 40px;"}
+{% endblock %}

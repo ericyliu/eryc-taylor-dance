@@ -26,12 +26,12 @@ position: 2
       %img{src: "{{ eryc.picture.url }}"}
       .info-container
         .name {{ eryc.name }}
-        .role {{ eryc.role }}
+        .role {{ eryc.position }}
         .bio {{ eryc.bio }}
 
 .block-container.dark
   .block.full
     .title The People
     .text This is going to be something cheesy about how our people are special and great blah blah blah. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et
-    %a.link Meet The Group
+    %a.link{href: "about/people"} Meet The Group
 {% endblock %}

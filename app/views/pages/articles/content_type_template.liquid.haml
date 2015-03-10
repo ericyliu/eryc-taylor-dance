@@ -1,0 +1,19 @@
+---
+title: Articles Template
+listed: false
+published: true
+position: 1
+content_type: "articles"
+---
+{% extends default %}
+{% block main %}
+.block-container.light
+  .block.full
+    .article
+      .title {{ article.name }}
+      .image{style: "background-image: url('{{ article.image.url}} ')"}
+      .text {{ article.content }}
+      {% if article.date != undefined %}
+      .date Posted On: {{ article.date | localized_date: '%B %d %Y' }}
+      {% endif %}
+{% endblock %}

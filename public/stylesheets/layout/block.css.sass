@@ -4,6 +4,10 @@
   width: 100%
   border-top: 5px solid $secondary-color
   border-bottom: 5px solid $secondary-color
+  position: relative
+  background-size: 100% auto
+  background-repeat: no-repeat
+  background-position: center center
 
   &.light
     background-color: $tertiary-color
@@ -25,6 +29,7 @@
   .block
     height: 100%
     box-sizing: border-box
+    position: relative
 
     &.full
       max-width: $max-width
@@ -49,9 +54,14 @@
       font-weight: bold
       font-size: 40px
       font-size: 2em
+      text-transform: Uppercase
 
       &.event-title
         padding-bottom: 10px
+
+      &.smaller
+        font-size: 30px
+        font-size: 1.5em
 
     .text
       display: block
@@ -65,12 +75,16 @@
       line-height: 1.5em
       padding-top: 40px
 
+      &.address
+        font-family: $primary-font
+
     .link
       display: block
       text-align: center
       padding-top: 50px
       margin: 0 auto
       font-weight: bold
+      text-transform: Uppercase
 
     .events
       width: 100%
@@ -214,3 +228,103 @@
             opacity: .5
           .name
             opacity: 1
+
+    .supporter-list
+      padding-top: 40px
+
+      .supporter
+        display: inline-block
+        background-color: lightgray
+        padding: 10px
+        color: black
+        min-width: 100px
+        text-align: center
+        margin: 5px
+
+    .tabs
+      text-align: center
+
+      .tab
+        display: inline
+        padding: 2px 5px
+
+        &.active
+          font-weight: bold
+          border-bottom: 1px solid white
+
+        &:hover
+          cursor: pointer
+
+    .people-list
+      padding-top: 40px
+      width: 100%
+
+      .person
+        position: relative
+        display: inline-block
+        margin: 10px
+        width: 180px
+        height: 180px
+
+        .picture
+          width: 100%
+          height: 100%
+          background-position: center top
+
+        .overlay
+          opacity: 0
+          background-color: black
+          position: absolute
+          width: 100%
+          height: 100%
+          top: 0px
+
+          .name
+            position: absolute
+            text-align: center
+            top: 45%
+            width: 100%
+
+        &:hover
+          .overlay
+            opacity: .5
+
+    .article
+      .image
+        height: 300px
+        width: 500px
+        background-position: center center
+        background-size: auto 500px
+        margin: 0 auto
+        margin-top: 40px
+        border: 5px solid lightgray
+
+      .text
+        font-size: 20px
+        font-size: 1em
+
+      .date
+        padding-top: 40px
+        text-align: right
+        font-size: 14px
+        font-size: .7em
+        font-weight: bold
+
+    .program-list-title
+      display: block
+      text-transform: Uppercase
+      padding-top: 40px
+      text-align: center
+      font-weight: bold
+
+    .program-list
+      .program
+        display: block
+        padding-top: 20px
+        text-align: center
+        font-weight: bold
+        font-size: 24px
+        font-size: 1.2em
+
+  .googlemap
+    width: 100%

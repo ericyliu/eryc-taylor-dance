@@ -4,4 +4,67 @@ published: true
 listed: true
 position: 4
 ---
-{% extends layout %}
+{% extends default %}
+{% block main %}
+.block-container.dark
+  .block.full
+    .title Our Programs
+
+.block-container.light
+  .block.full
+    .title Grants
+    .text Blurb describing the general idea of your grants. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent purus ex, scelerisque ut ullamcorper vitae, efficitur a diam.
+    %a.program-list-title{onclick: "toggleProgramList(grants)"} Available Grants +
+    .program-list{id: "grants", style: "display: none;"}
+      {% for program in contents.programs %}
+      {% if program.type == "Grant" %}
+      %a.program{href: "/programs/{{ program._slug }}"} {{ program.name }}
+      {% endif %}
+      {% endfor %}
+
+.block-container.dark
+  .block.full
+    .title Workshops
+    .text Blurb describing the general idea of your workshops. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent purus ex, scelerisque ut ullamcorper vitae, efficitur a diam. 
+    %a.program-list-title{onclick: "toggleProgramList(workshops)"} Available Workshops +
+    .program-list{id: "workshops", style: "display: none;"}
+      {% for program in contents.programs %}
+      {% if program.type == "Workshop" %}
+      %a.program{href: "/programs/{{ program._slug }}"} {{ program.name }}
+      {% endif %}
+      {% endfor %}
+
+.block-container.light
+  .block.full
+    .title Residencies
+    .text Blurb describing the general idea of your residency. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent purus ex, scelerisque ut ullamcorper vitae, efficitur a diam. 
+    %a.program-list-title{onclick: "toggleProgramList(residencies)"} Available Residencies +
+    .program-list{id: "reidencies", style: "display: none;"}
+      {% for program in contents.programs %}
+      {% if program.type == "Residency" %}
+      %a.program{href: "/programs/{{ program._slug }}"} {{ program.name }}
+      {% endif %}
+      {% endfor %}
+
+.block-container.dark
+  .block.full
+    .title Jobs & Internships
+    .text Blurb describing the general idea of your jobs and internships. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent purus ex, scelerisque ut ullamcorper vitae, efficitur a diam. 
+    %a.program-list-title{onclick: "toggleProgramList(jobs)"} Available Jobs and Internships +
+    .program-list{id: "jobs", style: "display: none;"}
+      {% for program in contents.programs %}
+      {% if program.type == "Job" %}
+      %a.program{href: "/programs/{{ program._slug }}"} {{ program.name }}
+      {% endif %}
+      {% if program.type == "Internship" %}
+      %a.program{href: "/programs/{{ program._slug }}"} {{ program.name }}
+      {% endif %}
+      {% endfor %}
+
+:javascript
+  function toggleProgramList(id) {
+    if ($(id).css("display") == "none") $(id).show(100);
+    else $(id).hide(100);
+  }
+
+{% endblock %}
