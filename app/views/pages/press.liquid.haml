@@ -8,7 +8,7 @@ position: 3
 {% block main %}
 .block-container.dark
   .block.full
-    .title See What's Happening
+    .title See What People Are Saying
     .articles-container
       {% for article in contents.articles limit: 5 %}
       .article{id: "index-{{ forloop.index }}"}
@@ -35,35 +35,12 @@ position: 3
           $(articles[4]).css({ height: height, width: 2*width, left: 3*width, top: height })
         })
 
-    %a.link See More Articles
+    %a.link{href:"press/reviews"} See More Reviews
 
 .block-container.light
   .block.full
     .title Book Us
     .text Here is some info on how to book us. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu.
-    %a.link Get in Touch
-
-.block-container.dark
-  .block.full
-    .title Galleries
-    .galleries-container
-      {% for gallery in contents.galleries limit: 9 %}
-      .gallery
-        %img{src: "{{ gallery.cover.url }}"}
-        %a.overlay{href: "/galleries/{{ gallery._slug}}"}
-        %a.name{href: "/galleries/{{ gallery._slug}}"} {{ gallery.name | escape }}
-      {% endfor %}
-
-      :javascript
-        $(document).ready(function() {
-          var container = $('.galleries-container');
-          var size = container.width()/3-5;
-          galleries = $('.gallery');
-          for (i=0; i<galleries.length; i++) {
-            $(galleries[i]).css({ height: size, width: size });
-          }
-        })
-
-    %a.link{href: "press/galleries"} See More Galleries
+    %a.link{href:"/contact"} Get in Touch
 
 {% endblock %}

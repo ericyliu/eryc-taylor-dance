@@ -39,28 +39,33 @@ main
   min-height: 100vh
 
 .social-media
-  .icon
-    width: 25px
-    height: 25px
-    background-size: 25px
-    background-position: center center
-    background-repeat: no-repeat
-    padding: 0 20px
-
-    &.facebook
-      background-image: url("/images/facebook-logo-square.png")
-
-    &.twitter
-      background-image: url("/images/twitter-logo-square.png")
-
-    &.linkedin
-      background-image: url("/images/linkedin-logo-square2.png")
-
-    &.youtube
-      background-image: url("/images/youtube.png")
-
+  a.icon
     &:hover
-      width: 30px
-      height: 30px
-      background-size: 30px
-      
+      text-shadow: none
+
+input.dark, textarea.dark
+  display: block
+  padding: 7px
+  width: 500px
+  margin: 0 auto
+  margin-bottom: 10px
+  border: 1px solid white
+  background-color: $primary-color
+  color: white
+
+  &:hover, &:focus
+    border: 1px solid lightblue
+    box-shadow: 0 0 20px lightblue
+
+.button
+  margin-top: 40px
+  width: 200px
+  text-transform: uppercase
+  background-color: $primary-color
+  font-weight: 600
+  text-align: center
+  cursor: pointer
+
+  &:hover
+    background-color: white
+    color: black

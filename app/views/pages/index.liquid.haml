@@ -53,6 +53,8 @@ published: true
 .block-container.dark
   .block.full
     .block.left
+      .overlay.contribute
+        .title Contribute
       .title Contribute
       .text We are a not-for-profit corporation that is exempt from federal taxation. Contributions in support of Eryc Taylor's work are fully tax-deductible and greatly appreciated! Thank you for your support!
       %form.link{:action => "https://www.paypal.com/cgi-bin/webscr", :method => "post", :target => "_top"}
@@ -66,23 +68,32 @@ published: true
                       %input{:alt => "PayPal - The safer, easier way to pay online!", :border => "0", :name => "submit", :src => "https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif", :type => "image"}
                         %img{:alt => "", :border => "0", :height => "1", :src => "https://www.paypalobjects.com/en_US/i/scr/pixel.gif", :width => "1"}
 
-
     .block.right
+      .overlay.about
+        .title About Us
       .title About Us
       .text We are a New York City based not-for-profit corporation with a mission to advance the appreciation of dance and educate the public about dance by creating, teaching and inspiring.
       %a.link{href: "/about"} Learn More
+
+    .block.full
+      .overlay.newsletter
+        .title Newsletter
+      .title Join Our Newsletter
+      %input.dark{placeholder: "Enter Your Email Here"}
+      %input.dark.button{type: "submit", value: "Submit"}
 
 .block-container.light
   .block.full
     .title.event-title Upcoming Events
     .events
       .today Today: {{ today | localized_date: '%B %d %Y'}}
-      == {% for event in contents.events limit:5 %}
+      {% for event in contents.events limit:5 %}
       .event{id: "{{ event._slug | escape }}", onclick: "show(\"{{ event._slug | escape }}\")"}
         .name {{ event.name | escape }}
         .hint Click for details
         .date {{ event.date | localized_date: '%B %d %Y' }}
-      == {% endfor %}
+      {% endfor %}
+      %a.link{href:"/events"} See more events
 
   :javascript
     function show(id) {
