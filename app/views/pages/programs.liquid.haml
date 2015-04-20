@@ -9,7 +9,29 @@ position: 4
 .block-container.dark
   .block.full
     .title Our Programs
+    .program-buttons
+      %a.button.program.grants Grants
+      %a.button.program.workshops Workshops
+      %a.button.program.residencies Residencies
+      %a.button.program.jobs Jobs/Internships
 
+:javascript
+  $(document).ready(function() {
+    $('.button.program.grants').on("click", function() {
+      $(document).scrollTop(0);
+    });
+    $('.button.program.workshops').on("click", function() {
+      $(document).scrollTop(500);
+    });
+    $('.button.program.residencies').on("click", function() {
+      $(document).scrollTop(1000);
+    });
+    $('.button.program.jobs').on("click", function() {
+      $(document).scrollTop(1514);
+    });
+  });
+
+%a{name: "grants"}
 .block-container.light
   .block.full
     .title Grants
@@ -22,6 +44,7 @@ position: 4
       {% endif %}
       {% endfor %}
 
+%a{name: "workshops"}
 .block-container.dark
   .block.full
     .title Workshops
@@ -34,6 +57,7 @@ position: 4
       {% endif %}
       {% endfor %}
 
+%a{name: "residencies"}
 .block-container.light
   .block.full
     .title Residencies
@@ -46,6 +70,7 @@ position: 4
       {% endif %}
       {% endfor %}
 
+%a{name: "jobs"}
 .block-container.dark
   .block.full
     .title Jobs & Internships
@@ -63,8 +88,8 @@ position: 4
 
 :javascript
   function toggleProgramList(id) {
-    if ($(id).css("display") == "none") $(id).show(100);
-    else $(id).hide(100);
+    if ($(id).css("display") == "none") $(id).slideDown(300);
+    else $(id).slideUp(300);
   }
 
 {% endblock %}

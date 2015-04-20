@@ -9,18 +9,15 @@ position: 2
 .block-container.dark
   .block.full
     .title About Us
-    .text Eryc Taylor Dance, Inc. is a New York City based not-for-profit corporation with a mission to advance appreciation of dance and educate the public about dance by creating and presenting original performances, conducting master classes and workshops, and making grants to aspiring choreographers.
+
 .block-container.light
   .block.full
-    .title Our Style
-    .text ETD's choreography seeks to find, explore and execute new points of view and combine varied styles of dance on and off pointe. The work displays a fierce desire to attain a bold physicality that strips away the movement to its essential core, and has a strength, energy and drama that carries its own. The structures of the dance deal with underlying impulses that reveal one's psyche creating a sense of bold honesty.
-.block-container.dark
-  .block.full
-    .title What We Do
-    .text ETD also strives to stay ahead of the curve, collaborating with digital artists and unique composers, to fuse the new age of technology with the classical compositions of music and dance. Specifically, ETD specializes in mapping and light projections, to create ethereal extensions of the dancers and stimulate the visual senses with grandiose illuminations.
+    .text.small Eryc Taylor Dance, Inc. is a New York City based not-for-profit corporation with a mission to advance appreciation of dance and educate the public about dance by creating and presenting original performances, conducting master classes and workshops, and making grants to aspiring choreographers.
+    .text.small ETD's choreography seeks to find, explore and execute new points of view and combine varied styles of dance on and off pointe. The work displays a fierce desire to attain a bold physicality that strips away the movement to its essential core, and has a strength, energy and drama that carries its own. The structures of the dance deal with underlying impulses that reveal one's psyche creating a sense of bold honesty.
+    .text.small ETD also strives to stay ahead of the curve, collaborating with digital artists and unique composers, to fuse the new age of technology with the classical compositions of music and dance. Specifically, ETD specializes in mapping and light projections, to create ethereal extensions of the dancers and stimulate the visual senses with grandiose illuminations.
 
 {% assign eryc = contents.people.first %}
-.block-container.light
+.block-container.dark
   .block.full
     .profile
       %img{src: "{{ eryc.picture.url }}"}
@@ -29,9 +26,32 @@ position: 2
         .role {{ eryc.position }}
         .bio {{ eryc.bio }}
 
-.block-container.dark
+.block-container.light
   .block.full
     .title The People
     .text This is going to be something cheesy about how our people are special and great blah blah blah. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et
-    %a.link{href: "about/people"} Meet The Group
+    %a.link{href: "about/company"} Meet The Group
+
+.block-container.dark
+  .block.full
+    .title Galleries
+    .galleries-container
+      {% for gallery in contents.galleries limit: 9 %}
+      .gallery
+        %img{src: "{{ gallery.cover.url }}"}
+        %a.overlay{href: "/galleries/{{ gallery._slug}}"}
+        %a.name{href: "/galleries/{{ gallery._slug}}"} {{ gallery.name | escape }}
+      {% endfor %}
+
+      :javascript
+        $(document).ready(function() {
+          var container = $('.galleries-container');
+          var size = container.width()/3-5;
+          galleries = $('.gallery');
+          for (i=0; i<galleries.length; i++) {
+            $(galleries[i]).css({ height: size, width: size });
+          }
+        })
+
+    %a.link{href: "about/media"} See More Galleries
 {% endblock %}

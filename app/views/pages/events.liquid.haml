@@ -23,7 +23,7 @@ position: 1
       {% endif %}
       {% endif %}
       .description {{ event.description | escape }}
-      %a.link{href: "/events/{{ event._slug }}"} Click here to go to event page
+      %a.link{href: "/events/{{ event._slug }}"} Click for more information
     {% endif %}
     {% endfor %}
 .block-container.light
@@ -34,15 +34,7 @@ position: 1
     .event-block
       .name {{ event.name | escape }}
       .date Date: {{ event.date | localized_date: '%B %d %Y' }}
-      {% if event.start_time != undefined %}
-      {% if event.end_time != undefined %}
-      .time Time: {{ event.start_time }} - {{ event.end_time }}
-      {% else %}
-      .time Time: {{ event.start_time }}
-      {% endif %}
-      {% endif %}
       .description {{ event.description | escape }}
-      %a.link{href: "/events/{{ event._slug }}"} Click here to go to event page
     {% endif %}
     {% endfor %}
 {% endblock %}

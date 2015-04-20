@@ -1,0 +1,21 @@
+---
+- Perk 1:
+    _slug: perk-1
+    amount: 10
+    image: "/samples/images/image1.jpg"
+    description: This is perk 1.
+- Perk 2:
+    _slug: perk-2
+    amount: 100
+    image: "/samples/images/image2.jpg"
+    description: This is perk 2.
+- Perk 3:
+    _slug: perk-3
+    amount: 1000
+    image: "/samples/images/image3.jpg"
+    description: This is perk 3.
+- Perk 4:
+    _slug: perk-4
+    amount: 10000
+    image: "/samples/images/image1.jpg"
+    description: This is perk 4.

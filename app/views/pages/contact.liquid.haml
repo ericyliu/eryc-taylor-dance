@@ -30,10 +30,10 @@ position: 1
         {% endif %}
         {% endif %}
 
-        %input{type: "text", name: "content[name]", value: "{{ contact_submission.name }}", placeholder: "Name"}
-        %input{type: "text", name: "content[email]", value: "{{ contact_submission.email }}", placeholder: "Email"}
-        %textarea{name: "content[message]", placeholder: "Message"} {{ contact_submission.message }}
-        %input.button{type: "submit", value: "Send"}
+        %input.dark{type: "text", name: "content[name]", value: "{{ contact_submission.name }}", placeholder: "Name"}
+        %input.dark{type: "text", name: "content[email]", value: "{{ contact_submission.email }}", placeholder: "Email"}
+        %textarea.dark{name: "content[message]", placeholder: "Please enter your message and any relevant contact information here."} {{ contact_submission.message }}
+        %input.dark.button{type: "submit", value: "Send"}
 
 .block-container.light
   .block.full

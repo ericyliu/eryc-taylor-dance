@@ -28,6 +28,19 @@ position: 5
 
 .block-container.dark
   .block.full
+    .title Perks
+    .perks-container
+      {% for perk in contents.perks %}
+      .perk
+        .overlay{style: "background-image: url('{{perk.image.url }}')"}
+          .title ${{ perk.amount }}
+        .name.title {{ perk.name }}
+        .amount ${{ perk.amount }}
+        .description {{ perk.description }}
+      {% endfor %}
+
+.block-container.dark
+  .block.full
     .title By Check
     .text You can also pay by check. Please make check payable to <br> Eryc Taylor Dance, Inc. <br> and send to:<br><br> Eryc Taylor Dance <br> 450 West 42nd Street <br> New York City, New York 10036
 

@@ -1,0 +1,26 @@
+---
+name: Perks
+description: Perks
+slug: perks
+label_field_name: name
+order_by: manually
+fields:
+- name:
+    label: Name
+    type: string
+    hint: Name of the perk
+    required: true
+- amount:
+    label: Amount
+    type: integer
+    hint: Amount required to donate to achieve perk
+    required: true
+- image:
+    label: Image
+    type: file
+    hint: Image of the perk
+- description:
+    label: Description
+    type: text
+    hint: Description of the perk
+
