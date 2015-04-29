@@ -16,6 +16,7 @@ published: true
     .pause.button{onclick: "playPause()", style: "display:none"}
     .mute.button{onclick: "muteUnmute()", style: "display:none"}
     .unmute.button{onclick: "muteUnmute()", style: "display:none"}
+    %a.continue.icon-down-open-big{href: "#continue"}
 
     :javascript
       document.getElementById("banner-video").oncanplay = function() {
@@ -49,7 +50,7 @@ published: true
           $('.unmute.button').hide();
         }
       }
-
+%a{name: "continue"}
 .block-container.dark
   .block.full
     .block.left

@@ -1,5 +1,5 @@
 ---
-title: Contribute
+title: Donate
 published: true
 listed: true
 position: 5
@@ -24,7 +24,7 @@ position: 5
                 %input{:name => "currency_code", :type => "hidden", :value => "USD"}
                   %input{:name => "bn", :type => "hidden", :value => "PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest"}
                     %input{:alt => "PayPal - The safer, easier way to pay online!", :border => "0", :name => "submit", :src => "https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif", :type => "image"}
-                      %img{:alt => "", :border => "0", :height => "1", :src => "https://www.paypalobjects.com/en_US/i/scr/pixel.gif", :width => "1"}  
+                      %img{:alt => "", :border => "0", :height => "1", :src => "https://www.paypalobjects.com/en_US/i/scr/pixel.gif", :width => "1"}
 
 .block-container.dark
   .block.full
@@ -49,7 +49,7 @@ position: 5
     .title Supporters
     .supporter-list
       {% for supporter in contents.supporters %}
-      {% if supporter.importance == "Primary" %} 
+      {% if supporter.importance == "Primary" %}
       .supporter {{ supporter.name | escape }}
       {% endif %}
       {% endfor %}
@@ -59,7 +59,7 @@ position: 5
     .title Contributors
     .supporter-list
       {% for supporter in contents.supporters %}
-      {% if supporter.importance == "Secondary" %} 
+      {% if supporter.importance == "Secondary" %}
       .supporter {{ supporter.name | escape }}
       {% endif %}
       {% endfor %}
