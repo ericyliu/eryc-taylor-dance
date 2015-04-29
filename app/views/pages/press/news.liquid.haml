@@ -1,22 +1,22 @@
 ---
-title: Reviews
+title: News
 published: true
 listed: true
-position: 1
+position: 2
 parent: Press
 ---
 {% extends default %}
 {% block main %}
 .block-container.dark
   .block.full
-    .title What People Are Saying
+    .title News
 .article-list
   {% for article in contents.articles %}
-  {% if article.source == "external" %}
+  {% if article.source == "internal" %}
   .article{style: "background-image: url('{{ article.image.url }}')"}
     .overlay
-      %a.tint{href: "{{ article.link }}"}
-      %a.title{href: "{{ article.link }}"} {{ article.name }}
+      %a.tint{href: "/articles/{{ article._slug }}"}
+      %a.title{href: "/articles/{{ article._slug }}"} {{ article.name }}
   {% endif %}
   {% endfor %}
 {% endblock %}
