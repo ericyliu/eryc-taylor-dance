@@ -157,11 +157,34 @@
           color: white
           cursor: pointer
 
-    .imgur-album
-      .logo
-        display: none
-      img
-        border: 1px solid white
+    .imgur-container
+
+      .download-blocker
+        width: 50px
+        height: 50px
+        position: absolute
+        background-color: $primary-color
+        right: 0px
+
+      .logo-blocker
+        width: 200px
+        height: 50px
+        position: absolute
+        background-color: $primary-color
+        left: 0px
+
+      .image-blocker
+        width: 70%
+        height: 70%
+        position: absolute
+        background-color: rgba(0,0,0,0)
+        left: 15%
+
+      .imgur-album
+        .logo
+          display: none
+        img
+          border: 1px solid white
 
     .profile
       display: block

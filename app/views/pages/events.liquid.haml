@@ -7,7 +7,7 @@ position: 1
 {% extends default %}
 
 {% block main %}
-.block-container.dark
+.block-container.light
   .block.full
     .title UPCOMING EVENTS
     {% for event in contents.events %}
@@ -26,7 +26,7 @@ position: 1
       %a.link{href: "/events/{{ event._slug }}"} Click for more information
     {% endif %}
     {% endfor %}
-.block-container.light
+.block-container.dark
   .block.full
     .title PAST EVENTS
     {% for event in contents.events %}

@@ -105,6 +105,10 @@ published: true
 
 .block-container.dark
   .block.full
-    %iframe.imgur-album{:frameborder => "0", :height => "550", :src => "{{ contents.galleries.first.link }}/embed?background=373737&text=ffffff&link=FFFFFF", :width => "100%"}
+    .imgur-container
+      .logo-blocker
+      .download-blocker
+      .image-blocker
+      %iframe.imgur-album{:frameborder => "0", :height => "550", :src => "{{ contents.galleries.first.link }}/embed?background=373737&text=ffffff&link=FFFFFF", :width => "100%"}
 
 {% endblock %}

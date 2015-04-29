@@ -10,5 +10,9 @@ content_type: "galleries"
 .block-container.dark
   .block.full
     .title {{ gallery.name }}
-    %iframe.imgur-album{:frameborder => "0", :height => "550", :src => "{{ gallery.link }}/embed?background=373737&text=ffffff&link=FFFFFF", :width => "100%", :style => "margin-top: 40px;"}
+    .imgur-container{:style => "margin-top: 40px;"}
+      .logo-blocker
+      .download-blocker
+      .image-blocker
+      %iframe.imgur-album{:frameborder => "0", :height => "550", :src => "{{ gallery.link }}/embed?background=373737&text=ffffff&link=FFFFFF", :width => "100%"}
 {% endblock %}
