@@ -88,7 +88,7 @@ published: true
     .events
       .today Today: {{ today | localized_date: '%B %d %Y'}}
       {% for event in contents.events limit:5 %}
-      .event{id: "{{ event._slug | escape }}", onclick: "show(\"{{ event._slug | escape }}\")"}
+      .event{id: "{{ event._slug | escape }}", onclick: "window.location.href = \"/events/{{ event._slug }}\""}
         .name {{ event.name | escape }}
         .hint Click for details
         .date {{ event.date | localized_date: '%B %d %Y' }}
@@ -105,21 +105,6 @@ published: true
   .block.full
     %iframe.imgur-album{:frameborder => "0", :height => "550", :src => "{{ contents.galleries.first.link }}/embed?background=373737&text=ffffff&link=FFFFFF", :width => "100%"}
 
-{% for event in contents.events limit:5 %}
-.event-popup{id: "{{ event._slug | escape }}", style: "display:none"}
-  .name {{ event.name | escape }}
-  .date Date: {{ event.date | localized_date: '%B %d %Y' }}
-  {% if event.start_time != undefined %}
-  {% if event.end_time != undefined %}
-  .time Time: {{ event.start_time }} - {{ event.end_time }}
-  {% else %}
-  .time Time: {{ event.start_time }}
-  {% endif %}
-  {% endif %}
-  .description {{ event.description | escape }}
-  %a.link{href: "/events/{{ event._slug }}"} Click here to go to event page
-  %a.close{onclick: "hide(\"{{ event._slug | escape }}\")"} x
-{% endfor %}
 :javascript
   function hide(id) {
     $(".event-popup#" + id).hide();
