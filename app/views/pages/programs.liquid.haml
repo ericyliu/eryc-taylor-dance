@@ -34,10 +34,9 @@ position: 4
 %a{name: "grants"}
 .block-container.light
   .block.full
-    .title Grants
+    .title Grant
     .text Blurb describing the general idea of your grants. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent purus ex, scelerisque ut ullamcorper vitae, efficitur a diam.
-    %a.program-list-title{onclick: "toggleProgramList(grants)"} Available Grants +
-    .program-list{id: "grants", style: "display: none;"}
+    .program-list{id: "grants"}
       {% for program in contents.programs %}
       {% if program.type == "Grant" %}
       %a.program{href: "/programs/{{ program._slug }}"} {{ program.name }}
@@ -48,7 +47,7 @@ position: 4
 .block-container.dark
   .block.full
     .title Workshops
-    .text Blurb describing the general idea of your workshops. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent purus ex, scelerisque ut ullamcorper vitae, efficitur a diam. 
+    .text Blurb describing the general idea of your workshops. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent purus ex, scelerisque ut ullamcorper vitae, efficitur a diam.
     %a.program-list-title{onclick: "toggleProgramList(workshops)"} Available Workshops +
     .program-list{id: "workshops", style: "display: none;"}
       {% for program in contents.programs %}
@@ -61,7 +60,7 @@ position: 4
 .block-container.light
   .block.full
     .title Residencies
-    .text Blurb describing the general idea of your residency. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent purus ex, scelerisque ut ullamcorper vitae, efficitur a diam. 
+    .text Blurb describing the general idea of your residency. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent purus ex, scelerisque ut ullamcorper vitae, efficitur a diam.
     %a.program-list-title{onclick: "toggleProgramList(residencies)"} Available Residencies +
     .program-list{id: "reidencies", style: "display: none;"}
       {% for program in contents.programs %}
@@ -74,7 +73,7 @@ position: 4
 .block-container.dark
   .block.full
     .title Jobs & Internships
-    .text Blurb describing the general idea of your jobs and internships. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent purus ex, scelerisque ut ullamcorper vitae, efficitur a diam. 
+    .text Blurb describing the general idea of your jobs and internships. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent purus ex, scelerisque ut ullamcorper vitae, efficitur a diam.
     %a.program-list-title{onclick: "toggleProgramList(jobs)"} Available Jobs and Internships +
     .program-list{id: "jobs", style: "display: none;"}
       {% for program in contents.programs %}
