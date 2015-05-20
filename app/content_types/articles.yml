@@ -37,3 +37,13 @@ fields:
     type: date
     hint: Date Article was Posted (if internal)
     required: false
+- quote:
+    label: Quote
+    type: string
+    hint: Quote to be displayed
+    required: false
+- author:
+    label: Author
+    type: string
+    hint: Author of the review
+    required: false

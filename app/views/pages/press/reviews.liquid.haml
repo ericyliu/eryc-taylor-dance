@@ -9,14 +9,16 @@ parent: Press
 {% block main %}
 .block-container.dark
   .block.full
-    .title What People Are Saying
+    .title Reviews
 .article-list
   {% for article in contents.articles %}
   {% if article.source == "external" %}
   .article{style: "background-image: url('{{ article.image.url }}')"}
     .overlay
-      %a.tint{href: "{{ article.link }}"}
-      %a.title{href: "{{ article.link }}"} {{ article.name }}
+      .tint
+      .quote "{{ article.quote }}"
+      .author - {{ article. author }}
+      %a.link{href: "{{ article.link }}"}
   {% endif %}
   {% endfor %}
 {% endblock %}

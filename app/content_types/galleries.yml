@@ -20,3 +20,25 @@ fields:
     type: file
     hint: Cover photo for the gallery
     required: true
+- year:
+    label: Year
+    type: string
+    hint: Year for gallery
+    required: false
+- dancer:
+    label: Dancer
+    type: string
+    hint: Dancers in the gallery
+- music:
+    label: Music
+    type: string
+    hint: Music for the gallery
+- photographer:
+    label: Photographer
+    type: string
+    hint: Photographer for the gallery
+- background:
+    label: Background
+    type: string
+    hint: Background information for this gallery
+    

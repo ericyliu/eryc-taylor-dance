@@ -35,6 +35,7 @@ parent: About
       .tab{id: "Staff", onclick: 'filterPeople("Staff")'} STAFF
     .people-list
       {% for person in contents.people %}
+      {% if person.role == "Dancer" %}
       %a.person{id: "{{person.role}}", href: "/people/{{ person._slug }}"}
         {% if person.picture.url == undefined %}
         .overlay.active
@@ -44,6 +45,11 @@ parent: About
         .overlay
           .name {{ person.name }}
         {% endif %}
+      {% else %}
+      .person{id: "{{person.role}}"}
+        .name {{ person.name }}
+        .position {{ person.position }}
+      {% endif %}
       {% endfor %}
 
   :javascript

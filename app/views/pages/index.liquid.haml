@@ -9,20 +9,20 @@ published: true
 {% capture video_url %}{% editable_file "Banner Video" %}/samples/videos/banner.mp4{% endeditable_file %}{% endcapture %}
 .banner-container
   .banner
-    .title ERYC TAYLOR DANCE
+    .title
+      ERYC TAYLOR DANCE
+      %a.continue.icon-down-open{href: "#continue"}
     %video{id: "banner-video", width: "1024", height: "500", loop: true, autoplay: true, muted: true}
       %source{src: "{{ video_url }}", type: "video/mp4"}
     .play.button{onclick: "playPause()", style: "display:none"}
     .pause.button{onclick: "playPause()", style: "display:none"}
     .mute.button{onclick: "muteUnmute()", style: "display:none"}
     .unmute.button{onclick: "muteUnmute()", style: "display:none"}
-    %a.continue.icon-down-open-big{href: "#continue"}
 
     :javascript
       document.getElementById("banner-video").oncanplay = function() {
         $('.pause.button').show();
         $('.unmute.button').show();
-        $('.banner .title').hide();
       };
 
       function playPause() {
