@@ -12,7 +12,7 @@ published: true
     .title
       ERYC TAYLOR DANCE
       %a.continue.icon-down-open{href: "#continue"}
-    %video{id: "banner-video", width: "1024", height: "500", loop: true, autoplay: true, muted: true}
+    %video{id: "banner-video", width: "1024", height: "500", loop: true, autoplay: true}
       %source{src: "{{ video_url }}", type: "video/mp4"}
     .play.button{onclick: "playPause()", style: "display:none"}
     .pause.button{onclick: "playPause()", style: "display:none"}
@@ -22,7 +22,7 @@ published: true
     :javascript
       document.getElementById("banner-video").oncanplay = function() {
         $('.pause.button').show();
-        $('.unmute.button').show();
+        $('.mute.button').show();
       };
 
       function playPause() {
