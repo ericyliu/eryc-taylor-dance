@@ -40,7 +40,9 @@ position: 3
 .block-container.light
   .block.full
     .title Book Us
+    {% editable_text "booking_message", hint: "Information on how to book Eryc Taylor Dance." %}
     .text Here is some info on how to book us. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu.
+    {% endeditable_text %}
     %a.link{href:"/contact"} Get in Touch
 
 {% endblock %}

@@ -57,7 +57,9 @@ published: true
       .overlay.contribute
         .title Contribute
       .title Contribute
+      {% editable_text "contribute_message", hint: "Message for the contribution box." %}
       .text We are a not-for-profit corporation that is exempt from federal taxation. Contributions in support of Eryc Taylor's work are fully tax-deductible and greatly appreciated! Thank you for your support!
+      {% endeditable_text %}
       %form.link{:action => "https://www.paypal.com/cgi-bin/webscr", :method => "post", :target => "_top"}
         %input{:name => "cmd", :type => "hidden", :value => "_donations"}
           %input{:name => "business", :type => "hidden", :value => "eryc@eryctyalordance.com"}
@@ -73,14 +75,18 @@ published: true
       .overlay.about
         .title About Us
       .title About Us
+      {% editable_text "about_message", hint: "Message for the about box." %}
       .text We are a New York City based not-for-profit corporation with a mission to advance the appreciation of dance and educate the public about dance by creating, teaching and inspiring.
+      {% endeditable_text %}
       %a.link{href: "/about"} Learn More
 
     %a{name: "newsletter"}
     .block.full
       .overlay.newsletter
         .title Newsletter
+      {% editable_text "newsletter_message", hint: "Message for the newsletter box." %}
       .title Join Our Newsletter
+      {% endeditable_text %}
       %input.dark{placeholder: "Enter Your Email Here"}
       %input.dark.button{type: "submit", value: "Submit"}
 
@@ -89,12 +95,14 @@ published: true
     .title.event-title Upcoming Events
     .events
       .today Today: {{ today | localized_date: '%B %d %Y'}}
+      {% with_scope date.gt: today %}
       {% for event in contents.events limit:5 %}
       .event{id: "{{ event._slug | escape }}", onclick: "window.location.href = \"/events/{{ event._slug }}\""}
         .name {{ event.name | escape }}
         .hint Click for details
         .date {{ event.date | localized_date: '%B %d %Y' }}
       {% endfor %}
+      {% endwith_scope %}
       %a.link{href:"/events"} See more events
 
   :javascript

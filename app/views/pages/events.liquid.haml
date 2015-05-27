@@ -29,7 +29,7 @@ position: 1
 .block-container.dark
   .block.full
     .title PAST EVENTS
-    {% for event in contents.events %}
+    {% for event in contents.events reversed %}
     {% if event.date < today %}
     .event-block.past
       %a.name{href: "/events/{{ event._slug }}"} {{ event.name | escape }}

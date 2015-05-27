@@ -9,12 +9,16 @@ position: 5
 .block-container.dark
   .block.full
     .title CONTRIBUTE
+    {% editable_text "donation_message" %}
     .text Eryc Taylor Dance, Inc. is a New York not-for-profit corporation that is exempt from federal taxation. Contributions in support of Eryc Taylor's work are fully tax-deductible and greatly appreciated! Your name will also appear in the list of contributors below!
+    {% endeditable_text %}
 
 .block-container.light
   .block.full
     .title Online
+    {% editable_text "paypal_message" %}
     .text You can contribute through paypal at the link below:
+    {% endeditable_text %}
     %form.link{:action => "https://www.paypal.com/cgi-bin/webscr", :method => "post", :target => "_top"}
       %input{:name => "cmd", :type => "hidden", :value => "_donations"}
         %input{:name => "business", :type => "hidden", :value => "eryc@eryctyalordance.com"}
@@ -42,8 +46,9 @@ position: 5
 .block-container.dark
   .block.full
     .title By Check
+    {% editable_text "check_message" %}
     .text You can also pay by check. Please make check payable to <br> Eryc Taylor Dance, Inc. <br> and send to:<br><br> Eryc Taylor Dance <br> 450 West 42nd Street <br> New York City, New York 10036
-
+    {% endeditable_text %}
 .block-container.light
   .block.full
     .title Supporters

@@ -35,7 +35,9 @@ position: 4
 .block-container.light
   .block.full
     .title Grant
+    {% editable_text "grant_message" %}
     .text Blurb describing the general idea of your grants. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent purus ex, scelerisque ut ullamcorper vitae, efficitur a diam.
+    {% endeditable_text %}
     .program-list{id: "grants"}
       {% for program in contents.programs %}
       {% if program.type == "Grant" %}
@@ -47,7 +49,9 @@ position: 4
 .block-container.dark
   .block.full
     .title Workshops
+    {% editable_text "workshop_message" %}
     .text Blurb describing the general idea of your workshops. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent purus ex, scelerisque ut ullamcorper vitae, efficitur a diam.
+    {% endeditable_text %}
     %a.program-list-title{onclick: "toggleProgramList(workshops)"} Available Workshops +
     .program-list{id: "workshops", style: "display: none;"}
       {% for program in contents.programs %}
@@ -60,7 +64,9 @@ position: 4
 .block-container.light
   .block.full
     .title Residencies
+    {% editable_text "residency_message" %}
     .text Blurb describing the general idea of your residency. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent purus ex, scelerisque ut ullamcorper vitae, efficitur a diam.
+    {% endeditable_text %}
     %a.program-list-title{onclick: "toggleProgramList(residencies)"} Available Residencies +
     .program-list{id: "reidencies", style: "display: none;"}
       {% for program in contents.programs %}
@@ -73,7 +79,9 @@ position: 4
 .block-container.dark
   .block.full
     .title Jobs & Internships
+    {% editable_text "job_message" %}
     .text Blurb describing the general idea of your jobs and internships. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent purus ex, scelerisque ut ullamcorper vitae, efficitur a diam.
+    {% endeditable_text %}
     %a.program-list-title{onclick: "toggleProgramList(jobs)"} Available Jobs and Internships +
     .program-list{id: "jobs", style: "display: none;"}
       {% for program in contents.programs %}
