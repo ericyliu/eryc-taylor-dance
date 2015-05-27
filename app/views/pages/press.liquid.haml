@@ -23,16 +23,17 @@ position: 3
 
       :javascript
         $(document).ready(function() {
-          var container = $('.articles-container');
-          var width = container.width()/5;
-          var height = width
-          container.height(2*height);
-          articles = $('.article');
-          $(articles[0]).css({ height: 2*height, width: 2*width })
-          $(articles[1]).css({ height: height, width: 2*width, left: 2*width });
-          $(articles[2]).css({ height: height, width: width, left: 4*width });
-          $(articles[3]).css({ height: height, width: width, left: 2*width, top: height })
-          $(articles[4]).css({ height: height, width: 2*width, left: 3*width, top: height })
+          if window.innerWidth <= 360
+            var container = $('.articles-container');
+            var width = container.width()/5;
+            var height = width
+            container.height(2*height);
+            articles = $('.article');
+            $(articles[0]).css({ height: 2*height, width: 2*width })
+            $(articles[1]).css({ height: height, width: 2*width, left: 2*width });
+            $(articles[2]).css({ height: height, width: width, left: 4*width });
+            $(articles[3]).css({ height: height, width: width, left: 2*width, top: height })
+            $(articles[4]).css({ height: height, width: 2*width, left: 3*width, top: height })
         })
 
     %a.link{href:"press/reviews"} See More Reviews
