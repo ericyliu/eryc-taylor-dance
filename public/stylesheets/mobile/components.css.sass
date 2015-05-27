@@ -1,8 +1,19 @@
 $break-mobile: 360px
 
 @media screen and (max-width: $break-mobile)
-  .social-sidebar, .shop-sidebar, .newsletter-sidebar
+  .block-container
+    .block
+      .title
+        font-size: 1.7em
+  .social-sidebar, .newsletter-sidebar
     display: none
+
+  .shop-sidebar
+    border: 1px solid white
+    border-right: none
+    margin-top: 55px
+    a
+      display: none
 
   .header-container
     .header

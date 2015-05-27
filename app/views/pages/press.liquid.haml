@@ -8,7 +8,7 @@ position: 3
 {% block main %}
 .block-container.dark
   .block.full
-    .title See What People Are Saying
+    .title News and Reviews
     .articles-container
       {% for article in contents.articles limit: 5 %}
       .article{id: "index-{{ forloop.index }}"}
@@ -23,7 +23,7 @@ position: 3
 
       :javascript
         $(document).ready(function() {
-          if window.innerWidth <= 360
+          if (window.innerWidth > 360) {
             var container = $('.articles-container');
             var width = container.width()/5;
             var height = width
@@ -34,9 +34,10 @@ position: 3
             $(articles[2]).css({ height: height, width: width, left: 4*width });
             $(articles[3]).css({ height: height, width: width, left: 2*width, top: height })
             $(articles[4]).css({ height: height, width: 2*width, left: 3*width, top: height })
+          }
         })
 
-    %a.link{href:"press/reviews"} See More Reviews
+    %a.link{href:"press/reviews"} See More
 
 .block-container.light
   .block.full
