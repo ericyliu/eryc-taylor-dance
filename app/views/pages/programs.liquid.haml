@@ -10,26 +10,10 @@ position: 4
   .block.full
     .title Our Programs
     .program-buttons
-      %a.button.program.grants Grants
-      %a.button.program.workshops Workshops
-      %a.button.program.residencies Residencies
-      %a.button.program.jobs Jobs/Internships
-
-:javascript
-  $(document).ready(function() {
-    $('.button.program.grants').on("click", function() {
-      $(document).scrollTop(0);
-    });
-    $('.button.program.workshops').on("click", function() {
-      $(document).scrollTop(500);
-    });
-    $('.button.program.residencies').on("click", function() {
-      $(document).scrollTop(1000);
-    });
-    $('.button.program.jobs').on("click", function() {
-      $(document).scrollTop(1514);
-    });
-  });
+      %a.button.program.grants{href:"/programs/#grants"} Grants
+      %a.button.program.workshops{href:"/programs/#workshops"} Workshops
+      %a.button.program.residencies{href:"/programs/#residencies"} Residencies
+      %a.button.program.jobs{href:"/programs/#jobs"} Jobs/Internships
 
 %a{name: "grants"}
 .block-container.light
@@ -38,7 +22,7 @@ position: 4
     {% editable_text "grant_message" %}
     .text Blurb describing the general idea of your grants. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent purus ex, scelerisque ut ullamcorper vitae, efficitur a diam.
     {% endeditable_text %}
-    .program-list{id: "grants"}
+    .program-list{id: "grantsid"}
       {% for program in contents.programs %}
       {% if program.type == "Grant" %}
       %a.program{href: "/programs/{{ program._slug }}"} {{ program.name }}
@@ -52,8 +36,8 @@ position: 4
     {% editable_text "workshop_message" %}
     .text Blurb describing the general idea of your workshops. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent purus ex, scelerisque ut ullamcorper vitae, efficitur a diam.
     {% endeditable_text %}
-    %a.program-list-title{onclick: "toggleProgramList(workshops)"} Available Workshops +
-    .program-list{id: "workshops", style: "display: none;"}
+    %a.program-list-title{onclick: "toggleProgramList('#workshopsid')"} Available Workshops +
+    .program-list{id: "workshopsid", style: "display: none;"}
       {% for program in contents.programs %}
       {% if program.type == "Workshop" %}
       %a.program{href: "/programs/{{ program._slug }}"} {{ program.name }}
@@ -67,8 +51,8 @@ position: 4
     {% editable_text "residency_message" %}
     .text Blurb describing the general idea of your residency. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent purus ex, scelerisque ut ullamcorper vitae, efficitur a diam.
     {% endeditable_text %}
-    %a.program-list-title{onclick: "toggleProgramList(residencies)"} Available Residencies +
-    .program-list{id: "reidencies", style: "display: none;"}
+    %a.program-list-title{onclick: "toggleProgramList('#residenciesid')"} Available Residencies +
+    .program-list{id: "residenciesid", style: "display: none;"}
       {% for program in contents.programs %}
       {% if program.type == "Residency" %}
       %a.program{href: "/programs/{{ program._slug }}"} {{ program.name }}
@@ -82,8 +66,8 @@ position: 4
     {% editable_text "job_message" %}
     .text Blurb describing the general idea of your jobs and internships. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent purus ex, scelerisque ut ullamcorper vitae, efficitur a diam.
     {% endeditable_text %}
-    %a.program-list-title{onclick: "toggleProgramList(jobs)"} Available Jobs and Internships +
-    .program-list{id: "jobs", style: "display: none;"}
+    %a.program-list-title{onclick: "toggleProgramList('#jobsid')"} Available Jobs and Internships +
+    .program-list{id: "jobsid", style: "display: none;"}
       {% for program in contents.programs %}
       {% if program.type == "Job" %}
       %a.program{href: "/programs/{{ program._slug }}"} {{ program.name }}
@@ -95,6 +79,7 @@ position: 4
 
 :javascript
   function toggleProgramList(id) {
+    console.log(id);
     if ($(id).css("display") == "none") $(id).slideDown(300);
     else $(id).slideUp(300);
   }
