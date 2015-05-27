@@ -14,14 +14,15 @@ position: 1
     {% if event.date > today %}
     .event-block
       .name {{ event.name | escape }}
-      .date Date: {{ event.date | localized_date: '%B %d %Y' }}
-      {% if event.start_time != undefined %}
-      {% if event.end_time != undefined %}
-      .time Time: {{ event.start_time }} - {{ event.end_time }}
-      {% else %}
-      .time Time: {{ event.start_time }}
-      {% endif %}
-      {% endif %}
+      .date-time
+        .date Date: {{ event.date | localized_date: '%B %d %Y' }}
+        {% if event.start_time != undefined %}
+        {% if event.end_time != undefined %}
+        .time Time: {{ event.start_time }} - {{ event.end_time }}
+        {% else %}
+        .time Time: {{ event.start_time }}
+        {% endif %}
+        {% endif %}
       .description {{ event.description | escape }}
       %a.link{href: "/events/{{ event._slug }}"} Click for more information
     {% endif %}

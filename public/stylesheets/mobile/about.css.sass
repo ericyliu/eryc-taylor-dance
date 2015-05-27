@@ -1,0 +1,56 @@
+$break-mobile: 360px
+
+@media screen and (max-width: $break-mobile)
+  .block-container
+    .block
+      .profile
+        img
+          display: block
+          width: 30%
+          margin: 0 auto
+
+        .info-container
+          padding-top: 20px
+          float: none
+          margin: 0 auto
+          width: 80%
+          display: block
+
+          .name
+            text-align: center
+            font-size: 1.2em
+          .role
+            text-align: center
+            font-size: 0.9em
+          .bio
+            text-align: center
+            font-size: 0.8em
+
+      .tabs
+        .tab
+          display: block
+          margin: 0 auto
+          width: 80%
+
+        span
+          display: none
+
+      .people-list
+        a.person
+          margin: 0 auto
+          margin-bottom: 10px
+          display: block
+        div.person
+          height: auto
+          
+          .name
+            display: block
+            line-height: 25px
+            padding-top: 10px
+          .position
+            display: block
+            float: none
+            font-size: .7em
+            text-align: right
+            line-height: 10px
+            padding-bottom: 10px
