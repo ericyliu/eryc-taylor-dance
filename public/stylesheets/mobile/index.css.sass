@@ -1,0 +1,59 @@
+$break-mobile: 360px
+
+@media screen and (max-width: $break-mobile)
+  body.index main
+    .banner-container
+      .banner
+        min-width: 0
+
+        .title
+          font-size: 1.4em
+
+          a
+            display: none
+
+        video
+          margin-top: 30px
+
+    .block-container
+      .block
+        margin-top: 20px
+        margin-bottom: 20px
+
+        .left, .right, .full
+          float: none
+          width: 90%
+          margin: 0 auto
+          max-width: none
+          min-height: 0
+          display: block
+          padding: 40px 10px
+          margin-bottom: 20px
+
+        .overlay
+          display: none
+
+        .title
+          line-height: 40px
+          font-size: 1.9em
+
+        .text
+          font-size: 1.0em
+
+        input.dark
+          width: auto
+          margin-top: 20px
+
+        .event-title
+          padding-top: 20px
+        .events
+          .event
+            display: block
+            .name
+              display: block
+              width: 100%
+            .hint
+              display: inline
+            .date
+              display: block
+
