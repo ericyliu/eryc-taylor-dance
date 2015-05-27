@@ -1,0 +1,32 @@
+$break-mobile: 360px
+
+@media screen and (max-width: $break-mobile)
+  main
+    .block
+      .event-block
+        margin: 0 10px
+        padding-bottom: 40px
+
+        .name
+          font-size: 1.2em
+          padding-bottom: 20px
+        .date, .time, .description
+          font-size: 0.8em
+          text-align: center
+        .time
+          padding-bottom: 20px
+        .description
+          font-size: 0.9em
+          margin: 0 35px
+          padding-bottom: 10px
+
+        &.past
+          .name
+            text-align: left
+            display: block
+            width: 100%
+            padding: 0
+            font-size: 1.0em
+          .date
+            font-size: 0.7em
+            padding-bottom: 20px
