@@ -33,3 +33,18 @@ fields:
     required: false
     unique: false
     localized: false
+    text_formatting: html
+- link:
+    label: Link
+    type: string
+    hint: Link to application website
+    required: false
+    unique: false
+    localized: false
+- file:
+    label: File
+    type: file
+    hint: Link to application form
+    required: false
+    unique: false
+    localized: false

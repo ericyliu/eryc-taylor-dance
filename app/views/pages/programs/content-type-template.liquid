@@ -23,7 +23,15 @@ content_type: programs
 </div>
 <div class='block-container dark'>
   <div class='block full'>
+    {% if program.link != '' %}
+    <a class='title' href='{{ program.link }}'>Apply Here</a>
+    {% else %}
+    {% if program.file.url != undefined %}
+    <a class='title' href='{{ program.file.url }}'>Apply Here</a>
+    {% else %}
     <a class='title' href='/contact'>Apply Here</a>
+    {% endif %}
+    {% endif %}
   </div>
 </div>
 {% endblock %}
