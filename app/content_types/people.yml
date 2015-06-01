@@ -40,6 +40,7 @@ fields:
     required: false
     unique: false
     localized: false
+    text_formatting: html
 - position:
     label: position
     type: string

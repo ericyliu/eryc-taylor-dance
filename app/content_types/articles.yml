@@ -11,57 +11,40 @@ fields:
     type: string
     hint: Name of the article
     required: true
-    unique: false
-    localized: false
 - image:
     label: Image
     type: file
     hint: Image to use for the article
     required: true
-    unique: false
-    localized: false
 - source:
     label: Source
     type: select
+    select_options: ["internal","external"]
     hint: Whether article is written by you or by someone else
     required: true
-    unique: false
-    localized: false
-    select_options:
-    - internal
-    - external
 - link:
     label: Link
     type: string
     hint: Link to the article (if external)
     required: false
-    unique: false
-    localized: false
 - content:
     label: Content
     type: text
     hint: Content of the article (if internal)
     required: false
-    unique: false
-    localized: false
+    text_formatting: html
 - date:
     label: Date
     type: date
     hint: Date Article was Posted (if internal)
     required: false
-    unique: false
-    localized: false
 - quote:
     label: Quote
     type: string
     hint: Quote to be displayed
     required: false
-    unique: false
-    localized: false
 - author:
     label: Author
     type: string
     hint: Author of the review
     required: false
-    unique: false
-    localized: false

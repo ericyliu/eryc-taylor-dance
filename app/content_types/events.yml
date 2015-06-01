@@ -41,6 +41,7 @@ fields:
     required: false
     unique: false
     localized: false
+    text_formatting: html
 - location:
     label: Location
     type: string

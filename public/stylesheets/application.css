@@ -7357,34 +7357,34 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
   }
 }
 */
- 
+
  [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
   speak: none;
- 
+
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
   margin-right: .2em;
   text-align: center;
   /* opacity: .8; */
- 
+
   /* For safety - reset parent styles, that can break glyph codes*/
   font-variant: normal;
   text-transform: none;
-     
+
   /* fix buttons height, for twitter bootstrap */
   line-height: 1em;
- 
+
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
   margin-left: .2em;
- 
+
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
- 
+
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
@@ -7415,14 +7415,14 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
   font-family: 'fontello';
   font-style: normal;
   font-weight: normal;
- 
+
   /* fix buttons height */
   line-height: 1em;
- 
+
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
 }
- 
+
 .icon-vimeo-squared { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe800;&nbsp;'); }
 .icon-instagramm { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe801;&nbsp;'); }
 .icon-youtube-squared { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe802;&nbsp;'); }
@@ -7454,42 +7454,42 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
   }
 }
 */
- 
+
  [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
   speak: none;
- 
+
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
   margin-right: .2em;
   text-align: center;
   /* opacity: .8; */
- 
+
   /* For safety - reset parent styles, that can break glyph codes*/
   font-variant: normal;
   text-transform: none;
- 
+
   /* fix buttons height, for twitter bootstrap */
   line-height: 1em;
- 
+
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
   margin-left: .2em;
- 
+
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
- 
+
   /* Font smoothing. That was taken from TWBS */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
- 
+
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
- 
+
 .icon-vimeo-squared:before { content: '\e800'; } /* '' */
 .icon-instagramm:before { content: '\e801'; } /* '' */
 .icon-youtube-squared:before { content: '\e802'; } /* '' */
@@ -8033,8 +8033,7 @@ input.dark, textarea.dark {
       vertical-align: middle;
       text-transform: uppercase;
       font-size: 18px;
-      line-height: 20px;
-      padding-left: 20px; }
+      line-height: 20px; }
     .header-container .header .mobile-dropdown {
       display: none;
       color: white;
@@ -8272,6 +8271,8 @@ body.index main .block .overlay.newsletter {
     font-family: "Crimson Text", serif;
     margin: 10px 30px;
     padding-bottom: 20px; }
+    .events main .event-block .description a {
+      text-decoration: underline; }
   .events main .event-block .link {
     font-size: 12px;
     font-size: 0.6em;
