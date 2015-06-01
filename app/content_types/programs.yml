@@ -4,17 +4,32 @@ description: Programs
 slug: programs
 label_field_name: name
 order_by: manually
+order_direction: asc
 fields:
 - name:
     label: Name
     type: string
     hint: Name of the program
     required: true
+    unique: false
+    localized: false
 - type:
     label: Type
     type: select
-    select_options: ["Grant, Workshop, Residency, Job, Internship"]
+    required: false
+    unique: false
+    localized: false
+    select_options:
+    - Grant
+    - Workshop
+    - Residency
+    - Job
+    - Internship
+    - Grant, Workshop, Residency, Job, Internship
 - description:
     label: Description
     type: text
     hint: Description of the program
+    required: false
+    unique: false
+    localized: false

@@ -1,0 +1,25 @@
+.shop-sidebar {
+  position: fixed;
+  margin-top: 65px;
+  padding: 10px 20px;
+  background-color: #373737;
+  right: 0px;
+  z-index: 98;
+  line-height: 30px;
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  border: 1px solid black; }
+  .shop-sidebar .icon {
+    display: inline-block;
+    font-size: 16px;
+    opacity: 0.5;
+    color: white; }
+  .shop-sidebar a {
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px; }

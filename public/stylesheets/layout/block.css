@@ -1,0 +1,353 @@
+.block-container {
+  width: 100%;
+  border-top: 5px solid #bbbbbb;
+  border-bottom: 5px solid #bbbbbb;
+  position: relative;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center center; }
+  .block-container.light {
+    background-color: white;
+    color: black; }
+    .block-container.light a {
+      color: black; }
+      .block-container.light a:hover {
+        color: gray; }
+  .block-container.dark {
+    background-color: #373737;
+    color: white; }
+    .block-container.dark a {
+      color: white; }
+  .block-container .block {
+    height: 100%;
+    box-sizing: border-box;
+    position: relative; }
+    .block-container .block .block {
+      border: 1px solid white; }
+      .block-container .block .block:hover .overlay {
+        display: none; }
+      .block-container .block .block.full {
+        margin: 60px auto;
+        padding: 40px 0; }
+    .block-container .block.full {
+      max-width: 1024px;
+      width: 100%;
+      margin: 100px auto; }
+    .block-container .block.left, .block-container .block.right {
+      display: inline-block;
+      max-width: 512px;
+      width: 47%;
+      padding: 60px 0;
+      border: 1px solid white;
+      min-height: 580px; }
+    .block-container .block.right {
+      float: right; }
+    .block-container .block .overlay {
+      position: absolute;
+      background-color: black;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      background-position: 50% 50%; }
+      .block-container .block .overlay .title {
+        position: absolute;
+        top: 40%;
+        width: 100%; }
+    .block-container .block .title {
+      display: block;
+      font-family: "PT Sans", sans-serif;
+      text-align: center;
+      font-weight: bold;
+      font-size: 40px;
+      font-size: 2em;
+      text-transform: Uppercase; }
+      .block-container .block .title.event-title {
+        padding-bottom: 10px; }
+      .block-container .block .title.smaller {
+        font-size: 30px;
+        font-size: 1.5em; }
+    .block-container .block .text {
+      display: block;
+      font-family: "Crimson Text", serif;
+      text-align: center;
+      max-width: 70%;
+      margin: 0 auto;
+      font-size: 24px;
+      font-size: 1.2em;
+      line-height: 30px;
+      line-height: 1.5em;
+      padding-top: 40px; }
+      .block-container .block .text:first-child {
+        padding-top: 0px; }
+      .block-container .block .text.address {
+        font-family: "PT Sans", sans-serif; }
+      .block-container .block .text.small {
+        font-size: 18px;
+        font-size: 0.9em; }
+    .block-container .block .link {
+      display: block;
+      text-align: center;
+      padding-top: 50px;
+      margin: 0 auto;
+      font-weight: bold;
+      text-transform: Uppercase; }
+    .block-container .block .events {
+      width: 100%;
+      max-width: 1024px; }
+      .block-container .block .events .today {
+        width: 90%;
+        margin: auto;
+        padding-bottom: 30px;
+        font-size: 0.8em;
+        text-align: right; }
+      .block-container .block .events .event {
+        display: table;
+        width: 90%;
+        border: 1px solid black;
+        padding: 10px;
+        margin: 20px auto; }
+        .block-container .block .events .event .name {
+          display: table-cell;
+          vertical-align: middle;
+          width: 65%; }
+        .block-container .block .events .event .hint {
+          font-size: 0.7em;
+          display: table-cell;
+          vertical-align: middle;
+          padding-top: 3px; }
+        .block-container .block .events .event .date {
+          display: table-cell;
+          vertical-align: middl;
+          float: right; }
+        .block-container .block .events .event:hover {
+          background-color: #373737;
+          color: white;
+          cursor: pointer; }
+    .block-container .block .imgur-container .download-blocker {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      background-color: #373737;
+      right: 0px; }
+    .block-container .block .imgur-container .logo-blocker {
+      width: 100px;
+      height: 50px;
+      position: absolute;
+      background-color: #373737;
+      left: 0px; }
+    .block-container .block .imgur-container .image-blocker {
+      width: 70%;
+      height: 70%;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0);
+      left: 15%; }
+    .block-container .block .imgur-container .imgur-album .logo {
+      display: none; }
+    .block-container .block .imgur-container .imgur-album img {
+      border: 1px solid white; }
+    .block-container .block .profile {
+      display: block;
+      margin-bottom: 40px; }
+      .block-container .block .profile img {
+        display: inline-block;
+        width: 30%;
+        vertical-align: top; }
+      .block-container .block .profile .info-container {
+        display: inline-block;
+        width: 65%;
+        float: right; }
+        .block-container .block .profile .info-container .name {
+          font-weight: bold;
+          font-size: 22px;
+          font-size: 1.1em; }
+        .block-container .block .profile .info-container .role {
+          font-weight: bold; }
+        .block-container .block .profile .info-container .bio {
+          padding-top: 20px;
+          font-family: "Crimson Text", serif;
+          font-size: 18px;
+          font-size: 0.9em; }
+    .block-container .block .articles-container {
+      position: relative;
+      display: block;
+      margin: 0 auto;
+      margin-top: 50px;
+      width: 80%; }
+      .block-container .block .articles-container .article {
+        display: table;
+        vertical-align: top;
+        position: absolute; }
+        .block-container .block .articles-container .article img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          border: 2px solid rgba(0, 0, 0, 0); }
+        .block-container .block .articles-container .article .name {
+          position: absolute;
+          display: inline-block;
+          top: 40%;
+          width: 100%;
+          text-align: center; }
+        .block-container .block .articles-container .article a {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0px; }
+        .block-container .block .articles-container .article .link {
+          position: relative; }
+    .block-container .block .galleries-container {
+      margin-top: 50px; }
+      .block-container .block .galleries-container .gallery {
+        display: inline-block;
+        position: relative; }
+        .block-container .block .galleries-container .gallery img {
+          width: 100%;
+          height: 100%;
+          border: 5px solid rgba(0, 0, 0, 0);
+          z-index: 10; }
+        .block-container .block .galleries-container .gallery .overlay, .block-container .block .galleries-container .gallery .name {
+          position: absolute;
+          width: 100%;
+          background-color: black;
+          background-clip: padding-box;
+          border: 5px solid rgba(0, 0, 0, 0);
+          opacity: 0; }
+        .block-container .block .galleries-container .gallery .overlay {
+          top: 0px;
+          height: 100%;
+          -webkit-transition: opacity 2s;
+          transition: opacity 2s; }
+        .block-container .block .galleries-container .gallery .name {
+          top: 45%;
+          vertical-align: middle;
+          text-align: center;
+          color: white;
+          -webkit-transition: opacity 1s;
+          transition: opacity 1s; }
+        .block-container .block .galleries-container .gallery:hover .overlay {
+          opacity: 0.5; }
+        .block-container .block .galleries-container .gallery:hover .name {
+          opacity: 1; }
+    .block-container .block .perks-container {
+      margin: 0 auto;
+      margin-top: 50px;
+      overflow: auto;
+      width: 912px; }
+      .block-container .block .perks-container .perk {
+        display: inline-block;
+        width: 300px;
+        height: 300px;
+        position: relative;
+        background-position: 50% 50%;
+        margin-bottom: 8px;
+        border: 1px solid white; }
+        .block-container .block .perks-container .perk:hover .overlay {
+          display: none; }
+        .block-container .block .perks-container .perk .name.title {
+          margin-top: 20px; }
+        .block-container .block .perks-container .perk .amount {
+          text-align: center; }
+        .block-container .block .perks-container .perk .description {
+          text-align: center;
+          margin-top: 10px;
+          padding-left: 10px;
+          padding-right: 10px;
+          font-size: 16px; }
+    .block-container .block .supporter-list {
+      padding-top: 40px; }
+      .block-container .block .supporter-list .supporter {
+        display: inline-block;
+        background-color: lightgrey;
+        padding: 10px;
+        color: black;
+        min-width: 100px;
+        text-align: center;
+        margin: 5px; }
+    .block-container .block .tabs {
+      text-align: center; }
+      .block-container .block .tabs .tab {
+        display: inline;
+        padding: 2px 5px; }
+        .block-container .block .tabs .tab.active {
+          font-weight: bold;
+          border-bottom: 1px solid white; }
+        .block-container .block .tabs .tab:hover {
+          cursor: pointer; }
+    .block-container .block .people-list {
+      padding-top: 40px;
+      width: 100%; }
+      .block-container .block .people-list div.person {
+        width: 80%;
+        margin: 10px auto;
+        height: 50px;
+        border: 1px solid white;
+        line-height: 50px;
+        padding-left: 10px;
+        padding-right: 10px; }
+        .block-container .block .people-list div.person .name {
+          display: inline; }
+        .block-container .block .people-list div.person .position {
+          display: inline;
+          float: right; }
+      .block-container .block .people-list a.person {
+        position: relative;
+        display: inline-block;
+        margin: 10px;
+        width: 180px;
+        height: 180px; }
+        .block-container .block .people-list a.person .picture {
+          width: 100%;
+          height: 100%;
+          background-position: center top;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-color: black; }
+        .block-container .block .people-list a.person .overlay {
+          opacity: 0;
+          background-color: black;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0px; }
+          .block-container .block .people-list a.person .overlay .name {
+            position: absolute;
+            text-align: center;
+            top: 45%;
+            width: 100%; }
+          .block-container .block .people-list a.person .overlay.active {
+            opacity: 0.5; }
+        .block-container .block .people-list a.person:hover .overlay {
+          opacity: 0.5; }
+    .block-container .block .article .image {
+      height: 300px;
+      width: 500px;
+      background-position: center center;
+      background-size: auto 500px;
+      margin: 0 auto;
+      margin-top: 40px;
+      border: 5px solid lightgrey; }
+    .block-container .block .article .text {
+      font-size: 20px;
+      font-size: 1em; }
+    .block-container .block .article .date {
+      padding-top: 40px;
+      text-align: right;
+      font-size: 14px;
+      font-size: 0.7em;
+      font-weight: bold; }
+    .block-container .block .program-list-title {
+      display: block;
+      text-transform: Uppercase;
+      padding-top: 40px;
+      text-align: center;
+      font-weight: bold; }
+    .block-container .block .program-list .program {
+      display: block;
+      padding-top: 20px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 24px;
+      font-size: 1.2em; }
+  .block-container .googlemap {
+    width: 100%; }

@@ -1,0 +1,35 @@
+.events main .event-block {
+  position: relative;
+  margin: 0 150px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #bbbbbb; }
+  .events main .event-block:last-child {
+    border-bottom: none; }
+  .events main .event-block .date-time {
+    padding-bottom: 20px; }
+    .events main .event-block .date-time .date, .events main .event-block .date-time .time {
+      font-size: 18px;
+      font-size: 0.9em; }
+  .events main .event-block .name {
+    padding-bottom: 20px;
+    font-size: 28px;
+    font-size: 1.4em;
+    text-align: center; }
+  .events main .event-block .description {
+    font-size: 18px;
+    font-size: 0.9em;
+    font-family: "Crimson Text", serif;
+    margin: 10px 30px;
+    padding-bottom: 20px; }
+  .events main .event-block .link {
+    font-size: 12px;
+    font-size: 0.6em;
+    position: absolute;
+    right: 5px;
+    bottom: 5px; }
+  .events main .event-block.past .name {
+    display: inline; }
+  .events main .event-block.past .date {
+    display: inline;
+    float: right; }

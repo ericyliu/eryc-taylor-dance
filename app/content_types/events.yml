@@ -11,28 +11,47 @@ fields:
     type: string
     hint: Name of the event
     required: true
+    unique: false
+    localized: false
 - date:
     label: Date
     type: date
     hint: Date of event
     required: true
+    unique: false
+    localized: false
 - start_time:
     label: Start Time
     type: string
     hint: Time of event start
+    required: false
+    unique: false
+    localized: false
 - end_time:
     label: End Time
     type: string
     hint: Time of event end
+    required: false
+    unique: false
+    localized: false
 - description:
     label: Description
     type: text
     hint: Description of the event
+    required: false
+    unique: false
+    localized: false
 - location:
     label: Location
     type: string
     hint: Location of event
+    required: false
+    unique: false
+    localized: false
 - location_link:
     label: Location Link
     type: string
     hint: Google Maps Address to the event
+    required: false
+    unique: false
+    localized: false

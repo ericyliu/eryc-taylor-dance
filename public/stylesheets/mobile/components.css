@@ -1,0 +1,85 @@
+@media screen and (max-width: 640px) {
+  .block-container .block .title {
+    font-size: 1.7em; }
+
+  .social-sidebar, .newsletter-sidebar {
+    display: none; }
+
+  .shop-sidebar {
+    border: 1px solid white;
+    border-right: none;
+    margin-top: 55px; }
+    .shop-sidebar a {
+      display: none; }
+
+  .header-container .header .logo-container {
+    position: absolute;
+    top: 23px;
+    z-index: 5; }
+  .header-container .header .icon-home, .header-container .header .links {
+    display: none; }
+  .header-container .header .title {
+    top: 0;
+    padding-top: 11px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    padding-left: 0; }
+  .header-container .header .mobile-dropdown {
+    display: block; }
+  .header-container .header .links {
+    padding-top: 40px;
+    padding-bottom: 5px;
+    padding-right: 0px;
+    z-index: -1;
+    opacity: 1; }
+    .header-container .header .links .link {
+      text-align: center;
+      display: block;
+      width: 100%; }
+      .header-container .header .links .link a {
+        padding-right: 10px;
+        padding-bottom: 5px;
+        display: block;
+        color: white; }
+      .header-container .header .links .link ul .link {
+        display: inline-block;
+        width: auto; }
+        .header-container .header .links .link ul .link a {
+          padding: 0;
+          padding-right: 10px; }
+      .header-container .header .links .link ul a {
+        padding-right: 35px;
+        font-size: 16px; }
+
+  .footer-container .footer {
+    display: block;
+    position: relative;
+    height: auto; }
+    .footer-container .footer .title {
+      display: block;
+      width: 100%;
+      padding: 10px 0;
+      padding-top: 30px;
+      text-align: center;
+      margin: 0; }
+    .footer-container .footer .social-media {
+      display: block;
+      margin: 0 auto;
+      float: none;
+      width: 265px;
+      padding-bottom: 5px; }
+      .footer-container .footer .social-media .icon {
+        display: inline-block;
+        line-height: 30px;
+        float: none; }
+    .footer-container .footer .contact, .footer-container .footer .email, .footer-container .footer .phone {
+      display: block;
+      width: 100%;
+      line-height: 30px;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      float: none; }
+    .footer-container .footer .phone {
+      padding-bottom: 30px; } }

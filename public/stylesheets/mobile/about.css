@@ -1,0 +1,51 @@
+@media screen and (max-width: 640px) {
+  .block-container .block .profile img {
+    display: block;
+    width: 30%;
+    margin: 0 auto; }
+  .block-container .block .profile .info-container {
+    padding-top: 20px;
+    float: none;
+    margin: 0 auto;
+    width: 80%;
+    display: block; }
+    .block-container .block .profile .info-container .name {
+      text-align: center;
+      font-size: 1.2em; }
+    .block-container .block .profile .info-container .role {
+      text-align: center;
+      font-size: 0.9em; }
+    .block-container .block .profile .info-container .bio {
+      text-align: center;
+      font-size: 0.8em; }
+  .block-container .block .tabs .tab {
+    display: block;
+    margin: 0 auto;
+    width: 80%; }
+  .block-container .block .tabs span {
+    display: none; }
+  .block-container .block .people-list a.person {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    display: block; }
+  .block-container .block .people-list div.person {
+    height: auto; }
+    .block-container .block .people-list div.person .name {
+      display: block;
+      line-height: 25px;
+      padding-top: 10px; }
+    .block-container .block .people-list div.person .position {
+      display: block;
+      float: none;
+      font-size: 0.7em;
+      text-align: right;
+      line-height: 10px;
+      padding-bottom: 10px; }
+
+  .media .video-popup .frame-container {
+    width: 90%;
+    height: auto;
+    border: 7px solid lightgrey; }
+
+  .block-container .block .galleries-container .gallery .name {
+    display: none; } }

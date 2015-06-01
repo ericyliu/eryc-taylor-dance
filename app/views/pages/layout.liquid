@@ -1,0 +1,34 @@
+---
+title: Layout
+slug: layout
+listed: false
+published: true
+cache_strategy: none
+response_type: text/html
+position: 100
+---
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+    <title>{{ site.name }}</title>
+    <meta name='keywords' value='{{ site.meta_keywords }}'>
+    <meta name='description' value='{{ site.meta_description }}'>
+    <link href="{{ 'favicon.ico' | theme_image_url }}" rel='shortcut icon' type='image/x-icon'>
+    <link href="{{ 'favicon.ico' | theme_image_url }}" rel='icon' type='image/x-icon'>
+    <link href="{{ 'apple-touch-icon-76x76-precomposed' | theme_image_url }}" rel='apple-touch-icon-precomposed' sizes='76x76'>
+    <link href="{{ 'apple-touch-icon-120x120-precomposed.png' | theme_image_url }}" rel='apple-touch-icon-precomposed' sizes='120x120'>
+    <link href="{{ 'apple-touch-icon-152x152-precomposed.png' | theme_image_url }}" rel='apple-touch-icon-precomposed' sizes='152x152'>
+    {{ 'application.css' | stylesheet_tag }}
+    {{ 'http://fonts.googleapis.com/css?family=PT+Sans:400,700|Crimson+Text:400,700' | stylesheet_tag }}
+  </head>
+  <body class='{{ page.slug }}'>
+    {% include header %}
+    <main>
+      {% block main %}
+      {% endblock %}
+    </main>
+    {% include footer %}
+  </body>
+</html>

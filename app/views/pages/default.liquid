@@ -1,0 +1,38 @@
+---
+title: Default
+slug: default
+listed: false
+published: true
+cache_strategy: none
+response_type: text/html
+position: 102
+---
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+    <title>{{ site.name }}</title>
+    <meta name='keywords' value='{{ site.meta_keywords }}'>
+    <meta name='description' value='{{ site.meta_description }}'>
+    <link href="{{ 'favicon.ico' | theme_image_url }}" rel='shortcut icon' type='image/x-icon'>
+    <link href="{{ 'favicon.ico' | theme_image_url }}" rel='icon' type='image/x-icon'>
+    <link href="{{ 'apple-touch-icon-76x76-precomposed' | theme_image_url }}" rel='apple-touch-icon-precomposed' sizes='76x76'>
+    <link href="{{ 'apple-touch-icon-120x120-precomposed.png' | theme_image_url }}" rel='apple-touch-icon-precomposed' sizes='120x120'>
+    <link href="{{ 'apple-touch-icon-152x152-precomposed.png' | theme_image_url }}" rel='apple-touch-icon-precomposed' sizes='152x152'>
+    {{ 'application.css' | stylesheet_tag }}
+    {{ 'jquery.min.js' | javascript_tag }}
+  </head>
+  <body class='{{ page.slug }}'>
+    {% include header %}
+    {% include social-sidebar %}
+    {% include shop-sidebar %}
+    {% include newsletter-sidebar %}
+    <main>
+      {% block main %}
+      {% endblock %}
+    </main>
+    {% include footer %}
+    {{ 'application.js' | javascript_tag }}
+  </body>
+</html>

@@ -1,0 +1,158 @@
+---
+title: Home
+listed: false
+published: true
+cache_strategy: none
+response_type: text/html
+position: 0
+seo_title: Eryc Taylor Dance
+editable_elements:
+  main/Banner Video: "/samples/pages/ETDfullreel.mp4"
+  main/contribute_message: <div class="text">We are a not-for-profit corporation that
+    is exempt from federal taxation. Contributions in support of Eryc Taylor's work
+    are fully tax-deductible and greatly appreciated! Thank you for your support.</div>
+  main/about_message: "<div class='text'>We are a New York City based not-for-profit
+    corporation with a mission to advance the appreciation of dance and educate the
+    public about dance by creating, teaching and inspiring.</div>"
+  main/newsletter_message: "<div class='title'>Join Our Newsletter</div>"
+---
+<!DOCTYPE html>
+{% extends default %}
+{% block main %}
+{% capture video_url %}{% editable_file "Banner Video" %}https://eryc-taylor-dance.s3.amazonaws.com/sites/54d874516e84c0dc00000002/assets/54f160115f9f72b4d3000004/banner.mp4{% endeditable_file %}{% endcapture %}
+<div class='banner-container'>
+  <div class='banner'>
+    <div class='title'>
+      ERYC TAYLOR DANCE
+      <a class='continue icon-down-open' href='#continue'></a>
+    </div>
+    <video autoplay height='500' id='banner-video' loop width='1024'>
+      <source src='{{ video_url }}' type='video/mp4'>
+    </video>
+    <div class='play button' onclick='playPause()' style='display:none'></div>
+    <div class='pause button' onclick='playPause()' style='display:none'></div>
+    <div class='mute button' onclick='muteUnmute()' style='display:none'></div>
+    <div class='unmute button' onclick='muteUnmute()' style='display:none'></div>
+    <script>
+      document.getElementById("banner-video").oncanplay = function() {
+        $('.pause.button').show();
+        $('.mute.button').show();
+      };
+      
+      function playPause() {
+        var video = document.getElementById("banner-video")
+        if (video.paused) {
+          video.play();
+          $('.play.button').hide();
+          $('.pause.button').show();
+        }
+        else {
+          $('.play.button').show();
+          $('.pause.button').hide();
+          video.pause();
+        }
+      }
+      function muteUnmute() {
+        var video = document.getElementById("banner-video")
+        video.muted = !video.muted;
+        if (video.muted) {
+          $('.mute.button').hide();
+          $('.unmute.button').show();
+        }
+        else {
+          $('.mute.button').show();
+          $('.unmute.button').hide();
+        }
+      }
+    </script>
+  </div>
+</div>
+<a name='continue'></a>
+<div class='block-container dark'>
+  <div class='block full'>
+    <div class='block left'>
+      <div class='overlay contribute'>
+        <div class='title'>Contribute</div>
+      </div>
+      <div class='title'>Contribute</div>
+      {% editable_text "contribute_message", hint: "Message for the contribution box." %}
+      <div class='text'>We are a not-for-profit corporation that is exempt from federal taxation. Contributions in support of Eryc Taylor's work are fully tax-deductible and greatly appreciated! Thank you for your support!</div>
+      {% endeditable_text %}
+      <form action='https://www.paypal.com/cgi-bin/webscr' class='link' method='post' target='_top'>
+        <input name='cmd' type='hidden' value='_donations'>
+          <input name='business' type='hidden' value='eryc@eryctyalordance.com'>
+            <input name='lc' type='hidden' value='US'>
+              <input name='item_name' type='hidden' value='Eryc Tyalor Dance'>
+                <input name='no_note' type='hidden' value='0'>
+                  <input name='currency_code' type='hidden' value='USD'>
+                    <input name='bn' type='hidden' value='PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest'>
+                      <input alt='PayPal - The safer, easier way to pay online!' border='0' name='submit' src='https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif' type='image'>
+                        <img alt='' border='0' height='1' src='https://www.paypalobjects.com/en_US/i/scr/pixel.gif' width='1'>
+                      </input>
+                    </input>
+                  </input>
+                </input>
+              </input>
+            </input>
+          </input>
+        </input>
+      </form>
+    </div>
+    <div class='block right'>
+      <div class='overlay about'>
+        <div class='title'>About Us</div>
+      </div>
+      <div class='title'>About Us</div>
+      {% editable_text "about_message", hint: "Message for the about box." %}
+      <div class='text'>We are a New York City based not-for-profit corporation with a mission to advance the appreciation of dance and educate the public about dance by creating, teaching and inspiring.</div>
+      {% endeditable_text %}
+      <a class='link' href='/about'>Learn More</a>
+    </div>
+    <a name='newsletter'></a>
+    <div class='block full'>
+      <div class='overlay newsletter'>
+        <div class='title'>Newsletter</div>
+      </div>
+      {% editable_text "newsletter_message", hint: "Message for the newsletter box." %}
+      <div class='title'>Join Our Newsletter</div>
+      {% endeditable_text %}
+      <input class='dark' placeholder='Enter Your Email Here'>
+      <input class='dark button' type='submit' value='Submit'>
+    </div>
+  </div>
+</div>
+<div class='block-container light'>
+  <div class='block full'>
+    <div class='title event-title'>Upcoming Events</div>
+    <div class='events'>
+      <div class='today'>Today: {{ today | localized_date: '%B %d %Y'}}</div>
+      {% with_scope date.gt: today %}
+      {% for event in contents.events limit:5 %}
+      <div class='event' id='{{ event._slug | escape }}' onclick='window.location.href = "/events/{{ event._slug }}"'>
+        <div class='name'>{{ event.name | escape }}</div>
+        <div class='hint'>Click for details</div>
+        <div class='date'>{{ event.date | localized_date: '%B %d %Y' }}</div>
+      </div>
+      {% endfor %}
+      {% endwith_scope %}
+      <a class='link' href='/events'>See more events</a>
+    </div>
+  </div>
+  <script>
+    function show(id) {
+      $(".event-popup").hide();
+      $(".event-popup#" + id).show();
+    }
+  </script>
+</div>
+<div class='block-container dark'>
+  <div class='block full'>
+    <div class='imgur-container'>
+      <div class='logo-blocker'></div>
+      <div class='download-blocker'></div>
+      <div class='image-blocker'></div>
+      <iframe class='imgur-album' frameborder='0' height='550' src='{{ contents.galleries.first.link }}/embed?background=373737&amp;text=ffffff&amp;link=FFFFFF' width='100%'></iframe>
+    </div>
+  </div>
+</div>
+{% endblock %}

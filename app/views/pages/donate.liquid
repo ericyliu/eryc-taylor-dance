@@ -1,0 +1,106 @@
+---
+title: Donate
+slug: donate
+listed: true
+published: true
+cache_strategy: none
+response_type: text/html
+position: 5
+editable_elements:
+  main/donation_message: "<div class='text'>Eryc Taylor Dance, Inc. is a New York
+    not-for-profit corporation that is exempt from federal taxation. Contributions
+    in support of Eryc Taylor's work are fully tax-deductible and greatly appreciated!
+    Your name will also appear in the list of contributors below!</div>"
+  main/paypal_message: "<div class='text'>You can contribute through paypal at the
+    link below:</div>"
+  main/check_message: "<div class='text'>You can also pay by check. Please make check
+    payable to <br> Eryc Taylor Dance, Inc. <br> and send to:<br><br> Eryc Taylor
+    Dance <br> 450 West 42nd Street <br> New York City, New York 10036</div>"
+---
+{% extends default %}
+{% block main %}
+<div class='block-container dark'>
+  <div class='block full'>
+    <div class='title'>CONTRIBUTE</div>
+    {% editable_text "donation_message" %}
+    <div class='text'>Eryc Taylor Dance, Inc. is a New York not-for-profit corporation that is exempt from federal taxation. Contributions in support of Eryc Taylor's work are fully tax-deductible and greatly appreciated! Your name will also appear in the list of contributors below!</div>
+    {% endeditable_text %}
+  </div>
+</div>
+<div class='block-container light'>
+  <div class='block full'>
+    <div class='title'>Online</div>
+    {% editable_text "paypal_message" %}
+    <div class='text'>You can contribute through paypal at the link below:</div>
+    {% endeditable_text %}
+    <form action='https://www.paypal.com/cgi-bin/webscr' class='link' method='post' target='_top'>
+      <input name='cmd' type='hidden' value='_donations'>
+        <input name='business' type='hidden' value='eryc@eryctyalordance.com'>
+          <input name='lc' type='hidden' value='US'>
+            <input name='item_name' type='hidden' value='Eryc Taylor Dance'>
+              <input name='no_note' type='hidden' value='0'>
+                <input name='currency_code' type='hidden' value='USD'>
+                  <input name='bn' type='hidden' value='PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest'>
+                    <input alt='PayPal - The safer, easier way to pay online!' border='0' name='submit' src='https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif' type='image'>
+                      <img alt='' border='0' height='1' src='https://www.paypalobjects.com/en_US/i/scr/pixel.gif' width='1'>
+                    </input>
+                  </input>
+                </input>
+              </input>
+            </input>
+          </input>
+        </input>
+      </input>
+    </form>
+  </div>
+</div>
+<div class='block-container dark'>
+  <div class='block full'>
+    <div class='title'>Perks</div>
+    <div class='perks-container'>
+      {% for perk in contents.perks %}
+      <div class='perk'>
+        <div class='overlay' style="background-image: url('{{perk.image.url }}')">
+          <div class='title'>${{ perk.amount }}</div>
+        </div>
+        <div class='name title'>{{ perk.name }}</div>
+        <div class='amount'>${{ perk.amount }}</div>
+        <div class='description'>{{ perk.description }}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<div class='block-container dark'>
+  <div class='block full'>
+    <div class='title'>By Check</div>
+    {% editable_text "check_message" %}
+    <div class='text'>You can also pay by check. Please make check payable to <br> Eryc Taylor Dance, Inc. <br> and send to:<br><br> Eryc Taylor Dance <br> 450 West 42nd Street <br> New York City, New York 10036</div>
+    {% endeditable_text %}
+  </div>
+</div>
+<div class='block-container light'>
+  <div class='block full'>
+    <div class='title'>Supporters</div>
+    <div class='supporter-list'>
+      {% for supporter in contents.supporters %}
+      {% if supporter.importance == "Primary" %}
+      <div class='supporter'>{{ supporter.name | escape }}</div>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<div class='block-container dark'>
+  <div class='block full'>
+    <div class='title'>Contributors</div>
+    <div class='supporter-list'>
+      {% for supporter in contents.supporters %}
+      {% if supporter.importance == "Secondary" %}
+      <div class='supporter'>{{ supporter.name | escape }}</div>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,59 @@
+---
+title: Press
+slug: press
+listed: true
+published: true
+cache_strategy: none
+response_type: text/html
+position: 3
+editable_elements:
+  main/booking_message: "<p>&nbsp;</p>\r\n<p>Eryc Taylor Dance is fully booked for
+    the Fall Season. Please inquire about 2016 or collaborations by clicking below.</p>"
+---
+{% extends default %}
+{% block main %}
+<div class='block-container dark'>
+  <div class='block full'>
+    <div class='title'>News and Reviews</div>
+    <div class='articles-container'>
+      {% for article in contents.articles limit: 5 %}
+      <div class='article' id='index-{{ forloop.index }}'>
+        <img src='{{ article.image.url }}'>
+        <div class='name'>{{ article.name }}</div>
+        {% if article.source == "external" %}
+        <a href='{{ article.link }}'></a>
+        {% else %}
+        <a href='/articles/{{ article._slug }}'></a>
+        {% endif %}
+      </div>
+      {% endfor %}
+      <script>
+        $(document).ready(function() {
+          if (window.innerWidth > 640) {
+            var container = $('.articles-container');
+            var width = container.width()/5;
+            var height = width
+            container.height(2*height);
+            articles = $('.article');
+            $(articles[0]).css({ height: 2*height, width: 2*width })
+            $(articles[1]).css({ height: height, width: 2*width, left: 2*width });
+            $(articles[2]).css({ height: height, width: width, left: 4*width });
+            $(articles[3]).css({ height: height, width: width, left: 2*width, top: height })
+            $(articles[4]).css({ height: height, width: 2*width, left: 3*width, top: height })
+          }
+        })
+      </script>
+    </div>
+    <a class='link' href='press/reviews'>See More</a>
+  </div>
+</div>
+<div class='block-container light'>
+  <div class='block full'>
+    <div class='title'>Book Us</div>
+    {% editable_text "booking_message", hint: "Information on how to book Eryc Taylor Dance." %}
+    <div class='text'>Here is some info on how to book us. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu.</div>
+    {% endeditable_text %}
+    <a class='link' href='/contact'>Get in Touch</a>
+  </div>
+</div>
+{% endblock %}

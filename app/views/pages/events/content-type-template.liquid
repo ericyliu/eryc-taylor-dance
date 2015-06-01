@@ -1,0 +1,42 @@
+---
+title: Events Template
+slug: content_type_template
+listed: false
+published: true
+cache_strategy: none
+response_type: text/html
+position: 1
+content_type: events
+---
+{% extends default %}
+{% block main %}
+<div class='block-container dark'>
+  <div class='block full'>
+    <div class='title'>{{ event.name }}</div>
+    {% if event.start_time != undefined %}
+    {% if event.end_time != undefined %}
+    <div class='text'>{{ event.date | localized_date: '%B %d, %Y' }} - {{ event.start_time }} to {{ event.end_time }}</div>
+    {% else %}
+    <div class='text'>{{ event.date | localized_date: '%B %d, %Y' }} - {{ event.start_time }}</div>
+    {% endif %}
+    {% else %}
+    <div class='text'>{{ event.date | localized_date: '%B %d, %Y' }}</div>
+    {% endif %}
+    {% if event.location != undefined %}
+    <div class='text'>{{ event.location }}</div>
+    {% endif %}
+  </div>
+</div>
+{% if event.description %}
+<div class='block-container light'>
+  <div class='block full'>
+    <div class='text'>{{ event.description }}</div>
+  </div>
+</div>
+{% endif %}
+{% if event.location_link %}
+<div class='block-container dark'>
+  <iframe class='googlemap' frameborder='0' height='450' src='https://www.google.com/maps/embed/v1/place?key=AIzaSyCzDWT5UsVx2JlZG6ykzfDqxesZ8aW6hPo&amp;q={{ event.location_link }}' style='border:0' width='600'></iframe>
+</div>
+{% endif %}
+{% endblock %}

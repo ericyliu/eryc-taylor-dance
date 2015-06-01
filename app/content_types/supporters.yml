@@ -4,19 +4,29 @@ description: Supporters
 slug: supporters
 label_field_name: name
 order_by: manually
+order_direction: asc
 fields:
 - name:
     label: Name
     type: string
     hint: Name of the supporter
     required: true
+    unique: false
+    localized: false
 - importance:
     label: Importance
     type: select
     hint: What group of contributers supporter belongs to
-    select_options: ["Primary", "Secondary"]
     required: true
+    unique: false
+    localized: false
+    select_options:
+    - Primary
+    - Secondary
 - amount:
     label: Amount
     type: float
     hint: Amount the supporter has contributed
+    required: false
+    unique: false
+    localized: false

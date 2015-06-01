@@ -1,30 +1,88 @@
 ---
 - Dancing With Light:
-    _slug: dancing-with-light
-    link: "http://www.huffingtonpost.com/chuck-gomez/dancing-with-light-eryc-t_b_4949630.html"
-    image: "/samples/images/image1.jpg"
-    source: "external"
-- Dancing With Darkness:
-    _slug: dancing-with-dark
-    link: "http://www.huffingtonpost.com/chuck-gomez/dancing-with-light-eryc-t_b_4949630.html"
-    image: "/samples/images/image2.jpg"
-    source: "external"
-    quote: "Blah blahblahdfajsdlk"
-    author: "Eric Liu"
-- Dancing With A Little Light:
-    _slug: dancing-with-littlelight
-    link: "http://www.huffingtonpost.com/chuck-gomez/dancing-with-light-eryc-t_b_4949630.html"
-    image: "/samples/images/image3.jpg"
-    source: "external"
-- Sample Internal Article:
-    _slug: sample-internal-article
-    image: "/samples/images/image1.jpg"
-    source: "internal"
-    date: 3/9/2015
-    content: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. <br><br> In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. <br><br> Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
-- Sample Internal Article 2:
-    _slug: sample-internal-article-2
-    image: "/samples/images/image2.jpg"
-    source: "internal"
-    content: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. <br><br> In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. <br><br> Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
-
+    _slug: eryc-taylor-dance-ny-times
+    image: "/samples/articles/eryc-taylor-dance-ny-times/newmain.jpg"
+    source: external
+    link: http://www.huffingtonpost.com/chuck-gomez/dancing-with-light-eryc-t_b_4949630.html
+    content: ''
+    quote: One leaves the performance ingivorated in an almost spiritual way.
+    author: The Huffington Post
+- Eryc's Trip to Cuba:
+    _slug: sample-internal-articl
+    image: "/samples/articles/sample-internal-articl/FullSizeRender_1.jpg"
+    source: internal
+    content: "<img src=\"http://i.imgur.com/ls2qvaB.jpg\" width=\"45%\"><br></br>\r\n\r\nI
+      sensed the slow progressive change happening in Havana. I stayed at a Casa Particular
+      (our version of a B&B owned by a lesbian couple) and much better than a hotel.
+      I got the real deal experience. Private business though is a very new evolution
+      that the government is slowly allowing. I was so happy to be immersed in Cuban
+      life. The family who hosted me and the people I met explained how positive they
+      feel about US/Cuba relations improving. Just to put things in perspective though
+      they still have food rations and from what I was told the average salary in
+      Cuba is $25-$50 a month. There is very little access to WiFi, credit cards,
+      ATM machines all the stuff we take for granted. It actually felt great to be
+      disconnected from all of \"that\" and can't wait to go back.\r\n\r\n"
+    date: 05/13/2015
+- Pushing Boundaries:
+    _slug: fleeting-liason
+    image: "/samples/articles/fleeting-liason/2013111505213830__MG_9439.jpg"
+    source: external
+    link: http://www.idanzcritixcorner.com/2010/11/dance-review-eryc-taylor-dance-pushing.html
+    content: ''
+    quote: 'Eryc Taylor Dance wraps up an amazing sold-out run at Joyce SoHo in Spectacular
+      fashion. With excitement, grace, power, and beauty, this is a company to watch.                     '
+    author: iDanz
+- ETD @ Ailey Citigroup:
+    _slug: eryc-taylor-dance-at-ailey-citigroup
+    image: "/samples/articles/eryc-taylor-dance-at-ailey-citigroup/2013112706594230_Gierre-Godley.jpg"
+    source: external
+    link: http://oberon481.typepad.com/oberons_grove/2009/10/eryc-taylor-dance-ailey-citigroup.html
+    content: ''
+    quote: 'A strikingly daring and risky performance...well constructed, impressive
+      show.              '
+    author: Oberon's Grove
+- The International Dance Festival Avant Garde 2015:
+    _slug: the-international-dance-festival-avant-garde-2015
+    image: "/samples/articles/the-international-dance-festival-avant-garde-2015/2013111803532630_1808_DG_Eryc_Taylor_120_CV.jpg"
+    source: internal
+    content: We are incredibly excited and honored to announce that Eryc Taylor Dance
+      has been invited to perform at the The International Dance Festival Avant Garde
+      in Yucatan, Mexico. The festival will take place from September 25th - 27th,
+      2015. More updates and information coming soon!
+- Second 6-month Residency At PGCMH!:
+    _slug: second-6-month-residency-at-pgcmg
+    image: "/samples/articles/second-6-month-residency-at-pgcmg/2013111803470430_1808_DG_Eryc_Taylor_001_CV.jpg"
+    source: internal
+    content: Eryc Taylor Dance is happy to announce that the Post Graduate Center
+      for Mental Health has signed another 6-Month contract with us to teach dance
+      workshops and therapy. We are incredibly excited to share our Movement Expressions
+      and Breath &amp; Energy classes with them.
+- New Choreography Grant Recipients Announced:
+    _slug: new-choreography-grant-recipients-announced
+    image: "/samples/articles/new-choreography-grant-recipients-announced/2013111803524830_1808_DG_Eryc_Taylor_101_CV.jpg"
+    source: internal
+    content: "Congratulations to Ana Sosa, Daniel Holt, and Eryn Renee Young for  receiving
+      this years Eryc Taylor Dance New Choreography Grant! \r\n\r\n Join us at their
+      open studio showing in November 15th at the Martha Graham Center for Contemporary
+      Dance at 55 Bethune Street, New York, NY 10014. Doors will open at 6:30 PM for
+      a 7:00 PM show. $20.00 suggested donation."
+- Postgraduate Center For Mental Health:
+    _slug: postgraduate-center-for-mental-health
+    image: "/samples/articles/postgraduate-center-for-mental-health/2013111803594330_1808_DG_Eryc_Taylor_365_CV.jpg"
+    source: internal
+    content: Eryc Taylor Dance will being teaching three types of classes to PGCMH
+      clients starting in April, 2014. These classes include Movement Expression,
+      Stretch &amp; Flow, and Will, Power &amp; Strength.
+- Huffington Post Article:
+    _slug: huffington-post-article
+    image: "/samples/articles/huffington-post-article/2013122203475531_1808_353_CV.jpg"
+    source: internal
+    content: 'Check out this article about the Eryc Taylor and Jason Levine collaboration! '
+- Reading Dance:
+    _slug: reading-dance
+    image: "/samples/articles/reading-dance/2013111803594330_1808_DG_Eryc_Taylor_365_CV.jpg"
+    source: external
+    content: ''
+    quote: A sophisticated vision that's hard to dismiss...naturally commanding our
+      attention from the start.
+    author: ReadingDance.com

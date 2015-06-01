@@ -1,0 +1,12 @@
+.contact .contact-block {
+  padding-top: 40px; }
+  .contact .contact-block textarea {
+    height: 300px; }
+  .contact .contact-block .errors {
+    text-align: center;
+    margin-bottom: 40px;
+    color: red; }
+  .contact .contact-block .success {
+    text-align: center;
+    margin-bottom: 40px;
+    color: white; }

@@ -1,0 +1,19 @@
+@media screen and (max-width: 640px) {
+  .block-container .block .perks-container {
+    width: auto; }
+    .block-container .block .perks-container .perk {
+      display: block;
+      height: auto;
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 15px; }
+      .block-container .block .perks-container .perk .overlay {
+        display: none; }
+      .block-container .block .perks-container .perk .description {
+        padding-bottom: 20px; }
+  .block-container .block .supporter-list {
+    width: 80%;
+    margin: 0 auto; }
+    .block-container .block .supporter-list .supporter {
+      width: 100%;
+      font-size: 0.8em; } }

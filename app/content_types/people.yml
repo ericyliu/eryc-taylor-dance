@@ -4,26 +4,46 @@ description: People
 slug: people
 label_field_name: name
 order_by: manually
+order_direction: asc
 fields:
 - name:
     label: Name
     type: string
     hint: Name of the person
     required: true
+    unique: false
+    localized: false
 - role:
     label: Role
     type: select
     hint: Role of the person
-    select_options: ["Dancer","PastDancer","Collaborator","Board","Staff"]
+    required: false
+    unique: false
+    localized: false
+    select_options:
+    - Dancer
+    - PastDancer
+    - Board
+    - Collaborator
+    - Staff
 - picture:
     label: Picture
     type: file
     hint: Picture of the person
+    required: false
+    unique: false
+    localized: false
 - bio:
     label: Biography
     type: text
     hint: Description of the person
+    required: false
+    unique: false
+    localized: false
 - position:
     label: position
     type: string
     hint: Position of the person
+    required: false
+    unique: false
+    localized: false

@@ -1,0 +1,92 @@
+---
+title: About
+slug: about
+listed: true
+published: true
+cache_strategy: none
+response_type: text/html
+position: 2
+editable_elements:
+  main/mission_message: "<div class='text small'>Eryc Taylor Dance, Inc. is a New
+    York City based not-for-profit corporation with a mission to advance appreciation
+    of dance and educate the public about dance by creating and presenting original
+    performances, conducting master classes and workshops, and making grants to aspiring
+    choreographers.</div>\r\n    <div class='text small'>ETD's choreography seeks
+    to find, explore and execute new points of view and combine varied styles of dance
+    on and off pointe. The work displays a fierce desire to attain a bold physicality
+    that strips away the movement to its essential core, and has a strength, energy
+    and drama that carries its own. The structures of the dance deal with underlying
+    impulses that reveal one's psyche creating a sense of bold honesty.</div>\r\n
+    \   <div class='text small'>ETD also strives to stay ahead of the curve, collaborating
+    with digital artists and unique composers, to fuse the new age of technology with
+    the classical compositions of music and dance. Specifically, ETD specializes in
+    mapping and light projections, to create ethereal extensions of the dancers and
+    stimulate the visual senses with grandiose illuminations.</div>"
+  main/people_message: <div class="text">ETD's strength tems from its incredibly talented
+    and passionate dancers. Since it's inception, Eryc Taylor Dance has been the home
+    to over twenty New York City dancers. We hope to continue to grow that family.</div>
+---
+{% extends default %}
+{% block main %}
+<div class='block-container dark'>
+  <div class='block full'>
+    <div class='title'>About Us</div>
+  </div>
+</div>
+<div class='block-container light'>
+  <div class='block full'>
+    {% editable_text "mission_message", hint: "Message for the mission of Eryc Taylor Dance" %}
+    <div class='text small'>Eryc Taylor Dance, Inc. is a New York City based not-for-profit corporation with a mission to advance appreciation of dance and educate the public about dance by creating and presenting original performances, conducting master classes and workshops, and making grants to aspiring choreographers.</div>
+    <div class='text small'>ETD's choreography seeks to find, explore and execute new points of view and combine varied styles of dance on and off pointe. The work displays a fierce desire to attain a bold physicality that strips away the movement to its essential core, and has a strength, energy and drama that carries its own. The structures of the dance deal with underlying impulses that reveal one's psyche creating a sense of bold honesty.</div>
+    <div class='text small'>ETD also strives to stay ahead of the curve, collaborating with digital artists and unique composers, to fuse the new age of technology with the classical compositions of music and dance. Specifically, ETD specializes in mapping and light projections, to create ethereal extensions of the dancers and stimulate the visual senses with grandiose illuminations.</div>
+    {% endeditable_text %}
+  </div>
+</div>
+{% assign eryc = contents.people.first %}
+<div class='block-container dark'>
+  <div class='block full'>
+    <div class='profile'>
+      <img src='{{ eryc.picture.url }}'>
+      <div class='info-container'>
+        <div class='name'>{{ eryc.name }}</div>
+        <div class='role'>{{ eryc.position }}</div>
+        <div class='bio'>{{ eryc.bio }}</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class='block-container light'>
+  <div class='block full'>
+    <div class='title'>The People</div>
+    {% editable_text "people_message", hint: "Message about the people at Eryc Taylor Dance" %}
+    <div class='text'>This is going to be something cheesy about how our people are special and great blah blah blah. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et</div>
+    {% endeditable_text %}
+    <a class='link' href='about/company'>Meet The Group</a>
+  </div>
+</div>
+<div class='block-container dark'>
+  <div class='block full'>
+    <div class='title'>Galleries</div>
+    <div class='galleries-container'>
+      {% for gallery in contents.galleries limit: 9 %}
+      <div class='gallery'>
+        <img src='{{ gallery.cover.url }}'>
+        <a class='overlay' href='/galleries/{{ gallery._slug}}'></a>
+        <a class='name' href='/galleries/{{ gallery._slug}}'>{{ gallery.name | escape }}</a>
+      </div>
+      {% endfor %}
+      <script>
+        $(document).ready(function() {
+          var container = $('.galleries-container');
+          var size = container.width()/3-5;
+          galleries = $('.gallery');
+          for (i=0; i<galleries.length; i++) {
+            $(galleries[i]).css({ height: size, width: size });
+          }
+        })
+      </script>
+    </div>
+    <a class='link' href='about/media'>See More Galleries</a>
+  </div>
+</div>
+{% endblock %}

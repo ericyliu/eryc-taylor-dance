@@ -1,0 +1,44 @@
+.galleries .video-popup {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 30;
+  top: 0%; }
+  .galleries .video-popup .overlay {
+    position: absolute;
+    background-color: black;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%; }
+  .galleries .video-popup .frame-container {
+    position: fixed;
+    width: 700px;
+    height: 500px;
+    border: 15px solid lightgrey;
+    top: 20%;
+    border-radius: 10px;
+    background-color: black;
+    margin: 0 auto;
+    left: 0;
+    right: 0; }
+    .galleries .video-popup .frame-container iframe {
+      width: 100%;
+      height: 100%; }
+    .galleries .video-popup .frame-container .close {
+      position: absolute;
+      background-image: url("https://eryc-taylor-dance.s3.amazonaws.com/sites/54d874516e84c0dc00000002/theme/images/fancybox_sprite.png?1425767919");
+      cursor: pointer;
+      top: -30px;
+      right: -30px;
+      width: 36px;
+      height: 36px;
+      z-index: 31; }
+  .galleries .video-popup .notice {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-size: 16px;
+    font-size: 0.8em; }

@@ -4,41 +4,61 @@ description: Galleries
 slug: galleries
 label_field_name: name
 order_by: manually
+order_direction: asc
 fields:
 - name:
     label: Name
     type: string
     hint: Name of gallery
     required: true
+    unique: false
+    localized: false
 - link:
     label: Imgur Link
     type: string
     hint: Link to Imgur gallery
     required: true
+    unique: false
+    localized: false
 - cover:
     label: Cover Photo
     type: file
     hint: Cover photo for the gallery
     required: true
+    unique: false
+    localized: false
 - year:
     label: Year
     type: string
     hint: Year for gallery
     required: false
+    unique: false
+    localized: false
 - dancer:
     label: Dancer
     type: string
     hint: Dancers in the gallery
+    required: false
+    unique: false
+    localized: false
 - music:
     label: Music
     type: string
     hint: Music for the gallery
+    required: false
+    unique: false
+    localized: false
 - photographer:
     label: Photographer
     type: string
     hint: Photographer for the gallery
+    required: false
+    unique: false
+    localized: false
 - background:
     label: Background
     type: string
     hint: Background information for this gallery
-    
+    required: false
+    unique: false
+    localized: false

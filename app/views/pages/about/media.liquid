@@ -1,0 +1,69 @@
+---
+title: Media
+slug: media
+listed: true
+published: true
+cache_strategy: none
+response_type: text/html
+position: 2
+---
+{% extends default %}
+{% block main %}
+<div class='block-container dark'>
+  <div class='block full'>
+    <div class='title'>PHOTOS</div>
+    <div class='galleries-container'>
+      {% for gallery in contents.galleries %}
+      <div class='gallery'>
+        <img src='{{ gallery.cover.url }}'>
+        <a class='overlay' href='/galleries/{{ gallery._slug}}'></a>
+        <a class='name' href='/galleries/{{ gallery._slug}}'>{{ gallery.name | escape }}</a>
+      </div>
+      {% endfor %}
+      <script>
+        $(document).ready(function() {
+          var container = $('.galleries-container');
+          var size = container.width()/3-5;
+          galleries = $('.gallery');
+          for (i=0; i<galleries.length; i++) {
+            $(galleries[i]).css({ height: size, width: size });
+          }
+        })
+      </script>
+    </div>
+  </div>
+</div>
+<div class='block-container light'>
+  <div class='block full'>
+    <div class='title'>VIDEOS</div>
+    <div class='galleries-container'>
+      {% for video in contents.videos %}
+      <div class='gallery'>
+        <img src='{{ video.cover.url }}'>
+        <a class='overlay' onclick='openVideo("{{ video.embed }}")'></a>
+        <a class='name' onclick='openVideo("{{ video.embed }}")'>{{ video.name | escape }}</a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<div class='video-popup' style='display:none;'>
+  <div class='overlay'></div>
+  <div class='frame-container'>
+    <div class='close' onclick='closeVideo()'></div>
+  </div>
+  <div class='notice'>Press anywhere to close</div>
+  <script>
+    function openVideo(embed) {
+      console.log("opening");
+      $('.frame-container').append('<iframe src="https://www.youtube.com/embed/' + embed + '?autoplay=1" frameborder="0" allowfullscreen></iframe>')
+      $('.video-popup').show();
+    }
+    
+    function closeVideo() {
+      $('.frame-container iframe').remove();
+      $('.video-popup').hide();
+    }
+  </script>
+</div>
+{% endblock %}

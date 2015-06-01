@@ -1,0 +1,5 @@
+@media screen and (max-width: 640px) {
+  .contact .contact-block input, .contact .contact-block textarea {
+    width: 70%; }
+  .contact .block .text {
+    max-width: none; } }

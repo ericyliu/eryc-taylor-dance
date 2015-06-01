@@ -1,0 +1,25 @@
+---
+title: Articles Template
+slug: content_type_template
+listed: false
+published: true
+cache_strategy: none
+response_type: text/html
+position: 1
+content_type: articles
+---
+{% extends default %}
+{% block main %}
+<div class='block-container light'>
+  <div class='block full'>
+    <div class='article'>
+      <div class='title'>{{ article.name }}</div>
+      <div class='image' style="background-image: url('{{ article.image.url}} ')"></div>
+      <div class='text'>{{ article.content }}</div>
+      {% if article.date != undefined %}
+      <div class='date'>Posted On: {{ article.date | localized_date: '%B %d %Y' }}</div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endblock %}

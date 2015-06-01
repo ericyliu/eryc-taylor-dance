@@ -4,23 +4,33 @@ description: Perks
 slug: perks
 label_field_name: name
 order_by: manually
+order_direction: asc
 fields:
 - name:
     label: Name
     type: string
     hint: Name of the perk
     required: true
+    unique: false
+    localized: false
 - amount:
     label: Amount
     type: integer
     hint: Amount required to donate to achieve perk
     required: true
+    unique: false
+    localized: false
 - image:
     label: Image
     type: file
     hint: Image of the perk
+    required: false
+    unique: false
+    localized: false
 - description:
     label: Description
     type: text
     hint: Description of the perk
-
+    required: false
+    unique: false
+    localized: false

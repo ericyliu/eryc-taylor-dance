@@ -1,0 +1,49 @@
+---
+title: Events
+slug: events
+listed: true
+published: true
+cache_strategy: none
+response_type: text/html
+position: 1
+---
+{% extends default %}
+{% block main %}
+<div class='block-container light'>
+  <div class='block full'>
+    <div class='title'>UPCOMING EVENTS</div>
+    {% for event in contents.events %}
+    {% if event.date > today %}
+    <div class='event-block'>
+      <div class='name'>{{ event.name | escape }}</div>
+      <div class='date-time'>
+        <div class='date'>Date: {{ event.date | localized_date: '%B %d %Y' }}</div>
+        {% if event.start_time != undefined %}
+        {% if event.end_time != undefined %}
+        <div class='time'>Time: {{ event.start_time }} - {{ event.end_time }}</div>
+        {% else %}
+        <div class='time'>Time: {{ event.start_time }}</div>
+        {% endif %}
+        {% endif %}
+      </div>
+      <div class='description'>{{ event.description | escape }}</div>
+      <a class='link' href='/events/{{ event._slug }}'>Click for more information</a>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+</div>
+<div class='block-container dark'>
+  <div class='block full'>
+    <div class='title'>PAST EVENTS</div>
+    {% for event in contents.events reversed %}
+    {% if event.date < today %}
+    <div class='event-block past'>
+      <a class='name' href='/events/{{ event._slug }}'>{{ event.name | escape }}</a>
+      <div class='date'>Date: {{ event.date | localized_date: '%B %d %Y' }}</div>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,67 @@
+body {
+  font-family: "PT Sans", sans-serif;
+  text-rendering: optimizeLegibility;
+  font-smooth: always;
+  font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  background-color: white;
+  color: black;
+  font-size: 20px; }
+
+a {
+  color: black;
+  text-decoration: none; }
+  a:hover {
+    color: #b7b7b7;
+    text-decoration: none;
+    text-shadow: 0.05em 0.05em 0.2em white;
+    cursor: pointer; }
+
+@viewport {
+  zoom: 1;
+  width: device-width; }
+
+@-ms-viewport {
+  zoom: 1;
+  width: device-width; }
+
+main {
+  margin-top: 40px;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  margin: 0 auto;
+  z-index: 15;
+  min-height: 100vh; }
+  main .block-container:last-child {
+    border-bottom: 1px solid; }
+
+.social-media a.icon:hover {
+  text-shadow: none; }
+
+input.dark, textarea.dark {
+  display: block;
+  padding: 7px;
+  width: 500px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  border: 1px solid white;
+  background-color: #373737;
+  color: white; }
+  input.dark:hover, input.dark:focus, textarea.dark:hover, textarea.dark:focus {
+    border: 1px solid lightblue;
+    box-shadow: 0 0 20px lightblue; }
+
+.button {
+  margin-top: 40px;
+  width: 200px;
+  text-transform: uppercase;
+  background-color: #373737;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer; }
+  .button:hover {
+    background-color: white;
+    color: black; }

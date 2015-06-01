@@ -1,0 +1,93 @@
+---
+title: Programs
+slug: programs
+listed: true
+published: true
+cache_strategy: none
+response_type: text/html
+position: 4
+editable_elements:
+  main/grant_message: <div class="text">Every year, Eryc Taylor Dance provides three
+    emerging New York City based choreographers with $1000 grants to fund the creation
+    of a new piece. At the end of three months, ETD produces and hosts a work in progress
+    show featuring the new works of the three grant recipients!</div>
+  main/workshop_message: <div class="text">Eryc Taylor Dance hosts an annual summer
+    intensive workshop in which ETD dancers teach Eryc's repitoire as well as improve
+    techniques, managing space, movement, and much more. ETD also hosts workshops
+    throughout the year ranging from classical to Jamaican dancehall. See below!</div>
+  main/job_message: <div class="text">ETD is always looking for new and passionate
+    talent, from pointe dancers to web design.</div>
+---
+{% extends default %}
+{% block main %}
+<div class='block-container dark'>
+  <div class='block full'>
+    <div class='title'>Our Programs</div>
+    <div class='program-buttons'>
+      <a class='button program grants' href='/programs/#grants'>Grants</a>
+      <a class='button program workshops' href='/programs/#workshops'>Workshops</a>
+      <a class='button program jobs' href='/programs/#jobs'>Jobs/Internships</a>
+    </div>
+  </div>
+</div>
+<a name='grants'></a>
+<div class='block-container light'>
+  <div class='block full'>
+    <div class='title'>Grant</div>
+    {% editable_text "grant_message" %}
+    <div class='text'>Blurb describing the general idea of your grants. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent purus ex, scelerisque ut ullamcorper vitae, efficitur a diam.</div>
+    {% endeditable_text %}
+    <div class='program-list' id='grantsid'>
+      {% for program in contents.programs %}
+      {% if program.type == "Grant" %}
+      <a class='program' href='/programs/{{ program._slug }}'>{{ program.name }}</a>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<a name='workshops'></a>
+<div class='block-container dark'>
+  <div class='block full'>
+    <div class='title'>Workshops</div>
+    {% editable_text "workshop_message" %}
+    <div class='text'>Blurb describing the general idea of your workshops. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent purus ex, scelerisque ut ullamcorper vitae, efficitur a diam.</div>
+    {% endeditable_text %}
+    <a class='program-list-title' onclick="toggleProgramList('#workshopsid')">Available Workshops +</a>
+    <div class='program-list' id='workshopsid' style='display: none;'>
+      {% for program in contents.programs %}
+      {% if program.type == "Workshop" %}
+      <a class='program' href='/programs/{{ program._slug }}'>{{ program.name }}</a>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<a name='jobs'></a>
+<div class='block-container light'>
+  <div class='block full'>
+    <div class='title'>Jobs & Internships</div>
+    {% editable_text "job_message" %}
+    <div class='text'>Blurb describing the general idea of your jobs and internships. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent purus ex, scelerisque ut ullamcorper vitae, efficitur a diam.</div>
+    {% endeditable_text %}
+    <a class='program-list-title' onclick="toggleProgramList('#jobsid')">Available Jobs and Internships +</a>
+    <div class='program-list' id='jobsid' style='display: none;'>
+      {% for program in contents.programs %}
+      {% if program.type == "Job" %}
+      <a class='program' href='/programs/{{ program._slug }}'>{{ program.name }}</a>
+      {% endif %}
+      {% if program.type == "Internship" %}
+      <a class='program' href='/programs/{{ program._slug }}'>{{ program.name }}</a>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<script>
+  function toggleProgramList(id) {
+    console.log(id);
+    if ($(id).css("display") == "none") $(id).slideDown(300);
+    else $(id).slideUp(300);
+  }
+</script>
+{% endblock %}

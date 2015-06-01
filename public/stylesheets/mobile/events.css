@@ -1,0 +1,26 @@
+@media screen and (max-width: 640px) {
+  main .block .event-block {
+    margin: 0 10px;
+    padding-bottom: 40px; }
+    main .block .event-block .name {
+      font-size: 1.2em;
+      padding-bottom: 20px; }
+    main .block .event-block .date, main .block .event-block .time, main .block .event-block .description {
+      text-align: center; }
+    main .block .event-block .date-time {
+      padding-bottom: 20px; }
+      main .block .event-block .date-time .date, main .block .event-block .date-time .time {
+        font-size: 0.7em; }
+    main .block .event-block .description {
+      font-size: 0.9em;
+      margin: 0 35px;
+      padding-bottom: 10px; }
+    main .block .event-block.past .name {
+      text-align: left;
+      display: block;
+      width: 100%;
+      padding: 0;
+      font-size: 1em; }
+    main .block .event-block.past .date {
+      font-size: 0.7em;
+      padding-bottom: 20px; } }

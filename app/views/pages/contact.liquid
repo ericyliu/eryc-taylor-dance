@@ -1,0 +1,59 @@
+---
+title: Contact
+slug: contact
+listed: false
+published: true
+cache_strategy: none
+response_type: text/html
+position: 1
+---
+{% extends default %}
+{% block main %}
+<div class='block-container dark'>
+  <div class='block full'>
+    <div class='title'>Talk To Us</div>
+    <div class='contact-block'>
+      <form action='{{ contents.contact_submissions.public_submission_url}}' method='POST'>
+        {% csrf_param %}
+        <input name='success_callback' type='hidden' value='/contact'>
+        <input name='error_callback' type='hidden' value='/contact'>
+        {% if contact_submission.errors %}
+        {% if contact_submission.errors.size > 0 %}
+        <div class='errors'>
+          <p>The following errors occured:</p>
+          <ul>
+            {% for error in contact_submission.errors %}
+            <li>{{ error[0] | capitalize }} -  {{error[1]}}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% else %}
+        <div class='success'>
+          <p>Your message was sent successfully!</p>
+        </div>
+        {% endif %}
+        {% endif %}
+        <input class='dark' name='content[name]' placeholder='Name' type='text' value='{{ contact_submission.name }}'>
+        <input class='dark' name='content[email]' placeholder='Email' type='text' value='{{ contact_submission.email }}'>
+        <textarea class='dark' name='content[message]' placeholder='Please enter your message and any relevant contact information here.'>{{ contact_submission.message }}</textarea>
+        <input class='dark button' type='submit' value='Send'>
+      </form>
+    </div>
+  </div>
+</div>
+<div class='block-container light'>
+  <div class='block full'>
+    <div class='title'>Contact Us</div>
+    <div class='text'>
+      <a href='mailto:andrew@eryctaylordance.com'>andrew@eryctaylordance.com</a>
+    </div>
+    <div class='text'>(475)235-1268</div>
+  </div>
+</div>
+<div class='block-container dark'>
+  <div class='block full'>
+    <div class='title'>Find Us</div>
+    <div class='text address'>ERYC TAYLOR DANCE<br>450 42ND ST<br>NEW YORK CITY, NY<br>10036</div>
+  </div>
+</div>
+{% endblock %}

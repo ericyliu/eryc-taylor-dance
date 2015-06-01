@@ -1,0 +1,112 @@
+.header-container {
+  position: fixed;
+  background-color: #373737;
+  opacity: 0.9;
+  width: 100%;
+  z-index: 99; }
+  .header-container .header {
+    display: table;
+    height: 40px;
+    width: 100%;
+    margin: 0 auto; }
+    .header-container .header .logo {
+      display: block;
+      width: 40px;
+      height: 40px;
+      margin: -10px 10px;
+      margin-right: 0px;
+      border-radius: 100px;
+      background-image: url("https://eryc-taylor-dance.s3.amazonaws.com/sites/54d874516e84c0dc00000002/theme/images/logo.jpg?1432770332");
+      background-size: 46px 44px;
+      background-position: -2px -3px;
+      background-repeat: no-repeat; }
+      .header-container .header .logo:hover {
+        border-radius: 100px;
+        box-shadow: 0px 0px 20px 10px white;
+        -webkit-transition: all 0.1s ease-in;
+        -o-transition: all 0.1s ease-in;
+        -moz-transition: all 0.1s ease-in;
+        -ms-transition: all 0.1s ease-in;
+        -kthtml-transition: all 0.1s ease-in;
+        transition: all 0.1s ease-in; }
+      .header-container .header .logo a {
+        display: block;
+        width: 100%;
+        height: 100%; }
+    .header-container .header .icon {
+      color: white;
+      position: absolute;
+      left: 60px;
+      top: 10px; }
+    .header-container .header .title {
+      display: table-cell;
+      color: white;
+      vertical-align: middle;
+      text-transform: uppercase;
+      font-size: 18px;
+      line-height: 20px;
+      padding-left: 20px; }
+    .header-container .header .mobile-dropdown {
+      display: none;
+      color: white;
+      float: right;
+      padding-top: 10px;
+      padding-right: 5px;
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      right: 0; }
+    @media screen and (min-width: 641px) {
+      .header-container .header .links {
+        float: right;
+        padding-right: 30px;
+        display: table-cell;
+        height: 100%;
+        vertical-align: middle;
+        box-sizing: border-box;
+        text-transform: uppercase; }
+        .header-container .header .links .link {
+          position: relative;
+          display: inline-block;
+          list-style-type: none;
+          padding-left: 20px;
+          padding-right: 10px;
+          box-sizing: border-box;
+          border-right: 2px solid transparent;
+          text-align: right;
+          min-width: 100px; }
+          .header-container .header .links .link:hover {
+            background-color: white;
+            border-right: 2px solid white; }
+            .header-container .header .links .link:hover a {
+              color: black; }
+            .header-container .header .links .link:hover ul {
+              display: block; }
+          .header-container .header .links .link a {
+            font-size: 14px;
+            font-size: 0.7em;
+            line-height: 40px;
+            color: white; }
+            .header-container .header .links .link a:hover {
+              color: #b7b7b7;
+              text-decoration: none;
+              text-shadow: 0.05em 0.05em 0.2em white;
+              cursor: pointer; }
+          .header-container .header .links .link ul {
+            position: absolute;
+            right: -2px;
+            display: none;
+            width: 102%;
+            border-right: 2px solid white;
+            box-sizing: border-box;
+            min-width: 100px;
+            background-color: #373737; }
+            .header-container .header .links .link ul .link {
+              float: right;
+              margin-right: 0px;
+              text-align: right; }
+              .header-container .header .links .link ul .link:hover {
+                background-color: rgba(0, 0, 0, 0);
+                border-right: 2px solid #373737; }
+              .header-container .header .links .link ul .link a {
+                color: white; } }

@@ -1,0 +1,29 @@
+---
+title: News
+slug: news
+listed: true
+published: true
+cache_strategy: none
+response_type: text/html
+position: 2
+---
+{% extends default %}
+{% block main %}
+<div class='block-container dark'>
+  <div class='block full'>
+    <div class='title'>News</div>
+  </div>
+</div>
+<div class='article-list'>
+  {% for article in contents.articles %}
+  {% if article.source == "internal" %}
+  <div class='article' style="background-image: url('{{ article.image.url }}')">
+    <div class='overlay'>
+      <a class='tint' href='/articles/{{ article._slug }}'></a>
+      <a class='title' href='/articles/{{ article._slug }}'>{{ article.name }}</a>
+    </div>
+  </div>
+  {% endif %}
+  {% endfor %}
+</div>
+{% endblock %}

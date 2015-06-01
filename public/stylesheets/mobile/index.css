@@ -1,0 +1,42 @@
+@media screen and (max-width: 640px) {
+  body.index main .banner-container .banner {
+    min-width: 0; }
+    body.index main .banner-container .banner .title {
+      font-size: 1.4em; }
+      body.index main .banner-container .banner .title a {
+        display: none; }
+    body.index main .banner-container .banner video {
+      margin-top: 30px; }
+  body.index main .block-container .block {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+    body.index main .block-container .block .left, body.index main .block-container .block .right, body.index main .block-container .block .full {
+      float: none;
+      width: 90%;
+      margin: 0 auto;
+      max-width: none;
+      min-height: 0;
+      display: block;
+      padding: 40px 10px;
+      margin-bottom: 20px; }
+    body.index main .block-container .block .overlay {
+      display: none; }
+    body.index main .block-container .block .title {
+      line-height: 40px;
+      font-size: 1.9em; }
+    body.index main .block-container .block .text {
+      font-size: 1em; }
+    body.index main .block-container .block input.dark {
+      width: auto;
+      margin-top: 20px; }
+    body.index main .block-container .block .event-title {
+      padding-top: 20px; }
+    body.index main .block-container .block .events .event {
+      display: block; }
+      body.index main .block-container .block .events .event .name {
+        display: block;
+        width: 100%; }
+      body.index main .block-container .block .events .event .hint {
+        display: inline; }
+      body.index main .block-container .block .events .event .date {
+        display: block; } }

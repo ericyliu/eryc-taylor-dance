@@ -1,0 +1,31 @@
+---
+title: Reviews
+slug: reviews
+listed: true
+published: true
+cache_strategy: none
+response_type: text/html
+position: 1
+---
+{% extends default %}
+{% block main %}
+<div class='block-container dark'>
+  <div class='block full'>
+    <div class='title'>Reviews</div>
+  </div>
+</div>
+<div class='article-list'>
+  {% for article in contents.articles %}
+  {% if article.source == "external" %}
+  <div class='article' style="background-image: url('{{ article.image.url }}')">
+    <div class='overlay'>
+      <div class='tint'></div>
+      <div class='quote'>"{{ article.quote }}"</div>
+      <div class='author'>- {{ article.author }}</div>
+      <a class='link' href='{{ article.link }}'></a>
+    </div>
+  </div>
+  {% endif %}
+  {% endfor %}
+</div>
+{% endblock %}

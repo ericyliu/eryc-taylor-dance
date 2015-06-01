@@ -2,71 +2,333 @@
 - Eryc Taylor:
     _slug: eryc-taylor
     role: Board
-    picture: "/samples/images/eryctaylor.jpg"
-    position: CEO
-    bio: Eryc Taylor holds a BFA in Dance from the University of the Arts, Philadelphia, Pa., and an MFA in Dance from New York University's Tisch School of the Arts.<br><br>
-      Eryc Taylor has studied abroad at both the London Contemporary School of Dance and the Centre de Danse du Marais in Paris. Taylor has been awarded several major scholarships, including residency at Jacob’s Pillow, and spent two years with the Cunningham Dance Foundation Repertory Understudy Group.<br><br>
-      Taylor has performed works by Merce Cunningham, Mark Dendy, Group Motion, Paul Taylor, Milton Meyers, Sean Curran and Gus Solomons Jr. and has collaborated with artists such as Todd Yeager, Jason Levine, Scooter LaForge and Mark Beard.<br><br>
-      Taylor's choreography has been presented worldwide and he is known for producing sight specific dance installations. He has produced summer dance festivals in Martha’s Vineyard called, "Dance Martha Dance!" His work has also appeared at Lincoln Center Out-of-Doors, Joyce Soho, The Second Avenue Dance Theater, NYU, Dance Theater Workshop, Dance New Amsterdam’s APAP festival, Joe's Pub at The Public Theater, NYC and New York Live Arts.<br><br>
-- Eryc Taylor:
-    _slug: eryc-taylor
+    picture: "/samples/people/eryc-taylor/eryctaylor.jpg"
+    bio: "Eryc Taylor holds a BFA in Dance from the University of the Arts, Philadelphia,
+      Pa, and an MFA in Dance from New York University's Tisch School of the Arts.
+      <br><br>\r\n\r\nEryc Taylor has studied abroad at both the London Contemporary
+      School of Dance and the Centre de Danse du Marais in Paris. Taylor has been
+      awarded several major scholarships, including residency at Jacob’s Pillow, and
+      spent two years with the Cunningham Dance Foundation Repertory Understudy Group.<br><br>\r\n\r\nTaylor
+      has performed works by Merce Cunningham, Mark Dendy, Group Motion, Paul Taylor,
+      Milton Meyers, Sean Curran and Gus Solomons Jr. and has collaborated with artists
+      such as Todd Yeager, Jason Levine, Scooter LaForge and Mark Beard.<br><br>\r\n\r\nTaylor's
+      choreography has been presented worldwide and he is known for producing sight
+      specific dance installations. He has produced summer dance festivals in Martha’s
+      Vineyard called, \"Dance Martha Dance!\" His work has also appeared at Lincoln
+      Center Out-of-Doors, Joyce Soho, The Second Avenue Dance Theater, NYU, Dance
+      Theater Workshop, Dance New Amsterdam’s APAP festival, Joe's Pub at The Public
+      Theater, NYC and New York Live Arts.<br><br>"
+    position: Artistic Director
+- Caroline Brethenoux:
+    _slug: caroline-brethenous
+    role: Dancer
+    picture: "/samples/people/caroline-brethenous/2014102004062931_Caroline_Brethenoux_Headshot.JPG"
+    bio: "Caroline started dancing at the age of 5 years old in France and she has
+      been dancing everywhere her career in advertising has taken her - Hong Kong,
+      Madrid, New York.&nbsp;\r\n\r\nShe has performed with Complutum Contemporary
+      Dance Company and DaDaDanza Project in Spain, collaborated with Projects in
+      Movement and Company Contexte in Paris, and taken part in diverse dance projects
+      in NYC with Eryc Taylor Dance Company, Mare Nostrum Elements Dance Theatre Company,
+      BalaSole Dance Company and independent choreographers as a freelance dancer
+      and choreographer. She is also a certified GYROKINESIS Teache."
+- Jessica Aronoff:
+    _slug: jessica-aronoff-1
+    role: Dancer
+    picture: "/samples/people/jessica-aronoff-1/2014102004115231_IMG_0928TGreen1.jpg"
+    bio: JESSICA ARONOFF grew up in New York dancing through the&nbsp;competition
+      and convention circuit. She went on to attend New York&nbsp;University’s Tisch
+      School of Arts, where she earned her BFA in Dance with&nbsp;honors. Jessica
+      is represented by McDonald Selznick Associates Agency,&nbsp;is a company member
+      of J CHEN PROJECT and AMS Project, and does&nbsp;freelance work dancing and
+      teaching throughout the country. She is so&nbsp;excited to join Eryc Taylor
+      Dance!
+- Jonathan Breton:
+    _slug: jonathan-breton
+    role: Dancer
+    picture: "/samples/people/jonathan-breton/Jonathan_Breton.jpg"
+    bio: "JONATHAN BRETON graduated from the Professional Superior Institute of Performing
+      Arts of Paris and trained in NYC at the Alvin Ailey School, and then at the
+      Martha Graham School (an open student). He performed for various musicals and
+      for ACB Dance Company, Ko-Ryo Dance Theatre, Neville Dance Theatre, Coyote Dancers,
+      among others... He has been choreographing in Europe for 4 years and is now
+      choreographing for AZOTH Dance Theatre in NYC.\r\n"
+- Roberto Lara:
+    _slug: roberto-lara
+    role: Dancer
+    picture: "/samples/people/roberto-lara/RobertoLara.JPG"
+    bio: Roberto Lara is a native of Mexico. He began his training at the Escuela
+      Nacional de Danza Clásica. He has danced with Compañía Nacional de Danza (México),
+      Ballet Nacional de Cuba, Compañia Rosas, among others and was an invited guest
+      artist with Kamea Dance Company (Israel) and Ballet Hispanico of New York.  He
+      toured extensively as a soloist with the internationally acclaimed Les Ballets
+      Trockadero de Monte Carlo.  At the International Dance Competition of the Inter-American
+      Federation of Dance Professionals,  he received the gold medal for Classical
+      Pas de Deux, and silvers for classical  variation and contemporary solo. He
+      is a three-time recipient of the Award for Excellence in Classical Dance Performance
+      from The National Foundation for Culture and the Arts of Mexico (FONCA).
+    position: Company Member
+- Dafni Mari:
+    _slug: dafni-mar
+    role: Dancer
+    picture: "/samples/people/dafni-mar/Dafni.jpg"
+    bio: "Dafni Mari was born and raised in Greece, where she studied in the professional
+      dance school of Despina Gregoriadou, and the School of Pharmacy at the National
+      and Kapodistrian University of Athens. After graduating from both schools, she
+      was accepted to Trinity Laban Conservatoire of Music and Dance in London, where
+      she gained her Master's of Dance Science. While in London, she was an associate
+      member of Ballet Black Neoclassical Company and also participated in many dance
+      and artistic projects.<br></br>\r\n\r\nSearching for new opportunities, she
+      moved to New York and joined \"Ajkun Ballet Theatre\", “Yuka Kawazu-Danse en
+      l'air”, and most recently,\" Benjamin Briones Ballet\",  \"Ballet for Young
+      Audiences\",  and \"String Dance and Media company\". She is also guesting around
+      the US with various dance companies. She is thrilled to dance with\"Eryc Taylor
+      Dance\" company."
+    position: Guest Dancer
+- Angela Patmon:
+    _slug: angela-patmon
+    role: Dancer
+    picture: "/samples/people/angela-patmon/angela.jpg"
+    bio: ''
+- Camille Workman:
+    _slug: camille-workman
+    role: Dancer
+    picture: "/samples/people/camille-workman/Camille.JPG"
+    bio: ''
+- Graziella Murdocca:
+    _slug: graziella-murdocca
+    role: PastDancer
+    picture: "/samples/people/graziella-murdocca/2014102004135831_1.jpg"
+    bio: Graziella Murdocca, born and raised in Brooklyn, N.Y, graduated from Hunter
+      College with a Bachelors degree in Mathematics and Dance.  She was a member
+      of Nicholas Andre Dance for their January 2014 tour, under the direction of
+      Nick Ross. Graziella has performed works by Doug Varone, Julian Barnett, Marijke
+      Eliasberg, Jana Hicks, Maura Donohue and Wendal Cooper. Currently, she dances
+      for Amaris Dance, In Mixed Company and The Next Stage Project. She is excited
+      to work with Eryc Taylor Dance Company.
+- Jacinthe Burton:
+    _slug: jacinthe-burton
+    role: PastDancer
+    picture: "/samples/people/jacinthe-burton/2013111403471530_jacinthe-burton.jpg"
+    bio: Jacinthe Burton is from Edmonton, Alberta, Canada. She graduated from The
+      Ailey School’s Certificate Program in 2012 and Vimy Ridge Academy’s Professional
+      Contemporary Dance Program with The Edmonton School of Ballet in 2009. Currently
+      she is dancing professionally in Las Vegas, Nevada. Jacinthe has studied in
+      summer programs with Hubbard Street Dance Chicago, Les Ballet Jazz de Montreal,
+      Harbour Dance Center and Decidedly Jazz Danceworks. She also travelled to Europe
+      as an exchange student to study at the Rotterdam Dance Academy within Codarts
+      University for the Arts.
+- Alyssa Maksym:
+    _slug: alyssa-maksym
+    role: PastDancer
+    picture: "/samples/people/alyssa-maksym/2013111403483430_Alyssa.jpg"
+    bio: Alyssa grew up attending dance conventions and remained a scholarship student
+      at Jump, New York City Dance Alliance, Tremaine, West Coast Dance Explosion,
+      Company Dance and Youth America Grand Prix throughout her early career. Alyssa
+      has since earned a BFA in Dance from the Tisch School of the Arts at New York
+      University where she also studied Business through the Leonard Stern School
+      of Business and the College of Arts and Sciences.
+- Jesus Olivera:
+    _slug: jesus-olivera
+    role: PastDancer
+    picture: "/samples/people/jesus-olivera/2013111403492930_Jesus_Olivera.jpg"
+    bio: Jesus started dancing at the age of 6 in Puerto Rico, he started taking Ballet
+      at 13 when he joined the Performing Arts School in Puerto Rico. Where he studied
+      Contemporary Dance, Ballet &amp; Jazz. Since then he has danced with Ballets
+      de San Juan, Ballet de Camara de Madrid and is currently dancing in NYC as a
+      freelance dancer.
+- Danielle Schulz:
+    _slug: danielle-schulz
+    role: Dancer
+    picture: "/samples/people/danielle-schulz/2014070312595631_Danielle_Schulz_2.jpeg"
+    bio: Danielle grew up in Southern California where she spent ten years training
+      at Ballet Pacifica in Irvine. She spent summers at the School of American Ballet,
+      San Francisco Ballet, American Ballet Theater, the Juilliard School, Lines Contemporary
+      Ballet, and Dance New York International in Burgos, Spain. Danielle went on
+      to receive her B.F.A. in dance from NYU – Tisch School of the Arts in 2009.
+      During her time there, she performed works by Gus Solomons Jr. and Williams
+      Forsythe. Since graduating, Danielle has performed works by Jeremy McQueen and
+      completed a contract with Celebrity Cruise Lines. She is thrilled to be a member
+      of Eryc Taylor Dance.
+- Joanna Elisabeth Priwieziencew:
+    _slug: joanna-elisabeth-priwieziencew
+    role: PastDancer
+    picture: "/samples/people/joanna-elisabeth-priwieziencew/2013111403515930_JPriwieziencewportrait.jpg"
+    bio: Joanna is an alumni of the National Ballet School of Warsaw, Poland. In Europe,
+      she performed at the Grand Opera of Warsaw, the Stuttgart Ballet, the Open Dance
+      Festival in St. Petersburg, the Ballet Carmen Roche in Spain and subsequently
+      traveled to Italy where she was a member of the newly founded Progetto Compagnia.
+      In NYC Joanna has been dancing with Ajkun Ballet Theatre, Exit12DanceCompany
+      and Staten Island Ballet. In August 2011 she joined Eryc Taylor Dance during
+      the SILO Residency.
+- Shoko Fujita:
+    _slug: shoko-fujita
+    role: PastDancer
+    picture: "/samples/people/shoko-fujita/2013111403535930_0.jpeg"
+    bio: 'Shoko has graduated with highest honors from Japan''s Women''s College of
+      Physical Education and received a bachelor''s degree in Movement Science specialized
+      in Dance studies. She has worked at Joffery Concert Group directed by Davis
+      Robertson since she moved to New York in 2012. As a company member she has performed
+      many pieces and worked with guest choreographers: Dwight Rhoden, Africa Guzman
+      and Larry Keigwin. She has performed for Paris and Wizard which is a part of
+      project of Japan Exhibition at the Museum of Modern Arts.'
+- Adam Di Loreto:
+    _slug: adam-di-loreto
+    role: Dancer
+    picture: "/samples/people/adam-di-loreto/2013111403550130_Adam_Di_Loreto_Headshot.jpg"
+    bio: Adam grew up and started his dance training in Canada at age 14. He's traveled
+      across the world working with different companies such as Rasta' Thomas BAD
+      BOYS OF DANCE, The Radio City Christmas Spectacular, and Tokyo Disney. He has
+      performed with recording artist Beth Ditto and has done industrials from Samsung
+      and M.A.C Cosmetics.
+- Idina Cortez:
+    _slug: idina-cortez
+    role: Dancer
+    picture: "/samples/people/idina-cortez/2014012603504231_Screen_Shot_2014-01-26_at_10.49.46_AM.png"
+    bio: Idina Cortez in a native New Yorker and began dancing at three years old.
+      She currently attends Fiorello H. LaGuardia Performing Arts High School where
+      she studies ballet and modern dance. She has performed in the Martha Graham
+      All City Panorama Project in 2011 and is excited to be working with Eryc Taylor
+      Dance.
+    position: Guest Dancer
+- Salomon Lerner:
+    _slug: salomon-lerner
+    role: Collaborator
+    bio: ''
+    position: Musical Composer
+- Shane Ohmer:
+    _slug: shane-ohmer
+    role: PastDancer
+    bio: ''
+- Erin Ginn:
+    _slug: erin-ginn
+    role: Dancer
+    bio: ''
+- Carly Mayer:
+    _slug: carly-mayer
+    role: PastDancer
+    bio: ''
+- Lydia Haug:
+    _slug: lydia-haug
+    role: PastDancer
+    bio: ''
+- Jenna Danneberger:
+    _slug: jenna-danneberger
+    role: PastDancer
+    bio: ''
+- Dillon Honiker:
+    _slug: dillon-honiker
+    role: PastDancer
+    bio: ''
+- Gierre Godley:
+    _slug: gierre-godley
+    role: PastDancer
+    bio: ''
+- Isa Fernandez:
+    _slug: isa-fernandez
+    role: PastDancer
+    bio: ''
+- Michelle Pelizon:
+    _slug: michelle-pelizon
+    role: PastDancer
+    bio: ''
+- Hope Kroog:
+    _slug: hope-kroog
+    role: PastDancer
+    bio: ''
+- Rachel Hamrick:
+    _slug: rachel-hamrick
+    role: PastDancer
+    bio: ''
+- Dwayne Brown:
+    _slug: dwayne-brown
+    role: PastDancer
+    bio: ''
+- Kate Monty:
+    _slug: kate-monty
+    role: PastDancer
+    bio: ''
+- Haruko Foto:
+    _slug: haruko-foto
+    role: Collaborator
+    bio: ''
+    position: Photographer
+- Jason Levine:
+    _slug: jason-levine
+    role: Collaborator
+    bio: ''
+    position: Video Engineer
+- Scooter LaForge:
+    _slug: scooter-laforge
+    role: Collaborator
+    bio: ''
+    position: Artist
+- Daniel Tobias:
+    _slug: daniel-tobias
+    role: Collaborator
+    bio: ''
+    position: Composer
+- Todd Yeager:
+    _slug: artist
+    role: Collaborator
+    bio: ''
+    position: Artist
+- Lois Greenfield:
+    _slug: lois-greenfield
+    role: Collaborator
+    bio: ''
+    position: Photographer
+- Garvey Rick:
+    _slug: garvey-rick
+    role: Collaborator
+    bio: ''
+    position: Video Editor and Photographer
+- Tonatiuh Otero:
+    _slug: tonatiuh-otero
+    role: Collaborator
+    bio: ''
+    position: Costume Design
+- Satoshi:
+    _slug: satoshi
+    role: Collaborator
+    bio: ''
+    position: Photographer
+- Santiago Studio:
+    _slug: santiago-studio
+    role: Collaborator
+    bio: ''
+    position: Photographer
+- Marsena Faris:
+    _slug: marsena-faris
     role: Board
-    picture: "/samples/images/eryctaylor.jpg"
-    position: CEO
-    bio: Eryc Taylor holds a BFA in Dance from the University of the Arts, Philadelphia, Pa., and an MFA in Dance from New York University's Tisch School of the Arts.<br><br>
-      Eryc Taylor has studied abroad at both the London Contemporary School of Dance and the Centre de Danse du Marais in Paris. Taylor has been awarded several major scholarships, including residency at Jacob’s Pillow, and spent two years with the Cunningham Dance Foundation Repertory Understudy Group.<br><br>
-      Taylor has performed works by Merce Cunningham, Mark Dendy, Group Motion, Paul Taylor, Milton Meyers, Sean Curran and Gus Solomons Jr. and has collaborated with artists such as Todd Yeager, Jason Levine, Scooter LaForge and Mark Beard.<br><br>
-      Taylor's choreography has been presented worldwide and he is known for producing sight specific dance installations. He has produced summer dance festivals in Martha’s Vineyard called, "Dance Martha Dance!" His work has also appeared at Lincoln Center Out-of-Doors, Joyce Soho, The Second Avenue Dance Theater, NYU, Dance Theater Workshop, Dance New Amsterdam’s APAP festival, Joe's Pub at The Public Theater, NYC and New York Live Arts.<br><br>
-- Eryc Taylor:
-    _slug: eryc-taylor
+    bio: ''
+    position: Board Secretary
+- Art Pober:
+    _slug: art-pober
     role: Board
-    picture: "/samples/images/eryctaylor.jpg"
-    position: CEO
-    bio: Eryc Taylor holds a BFA in Dance from the University of the Arts, Philadelphia, Pa., and an MFA in Dance from New York University's Tisch School of the Arts.<br><br>
-      Eryc Taylor has studied abroad at both the London Contemporary School of Dance and the Centre de Danse du Marais in Paris. Taylor has been awarded several major scholarships, including residency at Jacob’s Pillow, and spent two years with the Cunningham Dance Foundation Repertory Understudy Group.<br><br>
-      Taylor has performed works by Merce Cunningham, Mark Dendy, Group Motion, Paul Taylor, Milton Meyers, Sean Curran and Gus Solomons Jr. and has collaborated with artists such as Todd Yeager, Jason Levine, Scooter LaForge and Mark Beard.<br><br>
-      Taylor's choreography has been presented worldwide and he is known for producing sight specific dance installations. He has produced summer dance festivals in Martha’s Vineyard called, "Dance Martha Dance!" His work has also appeared at Lincoln Center Out-of-Doors, Joyce Soho, The Second Avenue Dance Theater, NYU, Dance Theater Workshop, Dance New Amsterdam’s APAP festival, Joe's Pub at The Public Theater, NYC and New York Live Arts.<br><br>
-- Eryc Taylor:
-    _slug: eryc-taylor
+    bio: ''
+    position: Treasurer
+- Betsy Timberman:
+    _slug: betsy-timberm
     role: Board
-    picture: "/samples/images/eryctaylor.jpg"
-    position: CEO
-    bio: Eryc Taylor holds a BFA in Dance from the University of the Arts, Philadelphia, Pa., and an MFA in Dance from New York University's Tisch School of the Arts.<br><br>
-      Eryc Taylor has studied abroad at both the London Contemporary School of Dance and the Centre de Danse du Marais in Paris. Taylor has been awarded several major scholarships, including residency at Jacob’s Pillow, and spent two years with the Cunningham Dance Foundation Repertory Understudy Group.<br><br>
-      Taylor has performed works by Merce Cunningham, Mark Dendy, Group Motion, Paul Taylor, Milton Meyers, Sean Curran and Gus Solomons Jr. and has collaborated with artists such as Todd Yeager, Jason Levine, Scooter LaForge and Mark Beard.<br><br>
-      Taylor's choreography has been presented worldwide and he is known for producing sight specific dance installations. He has produced summer dance festivals in Martha’s Vineyard called, "Dance Martha Dance!" His work has also appeared at Lincoln Center Out-of-Doors, Joyce Soho, The Second Avenue Dance Theater, NYU, Dance Theater Workshop, Dance New Amsterdam’s APAP festival, Joe's Pub at The Public Theater, NYC and New York Live Arts.<br><br>
-- Eryc Taylor:
-    _slug: eryc-taylor
-    role: Dancer
-    picture: "/samples/images/eryctaylor.jpg"
-    position: CEO
-    bio: Eryc Taylor holds a BFA in Dance from the University of the Arts, Philadelphia, Pa., and an MFA in Dance from New York University's Tisch School of the Arts.<br><br>
-      Eryc Taylor has studied abroad at both the London Contemporary School of Dance and the Centre de Danse du Marais in Paris. Taylor has been awarded several major scholarships, including residency at Jacob’s Pillow, and spent two years with the Cunningham Dance Foundation Repertory Understudy Group.<br><br>
-      Taylor has performed works by Merce Cunningham, Mark Dendy, Group Motion, Paul Taylor, Milton Meyers, Sean Curran and Gus Solomons Jr. and has collaborated with artists such as Todd Yeager, Jason Levine, Scooter LaForge and Mark Beard.<br><br>
-      Taylor's choreography has been presented worldwide and he is known for producing sight specific dance installations. He has produced summer dance festivals in Martha’s Vineyard called, "Dance Martha Dance!" His work has also appeared at Lincoln Center Out-of-Doors, Joyce Soho, The Second Avenue Dance Theater, NYU, Dance Theater Workshop, Dance New Amsterdam’s APAP festival, Joe's Pub at The Public Theater, NYC and New York Live Arts.<br><br>
-- Eryc Taylor:
-    _slug: eryc-taylor
-    role: Dancer
-    position: CEO
-    bio: Eryc Taylor holds a BFA in Dance from the University of the Arts, Philadelphia, Pa., and an MFA in Dance from New York University's Tisch School of the Arts.<br><br>
-      Eryc Taylor has studied abroad at both the London Contemporary School of Dance and the Centre de Danse du Marais in Paris. Taylor has been awarded several major scholarships, including residency at Jacob’s Pillow, and spent two years with the Cunningham Dance Foundation Repertory Understudy Group.<br><br>
-      Taylor has performed works by Merce Cunningham, Mark Dendy, Group Motion, Paul Taylor, Milton Meyers, Sean Curran and Gus Solomons Jr. and has collaborated with artists such as Todd Yeager, Jason Levine, Scooter LaForge and Mark Beard.<br><br>
-      Taylor's choreography has been presented worldwide and he is known for producing sight specific dance installations. He has produced summer dance festivals in Martha’s Vineyard called, "Dance Martha Dance!" His work has also appeared at Lincoln Center Out-of-Doors, Joyce Soho, The Second Avenue Dance Theater, NYU, Dance Theater Workshop, Dance New Amsterdam’s APAP festival, Joe's Pub at The Public Theater, NYC and New York Live Arts.<br><br>
-- Eryc Taylor:
-    _slug: eryc-taylor
-    role: Dancer
-    picture: "/samples/images/eryctaylor.jpg"
-    position: CEO
-    bio: Eryc Taylor holds a BFA in Dance from the University of the Arts, Philadelphia, Pa., and an MFA in Dance from New York University's Tisch School of the Arts.<br><br>
-      Eryc Taylor has studied abroad at both the London Contemporary School of Dance and the Centre de Danse du Marais in Paris. Taylor has been awarded several major scholarships, including residency at Jacob’s Pillow, and spent two years with the Cunningham Dance Foundation Repertory Understudy Group.<br><br>
-      Taylor has performed works by Merce Cunningham, Mark Dendy, Group Motion, Paul Taylor, Milton Meyers, Sean Curran and Gus Solomons Jr. and has collaborated with artists such as Todd Yeager, Jason Levine, Scooter LaForge and Mark Beard.<br><br>
-      Taylor's choreography has been presented worldwide and he is known for producing sight specific dance installations. He has produced summer dance festivals in Martha’s Vineyard called, "Dance Martha Dance!" His work has also appeared at Lincoln Center Out-of-Doors, Joyce Soho, The Second Avenue Dance Theater, NYU, Dance Theater Workshop, Dance New Amsterdam’s APAP festival, Joe's Pub at The Public Theater, NYC and New York Live Arts.<br><br>
-- Eryc Taylor:
-    _slug: eryc-taylor
-    role: Dancer
-    picture: "/samples/images/eryctaylor.jpg"
-    position: CEO
-    bio: Eryc Taylor holds a BFA in Dance from the University of the Arts, Philadelphia, Pa., and an MFA in Dance from New York University's Tisch School of the Arts.<br><br>
-      Eryc Taylor has studied abroad at both the London Contemporary School of Dance and the Centre de Danse du Marais in Paris. Taylor has been awarded several major scholarships, including residency at Jacob’s Pillow, and spent two years with the Cunningham Dance Foundation Repertory Understudy Group.<br><br>
-      Taylor has performed works by Merce Cunningham, Mark Dendy, Group Motion, Paul Taylor, Milton Meyers, Sean Curran and Gus Solomons Jr. and has collaborated with artists such as Todd Yeager, Jason Levine, Scooter LaForge and Mark Beard.<br><br>
-      Taylor's choreography has been presented worldwide and he is known for producing sight specific dance installations. He has produced summer dance festivals in Martha’s Vineyard called, "Dance Martha Dance!" His work has also appeared at Lincoln Center Out-of-Doors, Joyce Soho, The Second Avenue Dance Theater, NYU, Dance Theater Workshop, Dance New Amsterdam’s APAP festival, Joe's Pub at The Public Theater, NYC and New York Live Arts.<br><br>
+    bio: ''
+    position: Board Advisor
+- Andrew Tran:
+    _slug: andrew-tran-1
+    role: Staff
+    bio: ''
+    position: Company Manager
+- Geoffrey Kaelin:
+    _slug: andrew-tran
+    role: Staff
+    bio: ''
+    position: Manager Assistant
+- Eric Liu:
+    _slug: eric-liu
+    role: Staff
+    bio: ''
+    position: Web Dev
+- Ben Cushman:
+    _slug: ben-cushman
+    role: Board
+    bio: ''
+    position: Board Advisor

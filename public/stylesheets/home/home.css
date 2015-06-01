@@ -1,0 +1,75 @@
+body.index main .banner-container {
+  background-color: black; }
+  body.index main .banner-container .banner {
+    display: table;
+    position: relative;
+    padding-top: 40px;
+    top: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 310px;
+    min-width: 700px;
+    width: 100%; }
+    body.index main .banner-container .banner .title {
+      display: table-cell;
+      position: absolute;
+      color: white;
+      text-align: center;
+      z-index: 20;
+      width: 100%;
+      top: 48%;
+      font-size: 3em; }
+      body.index main .banner-container .banner .title .continue {
+        position: absolute;
+        z-index: 20;
+        width: 40px;
+        height: 20px;
+        color: white;
+        bottom: -10px;
+        left: 49%;
+        font-size: 16px; }
+        body.index main .banner-container .banner .title .continue:hover {
+          cursor: pointer; }
+    body.index main .banner-container .banner video {
+      display: block;
+      width: 100%;
+      height: auto;
+      z-index: 15; }
+    body.index main .banner-container .banner .button {
+      display: table-cell;
+      position: absolute;
+      color: white;
+      z-index: 20;
+      width: 40px;
+      height: 40px;
+      background-color: rgba(0, 0, 0, 0); }
+      body.index main .banner-container .banner .button:hover {
+        cursor: pointer; }
+      body.index main .banner-container .banner .button.play {
+        background-image: url("https://eryc-taylor-dance.s3.amazonaws.com/sites/54d874516e84c0dc00000002/theme/images/icon_set_player.svg?1432770331");
+        background-position: 82px 0px;
+        background-size: 125px;
+        bottom: 10px;
+        right: 10px; }
+      body.index main .banner-container .banner .button.pause {
+        background-image: url("https://eryc-taylor-dance.s3.amazonaws.com/sites/54d874516e84c0dc00000002/theme/images/icon_set_player.svg?1432770331");
+        background-position: 82px 40px;
+        background-size: 125px;
+        right: 10px;
+        bottom: 10px; }
+      body.index main .banner-container .banner .button.mute {
+        background-image: url("https://eryc-taylor-dance.s3.amazonaws.com/sites/54d874516e84c0dc00000002/theme/images/unmute.svg?1432770331");
+        background-size: 40px;
+        right: 10px;
+        bottom: 55px; }
+      body.index main .banner-container .banner .button.unmute {
+        background-image: url("https://eryc-taylor-dance.s3.amazonaws.com/sites/54d874516e84c0dc00000002/theme/images/mute.svg?1432770331");
+        background-size: 40px;
+        right: 10px;
+        bottom: 55px; }
+body.index main .block .overlay.contribute {
+  background-image: url("https://eryc-taylor-dance.s3.amazonaws.com/sites/54d874516e84c0dc00000002/theme/images/image1.jpg?1432770331"); }
+body.index main .block .overlay.about {
+  background-image: url("https://eryc-taylor-dance.s3.amazonaws.com/sites/54d874516e84c0dc00000002/theme/images/image2.jpg?1432770331"); }
+body.index main .block .overlay.newsletter {
+  background-image: url("https://eryc-taylor-dance.s3.amazonaws.com/sites/54d874516e84c0dc00000002/theme/images/image3.jpg?1432770331"); }

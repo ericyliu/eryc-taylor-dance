@@ -1,0 +1,51 @@
+.reviews .article-list .article, .news .article-list .article {
+  background-size: 100% auto;
+  background-position: center center;
+  padding: 150px 0;
+  border-bottom: 5px solid #bbbbbb;
+  position: relative; }
+  .reviews .article-list .article .overlay, .news .article-list .article .overlay {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%; }
+    .reviews .article-list .article .overlay .tint, .news .article-list .article .overlay .tint {
+      opacity: 0.8;
+      width: 100%;
+      height: 100%;
+      background-color: #373737;
+      position: absolute;
+      top: 0px; }
+    .reviews .article-list .article .overlay .title, .news .article-list .article .overlay .title {
+      width: 100%;
+      font-size: 30px;
+      font-size: 1.5em;
+      color: white;
+      text-align: center;
+      position: absolute;
+      text-transform: Uppercase;
+      font-weight: bold;
+      line-height: 300px; }
+    .reviews .article-list .article .overlay .quote, .news .article-list .article .overlay .quote {
+      font-size: 30px;
+      font-size: 1.5em;
+      color: white;
+      text-align: left;
+      position: absolute;
+      text-transform: Uppercase;
+      font-weight: bold;
+      line-height: 300px;
+      position: absolute;
+      left: 150px; }
+    .reviews .article-list .article .overlay .author, .news .article-list .article .overlay .author {
+      position: absolute;
+      right: 150px;
+      bottom: 50px;
+      color: white; }
+    .reviews .article-list .article .overlay .link, .news .article-list .article .overlay .link {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0px; }
+    .reviews .article-list .article .overlay:hover .tint, .news .article-list .article .overlay:hover .tint {
+      opacity: 0; }

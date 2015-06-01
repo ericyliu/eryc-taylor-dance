@@ -1,37 +1,77 @@
 ---
-- Event 1:
-    _slug: event-1
+- Cocktails at MiMa:
+    _slug: sample-past-even
+    date: 03/21/2012
+    description: Annual Fundraiser and silent auction
+- 'ETD SILO Residency ':
+    _slug: etd-silo-residency
+    date: 09/05/2012
+    description: 'Choreography planning and development '
+- ETD and Jason Levine:
+    _slug: etd-and-jason-levine
+    date: 11/20/2013
+    description: ETD video/dance collaboration
+- Works In Progress/NYLA:
+    _slug: works-in-profress-slash-nyla
+    date: 11/22/2013
+    description: ETD Work Presentation for Choreography
+- ETD Brunch:
+    _slug: etd-brunch
+    date: 02/23/2014
+    description: Special Brunch
+- An Inspired Evening:
+    _slug: an-inspired-evening
+    date: 03/29/2014
+    description: 'ETD Fundraiser '
+- Jean Day at Cadwalader:
+    _slug: jean-day-at-cadwalader
+    date: 04/11/2014
+    description: Donation Event
+- EMERGENCE:
+    _slug: emergence
+    date: 04/22/2014
+    description: Final Performance of the 2014 ETD Grand Recipients.
+- Eryc Taylor Dance 2014 Summer Workshop:
+    _slug: eryc-taylor-dance-2014-summer-workshop
+    date: 06/25/2014
+    description: 3 day workshop
+- ETD/NCG Recipients Announced:
+    _slug: etd-slash-ncg-recipients-announced
+    date: 09/07/2014
+    description: 'Grant Choreography Announcement: Ana Sosa, Daniel Holt, and Eryn
+      Renee Young '
+- Works In Progress *Sold Out*:
+    _slug: works-in-progress-star-sold-out-star
+    date: 11/15/2014
+    description: 'Dance performance '
+- Stellar Review by Philip Gardner (Oberons Grove)- ETD/NCG 2014 Show:
+    _slug: stellar-review-by-philip-gardner-oberons-grove-etd-slash-ncg-2014-show
+    date: 11/30/2014
+    description: 'Dance Performance by grant recipients  '
+- Happy Holidays:
+    _slug: happy-holidays
+    date: 12/31/2014
+    description: Happy Holidays
+- Guest Performance at Tanner Valentine Soiree:
+    _slug: guest-performance-at-tanner-valentine-soiree
+    date: 02/08/2015
+    description: Dance Trio
+- Cuba International Education Exchange:
+    _slug: cuba-international-education-exchange
+    date: 05/06/2015
+    description: Work Collaboration with Cuba/US program
+- ETD x ZeroNation DanceHall Workshop:
+    _slug: etd-x-zeronation-dancehall
+    date: 06/26/2015
+    description: " ETD is collaborating with DanceHall crew, ZeroNation, to put together
+      NYCs FIRST DanceHall workshop.\r\n\r\nPlease visit DiDC.nyc for all the info!"
+- The International Dance Festival Avant Garde:
+    _slug: the-international-dance-festival-avant-garde
     date: 09/25/2015
-    start_time: "12:00 PM"
-    end_time: "22:00 PM"
-    description: ETD will be performing at The International Dance Festival Avant Garde 
-      from September 25th-27th.
-    location: Yucatan, Mexico
-    location_link: 20.969380, -89.604690
-- Event 2:
-    _slug: event-1
-    date: 10/25/2015
-    start_time: "12:00 PM"
-    description: ETD will be performing at The International Dance Festival Avant Garde 
-      from September 25th-27th.
-    location: Yucatan, Mexico
-- Event 3:
-    _slug: event-1
-    date: 11/25/2015
-    description: ETD will be performing at The International Dance Festival Avant Garde 
-      from September 25th-27th.
-    location: Yucatan, Mexico
-- Event 4:
-    _slug: event-1
-    date: 12/25/2015
-    start_time: "12:00 PM"
-    description: ETD will be performing at The International Dance Festival Avant Garde 
-      from September 25th-27th.
-    location: Yucatan, Mexico
-- Event 5:
-    _slug: event-1
-    date: 1/25/2015
-    start_time: "12:00 PM"
-    description: ETD will be performing at The International Dance Festival Avant Garde 
-      from September 25th-27th.
-    location: Yucatan, Mexico
+    description: " ETD will be  at the The International Dance Festival Avant Garde
+      from September 25th - 27th."
+- ETD NYC Fall Season:
+    _slug: etd-nyc-fall-season
+    date: 10/18/2015
+    description: " ETD is excited to premier four new works, in an original immersive
+      environment. Please stay tuned for more information!"

@@ -1,0 +1,26 @@
+.newsletter-sidebar {
+  position: fixed;
+  margin-top: 130px;
+  padding: 10px 30px;
+  padding-right: 20px;
+  background-color: #373737;
+  right: 0px;
+  z-index: 98;
+  line-height: 30px;
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  text-align: right;
+  border: 1px solid black; }
+  .newsletter-sidebar .icon {
+    display: inline-block;
+    font-size: 16px;
+    opacity: 0.5;
+    color: white; }
+  .newsletter-sidebar a {
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px; }

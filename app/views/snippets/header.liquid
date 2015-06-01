@@ -1,0 +1,17 @@
+<div class='header-container'>
+  <div class='header'>
+    <a class='logo-container' href='/'>
+      <div class='logo'></div>
+    </a>
+    <div class='title'>Eryc Taylor Dance</div>
+    <div class='mobile-dropdown icon-menu' onclick='toggleMenu()'></div>
+    <div class='links'>
+      {% nav site, depth: 2, no_wrapper: true, exclude: nil, icon: false %}
+    </div>
+    <script>
+      function toggleMenu() {
+        $(".header .links").toggle();
+      }
+    </script>
+  </div>
+</div>

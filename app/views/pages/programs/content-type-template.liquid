@@ -1,0 +1,29 @@
+---
+title: Programs Template
+slug: content_type_template
+listed: false
+published: true
+cache_strategy: none
+response_type: text/html
+position: 1
+content_type: programs
+---
+{% extends default %}
+{% block main %}
+<div class='block-container dark'>
+  <div class='block full'>
+    <div class='title'>{{ program.name }}</div>
+    <div class='text'>{{ program.type }}</div>
+  </div>
+</div>
+<div class='block-container light'>
+  <div class='block full'>
+    <div class='text'>{{ program.description }}</div>
+  </div>
+</div>
+<div class='block-container dark'>
+  <div class='block full'>
+    <a class='title' href='/contact'>Apply Here</a>
+  </div>
+</div>
+{% endblock %}

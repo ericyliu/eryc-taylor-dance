@@ -1,0 +1,80 @@
+---
+title: Company
+slug: company
+listed: true
+published: true
+cache_strategy: none
+response_type: text/html
+position: 1
+---
+{% extends default %}
+{% block main %}
+<div class='block-container dark'>
+  <div class='block full'>
+    <div class='title'>THE COMPANY</div>
+  </div>
+</div>
+{% assign eryc = contents.people.first %}
+<div class='block-container light'>
+  <div class='block full'>
+    <div class='title'>Artistic Director<br><br></div>
+    <div class='profile'>
+      <img src='{{ eryc.picture.url }}'>
+      <div class='info-container'>
+        <div class='name'>{{ eryc.name }}</div>
+        <div class='role'>{{ eryc.position }}</div>
+        <div class='bio'>{{ eryc.bio }}</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class='block-container dark'>
+  <div class='block full'>
+    <div class='tabs'>
+      <div class='tab' id='Dancer' onclick='filterPeople("Dancer")'>DANCERS</div>
+      <span>-</span>
+      <div class='tab' id='PastDancer' onclick='filterPeople("PastDancer")'>PAST DANCERS</div>
+      <span>-</span>
+      <div class='tab' id='Collaborator' onclick='filterPeople("Collaborator")'>COLLABORATORS</div>
+      <span>-</span>
+      <div class='tab' id='Board' onclick='filterPeople("Board")'>BOARD OF DIRECTORS</div>
+      <span>-</span>
+      <div class='tab' id='Staff' onclick='filterPeople("Staff")'>STAFF</div>
+    </div>
+    <div class='people-list'>
+      {% for person in contents.people %}
+      {% if person.role == "Dancer" %}
+      <a class='person' href='/people/{{ person._slug }}' id='{{person.role}}'>
+        {% if person.picture.url == undefined %}
+        <div class='overlay active'>
+          <div class='name'>{{ person.name }}</div>
+        </div>
+        {% else %}
+        <div class='picture' style='background-image:url("{{ person.picture.url }}");'></div>
+        <div class='overlay'>
+          <div class='name'>{{ person.name }}</div>
+        </div>
+        {% endif %}
+      </a>
+      {% else %}
+      <div class='person' id='{{person.role}}'>
+        <div class='name'>{{ person.name }}</div>
+        <div class='position'>{{ person.position }}</div>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+  <script>
+    function filterPeople(id) {
+      $(".person").hide();
+      $(".person#" + id).show();
+      $(".tab").removeClass("active");
+      $(".tab#" + id).addClass("active");
+    }
+    $(document).ready(function() {
+      filterPeople("Dancer");
+    })
+  </script>
+</div>
+{% endblock %}
